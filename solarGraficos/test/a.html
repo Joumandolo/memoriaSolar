@@ -1,0 +1,52 @@
+<html>
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Ejemplos Solar</title>
+    <link href="../flot/flot-flot-1a99246/examples/layout.css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]-->
+    <script language="javascript" type="text/javascript" src="../flot/flot-flot-1a99246/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="../flot/flot-flot-1a99246/jquery.flot.js"></script>
+ </head>
+    <body>
+    <h1>Ejemplo de Graficos</h1>
+
+    <div id="placeholder" style="width:600px;height:300px;"></div>
+
+<script type="text/javascript">
+var datosJson;
+//datosJson = [["10418","767.300"],["10419","779.900"],["10420","779.900"],[10421,776.900],[10422,773.200],[10423,767.800],[10424,767.400],[10425,772.400]];
+
+//$.plot($("#placeholder"), [{data: datosJson, label: "rad_w"}]);
+
+$.ajax({
+	url: 'a.php',
+	type: 'GET',
+	dataType: 'json',
+	//data: ,
+	async: false,
+	success: function(data, textStatus, jqXHR){
+	datosJson = data;
+	$.plot($("#placeholder"),
+		[{data: datosJson, label: "rad_w"}],
+		{xaxis: {
+			mode: "time",
+			ticks: 5,
+			grid: { hoverable: true, clickable: true },
+			series: {
+ 				lines: { show: true },
+				points: { show: true }
+			},
+			//minTickSize: [1, "day"],
+			//min: (new Date(datosJson[0][0])).getTime(),
+			//max: (new Date()).getTime()
+
+			}
+		}
+		);
+	},
+});
+   
+</script>
+
+ </body>
+</html>

@@ -1,0 +1,57 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[spanish]{babel}
+\usepackage{usmtesis/usmtesis}
+%\usepackage[style=authortitle-icomp,natbib=true,sortcites=true,block=space]{biblatex}
+\usepackage[style=footnote-dw]{biblatex}
+\usepackage{url}
+%\usepackage{footbib}
+\usepackage[refpages]{gloss}
+
+\bibliography{include/bibliografia}
+%\bibliographystyle{plain}
+%\nolistoftables
+\ingej
+\copyrightyear{2011}
+\submitdate{Julio 2011}
+\convocation{Agosto}{2011}
+\makegloss
+\selectlanguage{spanish}
+
+\title{Implementación de un Sistema de Gestión agrícola con Georreferenciación para la Cooperativa Campesina Peumo Ltda.}
+\author{Manuel José Arredondo Maritano}
+
+%\convocation{2011}{21} %aun noc como se ocupa este comando
+
+\profguia{Dr.~Ricardo Acevedo Almonacid}
+\profcorr{Mg.~Lautaro Guerra Genskowsky}
+
+\dedicate{aqui poner algo}%texto de agradecimiento o dedicatoria
+\resumen{\input{chapters/2-resumen}}
+\abstract{en traduccion}
+
+\begin{document}
+
+\beforepreface
+\prefacesection
+\afterpreface
+\printgloss{glsbase,include/glosario}
+
+%\include{chapters/1-agradecimientos}
+%\include{chapters/2-resumen}
+%\include{chapters/3-abstract}
+\include{chapters/4-Introduccion}
+\include{chapters/5-Problema}
+\include{chapters/6-Desarrollo}
+\include{chapters/7-Conclusiones}
+\include{chapters/8-Anexos}
+
+%\footbibliographystyle{plain}
+%\footbibliography{include/bibliografia}
+
+%\bibliographystyle{plain}
+%\bibliography{include/bibliografia}
+%\printbibliography[title=Works Cited] %(5)
+
+\end{document}

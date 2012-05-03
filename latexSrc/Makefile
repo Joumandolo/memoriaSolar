@@ -9,14 +9,13 @@ INS = fichaInscripcion
 
 all:
 	rubber --pdf $(DOC)
+	rubber --pdf $(INS)
+mem:
+	rubber --pdf $(DOC)
 ins:
 	rubber --pdf $(INS)
 clean:
-	@echo "Limpiando..."
-	@rm -f $(DOC).{aux,toc,log,lof,tmp,dvi,idx,ilg,ind,bbl,blg,out,nav,snm,fb.aux,gls.aux,bcf,run.xml,-blx.bib} .my_log
-	@rm -f memoria-blx.bib .my_log
-	@rm -f chapters/$(CHAP).aux .my_log
-	@rm -f $(INS).{aux,toc,log,lof,tmp,dvi,idx,ilg,ind,bbl,blg,out,nav,snm,fb.aux,gls.aux,bcf,run.xml} .my_log
+	rubber --clean $(DOC)
 distclean:
 	rubber --pdf --clean $(DOC)
 	rubber --pdf --clean $(INS)

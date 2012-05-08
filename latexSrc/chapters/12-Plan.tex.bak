@@ -1,0 +1,18 @@
+\chapter{Plan de trabajo}
+
+\begin{table}
+\centering
+\begin{tabular}[H]{|p{0.8in}|p{3in}|}
+\hline
+\textbf{Tarea} & \textbf{Duracion (semanas)} \\ \hline
+Definición del Alcance del Proyecto & 1 \\ \hline
+Definición de Requerimientos & 1 \\ \hline
+Interiorización y programación del  hardware involucrado & 2 \\ \hline
+Diseño de Prototipo & 1 \\ \hline
+Construcción de la Aplicación 1 & 4 \\ \hline
+Construcción de la Aplicación 2 & 1 \\ \hline
+Pruebas y Ajustes & 2 \\ \hline
+Redacción del Informe Final & 4 \\ \hline
+\textbf{Total} & \textbf{16} \\ \hline
+\end{tabular}
+\end{table}

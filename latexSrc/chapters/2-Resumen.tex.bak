@@ -1,0 +1,13 @@
+La memoria desarrollada y presentada a continuacion consiste en el desarrollo de una plataforma de gestión de la información producida por la planta de energía solar de la exportadora Subsole S.A., ubicada en la región de Atacama.
+Actualmente es la planta más grande de Chile para uso agrícola y el Banco Interamericano de Desarrollo (BID) está interesado en difundir características técnicas sobre el proceso de construcción y operación a tiempo real de esta instalación.
+Dentro de este marco, el BID encargó a la Fundación Chile la creación de un portal Web junto a una Red de difución y colaboración para Latinoamérica y el Caribe (RedSolLAC), la cual pretende potenciar y desarrollar la producción y el uso de energía fotovoltaica en la región.\\
+
+La información de energía generada por la planta e inyectada a la red deberá ser presentada en tiempo real por la plataforma Web, además deberá estar disponible para ser descargada en diferentes formatos que permita a los usuarios especialistas utilizarla.\\
+
+Para la captura y recopilacion de datos se implementaran estaciones meteorologicas compuestas de equipos especializason en la medicion de variables solares, ademas de diferentes parametro medioambientales. Se utilizaran dos estaciones una ubicada en santiago y otra en la planta de Subsole.
+
+A partir de la información obtenida por la estación meteorológica ubicada en la planta fotovoltaica y los datos medidos en Santiago en la estación de medición de la Fundación Chile, se desarrollará una sistema de cálculo para realizar estudios de prefactibilidad técnica y económica a través de una calculadora “on line”.
+Este desarrollo será asesorado por los ingenieros de la Fundación Chile para su implementación.
+La calculadora tendrá que permitir la descarga de reportes de la simulación realizada por los usuarios.\\
+
+Los datos de las estaciones de medición de la Fundación Chile (Santiago) y de la planta fotovoltaica (región de Atacama) estarán a disposición de los usuarios de la RedSolLAC en forma gráfica y podrán descargarla de la base de datos en diferentes formatos.

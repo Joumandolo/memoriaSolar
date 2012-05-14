@@ -17,7 +17,7 @@ $conexion = mysql_connect("localhost", "root", ".joumandolo") or die("no conexio
 mysql_select_db("wordpress", $conexion) or die("Error al conectarse con la bases de datos...");
 
 /* insertar registros */
-$q = "INSERT INTO solarDatos2 (Rad_W, Rad_kJ_Tot, rh, Temp_TC, BattV) VALUES (".$dataloger['radW'].",".$dataloger['radW2'].",".$dataloger['rh'].",".$dataloger['airTc'].",".$dataloger['battV'].")";
+$q = "INSERT INTO solarDatos2 (timestamp, Rad_W, Rad_kJ_Tot, rh, Temp_TC, BattV) VALUES (UTC_TIMESTAMP(), ".$dataloger['radW'].",".$dataloger['radW2'].",".$dataloger['rh'].",".$dataloger['airTc'].",".$dataloger['battV'].")";
 
 $r = mysql_query($q, $conexion) or die(mysql_error());
 

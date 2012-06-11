@@ -4,7 +4,7 @@
 \usepackage[spanish]{babel}
 \usepackage{usmtesis/usmtesis}
 %\usepackage[style=authortitle-icomp,natbib=true,sortcites=true,block=space]{biblatex}
-\usepackage[style=footnote-dw]{biblatex}
+\usepackage[style=numeric]{biblatex}
 \usepackage{url}
 %\usepackage{footbib}
 \usepackage[refpages]{gloss}
@@ -16,8 +16,9 @@
 \copyrightyear{2012}
 \submitdate{Julio 2012}
 \convocation{Agosto}{2012}
-\makegloss
 \selectlanguage{spanish}
+
+\makegloss 
 
 \title{Sistema informático para el manejo de datos de produccion generados por una estación de monitoreo solar fotovoltaica.}
 \author{Manuel José Arredondo Maritano}
@@ -29,12 +30,15 @@
 \resumen{\input{chapters/2-Resumen}}
 \abstract{\input{chapters/3-Abstract}}
 
+
 \begin{document}
 
 \beforepreface
 \prefacesection
 \afterpreface
-\printgloss{glsbase,include/glosario}
+
+\gloss[nocite]{*}
+\printgloss{glbase,glosario}
 
 %\include{chapters/1-Agradecimientos}
 %\include{chapters/2-Resumen}
@@ -53,6 +57,6 @@
 %\footbibliography{include/bibliografia}
 %\bibliographystyle{plain}
 %\bibliography{include/bibliografia}
-%\printbibliography[title=Works Cited] %(5)
+\printbibliography[title=Bibliografia] %(5)
 
 \end{document}

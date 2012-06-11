@@ -7,34 +7,35 @@ Planteados estos dos temas es que se ha tomado la decisión de realizar y desarr
 Dado que el portal Web de la RedSoLac estar implementado en el famoso CMS Wordpress he tomado la decisión de desarrollar las aplicación de forma modular en forma de plugins para este sistema Web.\\
 Se desarrollaran 3 plugins cada uno debe satisfacer un requerimiento diferente de los cuales han sido planteados en el capitulo primero, estos plugins deberán cumplir estrictamente con el formato de desarrollo planteado en la documentación oficial de Wordpress.org y deberán funcionar como productos independientes y deberá poder ser portados a cualquier sistema con Wordpress.\\
 
-\section{Wordpress}
+\subsection{Sofware utilizado}
+\subsubsection{Wordpress}
 Wordpress es una avanzada plataforma semántica de publicación personal orientada a la estética, los estándares Web y la usabilidad. Wordpress es libre y, al mismo tiempo, gratuito.\\
 Wordpress es un sistema de manejador de contenidos (CMS del ingles Content Management Sistem) basado en estilo de publicaciones de blogs, además es un sistema libre de código abierto bajo la licencia GPL2. Esta echo en lenguaje PHP y utiliza el motor de bases de datos MySql, su arquitectura esta pensada y diseñada de forma modular, cosa que le permite adaptarse y ser configurable de acuerdo con los requerimientos de cada usuario.\\
 La primera versión de esta plataforma fue liberada el año 2003 por Matt Mullenweg y es un rama del otro proyecto llamado b2/cafelog. Actualmente esta plataforma esta en su versión 3.0 y ha sido descargada mas de 65 millones de veces. se estima que Wordpress a la fecha es la herramienta de publicación de contenido mas utilizada y mas popular de la Red con aproximadamente un 14\% de participación en Internet y mas del 22\% de sitios nuevos o que se publican por primera vez.
 
-\subsection{Arquitectura de Wordpress}
+\subsubsection{Arquitectura de Wordpress}
 Tal como se menciono el apartado anterior Wordpress es una potente plataforma para la publicación de sitios en la Web. la plataforma esta programada en el lenguaje PHP y utiliza el motor de bases de datos MySql, para la parte visual utiliza hojas de estilo CSS.\\
 Wordpress esta echo de tal manera que permita a sus usuario modificar o configurar partes esenciales del sistema que permitan gran funcionalidad y adaptación a los requerimientos del sistema, además cuanta con un framework y una API que permiten a programadores realizar aplicación de manera muy sencilla para que se adapten a la plataforma.
 
-\subsection{Themes}
+\subsubsection{Themes}
 La parte visual o gráfica de esta plataforma funciona a través de un sistema llamado themes.\\
 
 Los themes son un conjunto de librerías programadas en PHP que permiten estructura la forma en que se mostraran los contenidos del sitio y a la ves la gráfica que este expondrá a sus visitantes sin alterar el contenido del sitio. Wordpress al estar diseñado de manera modular permite a sus usuarios contar con gran cantidad de themes diferentes y mediante una interfaz de administración permite intercambiar estos themes de manera rápida y sencilla. Adicionalmente en el mercado existe extensos depósitos de themes que pueden ser instalados en cualquier sitio compatible con la versión indicada de Wordpress.\\
 
 En el sitio de Wordpress podemos encontrar una extensa documentación y un API bien estructura que indica a los programadores que deseen desarrollar nuevos themes como deben estructurar el paquete de librerías y que funcionalidades pueden agregar o quitar. Adicionalmente estas librerías pueden posteriormente publicarse libremente o bien Wordpress da la libertad a sus usuarios de vender trabajos basados en su framework.
 
-\subsection{Plugins}
+\subsubsection{Plugins}
 Los plugins funcionan casi de la misma manera que los themes y así también la mayoría de los componente que dispone Wordpress. Estos son un conjunto de librerías programadas en PHP que pueden instalarse o desinstalares desde el panel de administración.\\
 
 Cada plugins esta diseñado para agregar nuevas funcionalidades al los sitios, la documentación de Wordpress entrega pautas estrictas de como deben estar programadas las libreáis para que las nuevas funcionalidades no interfieran con el funcionamiento normal del sistema. Un plugins además puede modificar casi cualquier funcionalidad del sistema siempre que no interfiera con funciones criticas.
 
-\subsection{Widgets}
+\subsubsection{Widgets}
 Los widgets son pequeños programas autónomos que permiten agregar nuevas funcionalidades al sistema pero que adicional a un plugins común y corrientes posee de una interfaz visual y esta diseñado para exponer al usuario algún dato o funcionalidad especifica. Estos pequeños programas pueden agregarse y quitarse manera muy rápida y pueden y tienen la característica de ser móviles. Generalmente son programas que se agregan en las barras laterales.
 
-\subsection{Multiusuario}
+\subsubsection{Multiusuario}
 Wordpress permite la creación y administración de mucho usuarios los cuales pueden tener diferentes responsabilidades dentro del sistema tales como administrar el contenido o bien administrar la conflagración del sitio. esto permite que la mantención del sitio y a la vez las responsabilidades pueda estar muy bien distribuidas sin riesgo de que algún usuario realize tareas no permitidas por si nivel de acceso.
 
-\section{PHP}
+\subsubsection{PHP}
 PHP es un acrónimo recursivo que significa PHP Hypertext Pre-processor. Fue creado originalmente por Rasmus Lerdorf en 1994; sin embargo la implementación principal de PHP es producida ahora por The PHP Group y sirve como el estándar de facto para PHP al no haber una especificación formal. Publicado bajo la PHP License, la Free Software Foundation considera esta licencia como software libre.\\
 
 Es un lenguaje de programación interpretado (Lenguaje de alto rendimiento), diseñado originalmente para la creación de páginas web dinámicas. Se usa principalmente para la interpretación del lado del servidor (server-side scripting) pero actualmente puede ser utilizado desde una interfaz de línea de comandos o en la creación de otros tipos de programas incluyendo aplicaciones con interfaz gráfica.
@@ -53,7 +54,7 @@ Es un lenguaje de programación interpretado (Lenguaje de alto rendimiento), dis
 \item Si bien PHP no obliga a quien lo usa a seguir una determinada metodología a la hora de programar (muchos otros lenguajes tampoco lo hacen), aun haciéndolo, el programador puede aplicar en su trabajo cualquier técnica de programación o de desarrollo que le permita escribir código ordenado, estructurado y manejable. Un ejemplo de esto son los desarrollos que en PHP se han hecho del patrón de diseño Modelo Vista Controlador (MVC), que permiten separar el tratamiento y acceso a los datos, la lógica de control y la interfaz de usuario en tres componentes independientes.
 \end{itemize}
 
-\section{MySql}
+\subsubsection{MySql}
 MySQL es un sistema de gestión de bases de datos relacional, multihilo y multiusuario con más de seis millones de instalaciones. MySQL AB ,desde enero de 2008 una subsidiaria de Sun Microsystems y ésta a su vez de Oracle Corporation desde abril de 2009, desarrolla MySQL como software libre en un esquema de licenciamiento dual.
 Por un lado se ofrece bajo la GNU GPL para cualquier uso compatible con esta licencia, pero para aquellas empresas que quieran incorporarlo en productos privativos deben comprar a la empresa una licencia específica que les permita este uso. Está desarrollado en su mayor parte en ANSI C.\\
 
@@ -76,18 +77,18 @@ Uso de multihilos mediante hilos del kernel.
 \item MySQL contiene su propio paquete de pruebas de rendimiento proporcionado con el código fuente de la distribución de MySQL.
 \end{itemize}
 
-\section{CSS}
+\subsubsection{CSS}
 El nombre hojas de estilo en cascada viene del inglés Cascading Style Sheets, del que toma sus siglas. CSS es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML. El W3C (World Wide Web Consortium) es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.\\
 
 La idea que se encuentra detrás del desarrollo de CSS es separar la estructura de un documento de su presentación.
 La información de estilo puede ser adjuntada como un documento separado o en el mismo documento HTML. En este último caso podrían definirse estilos generales en la cabecera del documento o en cada etiqueta particular mediante el atributo "<style>".
 
-\section{Hardware}
+\subsection{Hardware}
 Durante el desarrollo e implementación del software involucrado en esta memoria fue necesario aprender e interiorizarse con una serie de elementos de hardware que forman parte de la mayoría de las estaciones de monitoreo para plantas de energía solar así como elementos comunes empleados en la construcción de estas mismas.\\
 
 La principal estación de monitoreo utilizada para la realización de las pruebas de software se ubica en el techo del edificio principal de fundación chile en la región metropolitana comuna de Vitacura, esta estación cuenta con los siguientes componentes:
 
-\subsection{Datalogger Campbell CR1000}
+\subsubsection{Datalogger Campbell CR1000}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=100pt]{images/cr1000}
@@ -115,7 +116,7 @@ Campbell scientific es una compañía dedicada a la construcción y distribució
 \item Entradas protegidas mediante tubos de descarga de gas(Gas Discharge Tube (GDT)).
 \end{itemize}
 
-\subsection{Interfaz Ethernet NL200 Campbell}
+\subsubsection{Interfaz Ethernet NL200 Campbell}
 
 \begin{figure}[h!]
         \centering
@@ -145,7 +146,7 @@ Como característica adicional hay que mencionar que es un periférico diseñado
 \item Ethernet: 10/100 Mbps
 \end{itemize}
 
-\subsection{MultiModem GPRS Multitech modelo MTCBA-G-F4}
+\subsubsection{MultiModem GPRS Multitech modelo MTCBA-G-F4}
 
 \begin{figure}[h!]
         \centering
@@ -166,7 +167,7 @@ Para poder operar con este módem es necesario tener contratado un plan de datos
 \item 2 años de garantía.
 \end{itemize}
 
-\subsection{Piranómetro PSP-Eppley}
+\subsubsection{Piranómetro PSP-Eppley}
 
 \begin{figure}[h!]
         \centering
@@ -177,10 +178,10 @@ Para poder operar con este módem es necesario tener contratado un plan de datos
 El Piranómetro de Precisión Espectral es un instrumento de medición de clase mundial designado para medir la radiación entregada por el sol y l atmósfera, para todo el espectro eléctrico o bien puede configurarse para un segmento especifico.\\
 Se compone de una multi unión circular de hilo bobinado junto a una termopila Eppley que tiene la capacidad de soportar fuertes vibraciones y choques mecánicos.
 
-\subsection{Sensor de temperatura y humedad HMP60}
+\subsubsection{Sensor de temperatura y humedad HMP60}
 Es una sonda de humedad sencilla, económica y duradera. Es adecuada para aplicaciones de volumen, integración en equipos de otros fabricantes, incubadoras, cajas de manipulación con guantes, invernaderos, cámaras de fermentación y registradoras de datos.
 
-\subsection{Batería PS100}
+\subsubsection{Batería PS100}
 
 \begin{figure}[h!]
         \centering
@@ -190,7 +191,7 @@ Es una sonda de humedad sencilla, económica y duradera. Es adecuada para aplica
 
 Baterías de plomo-ácido, la fuente de alimentación cuenta con un regulador de carga, puertos libres con salidas DC 12V, además de un conector para el módulo fotovoltaico.
 
-\subsection{Panel fotovoltaico SX310M}
+\subsubsection{Panel fotovoltaico SX310M}
 
 \begin{figure}[h!]
         \centering
@@ -209,14 +210,16 @@ Modulo fotovoltaico de alta eficiencia, compuesto por celdas de nitrito de silic
 \item Peso: 1.49 Kg 
 \end{itemize}
 
-\subsection{Estación de monitoreo Solar Fch Vitacura}
-\subsection{Estación de monitoreo Solar Norte}
+\subsubsection{Estación de monitoreo Solar Fch Vitacura}
+\subsubsection{Estación de monitoreo SubSole}
 
-\section{Diseño de la solución}
+\section{Diseño de la Base de Datos}
+\subsection{Tabla datos meteorologicos}
+\subsection{Tabla unidades}
+
+\section{Diseño de la aplicacion}
 \subsection{Plugin gráficos solares}
 \subsection{Plugin calculadora solar}
 \subsection{Widget solar}
-
-\section{Descripción detallada del sistema}
 
 

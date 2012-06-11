@@ -1,0 +1,434 @@
+<head><title>RJFlash - XML sales chart / product graph  </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ 
+
+</head>
+<body bgcolor="#D9D9D9" style="margin:0px;" topmargin="0" bottommargin="0" rightmargin="0" leftmargin="0">
+
+
+
+<table border="0" cellpadding="12" cellspacing="0" width="100%" height="100%" style="background-color:#D9D9D9; border:solid 6px #000000; margin:0px;">
+<tr><td align="center" valign="middle" nowrap>
+
+
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="740" style="background-color:#FFFFFF; border:solid 2px #000000; margin:8px;">
+<tr><td align="center" valign="middle">
+
+
+<table cellpadding="0" cellspacing="0" align="center" style="border:solid 0px #000000">
+<tr><td align="center" nowrap>
+<p align="center" style="font-family:verdana,arial; font-size:16px; color:#691600;"> 
+<br> &nbsp; <b> RJFlash - XML sales chart / product graph  </b></p>
+<p align="center" style="font-family:verdana,arial; font-size:11px; color:#000000;"> 
+FLA: 8+ (AS 2.0)
+<br> <br> </p>
+</td></tr></table>
+
+
+<hr width="100%" size="1" color="#000000"> 
+
+
+
+<p align="left" style="margin:12px; font-family:verdana,arial; font-size:12px; color:#000000;"> 
+<strong>To use Chart/Graph:</strong>
+<br><br>
+Open FLA, Copy '_MainCHART' from Library or Stage and paste into your project.
+<br>
+<br>
+Make sure that each file (.swf and .xml) are in the same directory/folder.
+</p>
+<hr width="100%" size="1" color="#000000">
+<p align="left" style="margin:12px; font-family:verdana,arial; font-size:12px; color:#000000;"> 
+<strong>To create bars:</strong>
+<br>
+<br>
+First open the XML file with text editor program. <br>
+( right click on XML file, then select 'Open With &nbsp; &nbsp; >' )
+<br><br>
+<br>
+When setting quantity, make sure to type in a number that is the same or lower than<br>
+the amount of 'bar' sections. (a larger number will cause an offset in bar growth initiation)<br>
+ So, if your going to use 7 bar variables ('bar1' to 'bar7'), type in 7 (or lower) for 'bar_quantity'.<br>
+example: <font color="#0033A9">bar_quantity="7"</font> or <font color="#0033A9">bar_quantity="6"</font>
+<br>
+<br><br>
+Copy all of 'bar1' section and paste as a new section below the original section, <br>
+then rename 'bar1' with the next number: 'bar2', then eventually make 'bar3', and so on... <br>
+then edit all their values :)<br>
+<br><font color="#797979"><u>TIP: Quick text replacement</u>: hold in key 'CTRL' then press key 'H' to open "Find/Replace" window.</font><br>
+<br><br>
+Short example of 'bar' sections: <br>
+<br>
+<font color="#0000DD">*bar1</font><br>
+<font color="#495999">
+bar1_AmountValue="86"<br>
+bar1_maxHeight="86"<br>
+bar1_itemNAME="<br>
+APPLES"<br>
+bar1_ValueSymbol_before="$"<br>
+bar1_ValueSymbol_after="k"<br>
+
+<br>
+<font color="#0000DD">*bar2</font><br>
+bar2_AmountValue="1483.45"<br>
+bar2_maxHeight="75"<br>
+bar2_itemNAME="<br>
+GRAPES"<br>
+bar2_ValueSymbol_before="$"<br>
+bar2_ValueSymbol_after="k"<br>
+<br>
+
+<font color="#0000DD">*bar3</font><br>
+bar3_AmountValue="107"<br>
+bar3_maxHeight="35"<br>
+bar3_itemNAME="<br>
+BANANAS"<br>
+bar3_ValueSymbol_before="$"<br>
+bar3_ValueSymbol_after="k"<br>
+<br>
+<br>
+
+</font>
+Note: 'bar_itemNAME' and some other string variables support line returns (multiline).
+</p>
+<br>
+<hr width="100%" size="1" color="#000000"> <br>
+<p align="left" style="margin:12px; font-family:verdana,arial; font-size:14px; color:#000000;"> 
+<strong>XML Settings:</strong></p>
+
+<p align="left" style="margin:12px; font-family:verdana,arial; font-size:12px; color:#006900;"> 
+All properties require placement of value inside quotes &quot; &quot;<br>
+<br>
+Color variables are hex values( RR GG BB ) <br>
+example: "FFFFFF" is full white and "000000" is full black<br>
+00 is lowest, FF is highest. (0 to F: 0123456789ABCDEF)
+<br>
+( "FF0000" = red) / ( "00FF00" = green) / ( "0000FF" = blue) / ( "FFFF00" = yellow). 
+<br><br>Other settings are either a String("word"), a Number("9"), or Boolean("true" or "false").<br><br>
+Number Range:<br>
+Most numbers usually range from: 0 to around 100.<br>
+Some numbers can range from: 0 to only around 10.<br><br>
+Other numbers can range from around: -100 to +100 <br>
+*If value is:<br> 
+-negative + horizontal = object goes left <br>
+-negative + vertical = object goes up <br>
++positive + horizontal = object goes right <br>
++positive + vertical = object goes down <br>
+<br>
+and others range from: 0 to around 1000 (such as strength).<br>
+<br>
+BlendModes are:<br>
+"add", "screen", "overlay", "lighten", "hardlight", multiply, darken, subtract, difference or invert.
+</p>
+<p align="left" style="margin:12px; font-family:verdana,arial; font-size:12px; color:#0033A9;"> 
+<br>
+
+<font color="DD0000">// Chart's title settings</font><br>
+chartTitle="Sales for March 2010"<br>
+chartTitle_textColor="EAEAEA"<br>
+chartTitle_fontSize="11"<br>
+chartTitle_textBold="true"<br>
+chartTitle_fontFamily="verdana"<br>
+chartTitle_xOffset="0"<br>
+chartTitle_yOffset="2"<br>
+<br>
+<font color="DD0000">// Chart fade in </font><br>
+chartFadeIN="true"<br>
+chartFadeIN_rate="3"<br>
+chartFadeIN_delay="18"<br>
+<br>
+<font color="DD0000">// Chart's lines/values</font> <br>
+<font color="333333">// (copy &amp; paste and change number: 'chartLine_1_txt' to make 'chartLine_2_txt', and so on.. )</font><br>
+chartLine_Quantity="5"<br>
+chartLine_1_txt="0"<br>
+chartLine_2_txt="25"<br>
+chartLine_3_txt="50"<br>
+chartLine_4_txt="75"<br>
+chartLine_5_txt="100"<br>
+chartLine_txtSymbolBefore="%"<br>
+chartLine_txtSymbolAfter="%"<br>
+chartLine_Spacing="25"<br>
+chartLine_txtColor="CACACA"<br>
+chartLine_txtSize="10"<br>
+chartLine_txtFamily="verdana"<br>
+chartLine_txtBold="false"<br>
+chartLine_txtAlignment="right"<br>
+chartLine_txt_xOffset="0"<br>
+chartLine_txt_yOffset="-2"<br>
+chartLine_Color="FFFFFF"<br>
+chartLine_Thickness="1"<br>
+chartLine_Opacity="40"<br>
+chartLine_widthOffset="0"<br>
+chartLine_xOffset="0"<br>
+chartLine_yOffset="0"<br>
+<br>
+<font color="DD0000">// Chart's drop shadow </font><br>
+chart_dropShadow="true"<br>
+chart_dropShadow_distance="0"<br>
+chart_dropShadow_opacity="70"<br>
+chart_dropShadow_blur="10"<br>
+chart_dropShadow_strength="100"<br>
+<br>
+<font color="DD0000">// Right-Click Context menu </font><br>
+rcMenu_showXMLReload="true"<br>
+rcMenu_textXMLReload="Reload XML Data"<br>
+rcMenu_text="Activeden.net (RJFlash)"<br>
+rcMenu_text_URL="http://activeden.net/?ref=RJFlash"<br>
+rcMenu_text_URLtarget="_blank"<br>
+<br>
+<font color="DD0000">// Chart's TOP table </font><br>
+backgroundTOP_width="540"<br>
+backgroundTOP_height="20"<br>
+backgroundTOP_xOFFset="0"<br>
+backgroundTOP_yOFFset="0"<br>
+backgroundTOP_color="393969"<br>
+backgroundTOP_opacity="100"<br>
+backgroundTOP_borderColor="000000"<br>
+backgroundTOP_borderOpacity="100"<br>
+<br>
+<font color="DD0000">// Chart's MIDDLE/Main table </font><br>
+backgroundMID_width="540"<br>
+backgroundMID_height="100"<br>
+<font color="DD0000">// backgroundMID_xOFFset & backgroundMID_yOFFset controls the entire chart's position</font><br>
+backgroundMID_xOFFset="0"<br>
+backgroundMID_yOFFset="0"<br>
+backgroundMID_color="333333"<br>
+backgroundMID_opacity="100"<br>
+backgroundMID_borderColor="000000"<br>
+backgroundMID_borderOpacity="100"<br>
+<br>
+<font color="DD0000">// Chart's BOTTOM table </font><br>
+backgroundBTM_width="540"<br>
+backgroundBTM_height="32"<br>
+backgroundBTM_xOFFset="0"<br>
+backgroundBTM_yOFFset="0"<br>
+backgroundBTM_color="393969"<br>
+backgroundBTM_opacity="100"<br>
+backgroundBTM_borderColor="000000"<br>
+backgroundBTM_borderOpacity="100"<br><br>
+<font color="DD0000">// Chart's bottom text description: <br>
+// add more 'backgroundBTM_text_' as 'backgroundBTM_text_Quantity' increases<br></font>
+<font color="696969">// ...The same process as: 'chartLine_Quantity' and 'bar_quantity'...</font><br>
+backgroundBTM_text_Quantity="0"<br>
+backgroundBTM_text_1="Q1"<br>
+backgroundBTM_text_2="Q2"<br>
+backgroundBTM_text_3="Q3"<br>
+backgroundBTM_text_4="Q4"<br>
+backgroundBTM_text_spacing="90"<br>
+backgroundBTM_text_xOFFset="-20"<br>
+backgroundBTM_text_yOFFset="20"<br>
+backgroundBTM_text_color="898989"<br>
+backgroundBTM_text_size="10"<br>
+backgroundBTM_text_bold="false"<br>
+<br>
+<font color="DD0000">// Bar/item pop-up window </font><br>
+<font color="DD0000">// popUP window position: "mouse", "bar", "barMouse", "barMouse_Xcenter" or "chart"</font><br>
+<font color="333333">// "mouse" = follows X & Y mouse relative to bar's X position</font><br>
+<font color="333333">// "barX" = centered to bar's X </font><br>
+<font color="333333">// "barXH" = centered to bar's X & Height </font><br>
+<font color="333333">// "barX_mouse" = relative to bar's X + X mouse relation (stays within chart's area)</font><br>
+<font color="333333">// "barXH_mouse" = relative to bar's X & Height + X mouse relation (stays within chart's area)</font><br>
+<font color="333333">// "barXH_centered_mouse" = centered to bar's X, relative to bars' Height + X mouse relation</font><br>
+<font color="333333">// "chart" = remains stationary on an area of the chart</font><br>
+popUPtxt_position="bar"<br>
+<br>
+<font color="333333">// Show(false) or Hide(true) cursor when cursor is over item</font><br>
+popUPtxt_mouseHide="true"<br>
+popUPtxt_fade="true"<br>
+popUPtxt_fadeIN_rate="5"<br>
+popUPtxt_fadeOUT_rate="1"<br>
+popUPtxt_xOFFset="0"<br>
+popUPtxt_yOFFset="0"<br>
+popUPtxt_width="128"<br>
+popUPtxt_height="66"<br>
+popUPtxt_fontSize="11"<br>
+popUPtxt_fontBold="true"<br>
+popUPtxt_alignment="left"<br>
+popUPtxt_verticalSpacing="-7"<br>
+popUPtxt_dropShadow="true"<br>
+popUPtxt_dropShadow_distance="0"<br>
+popUPtxt_dropShadow_color="000000"<br>
+popUPtxt_dropShadow_opacity="72"<br>
+popUPtxt_dropShadow_blur="8"<br>
+popUPtxt_dropShadow_strength="100"<br>
+<br>
+<font color="DD0000">// Bar's highlight (while cursor is over bar) </font><br>
+bar_hiLite_show="true"<br>
+bar_hiLite_opacity="36"<br>
+bar_hiLite_blur="2"<br>
+<br>
+<font color="DD0000">// Bar's text field </font><br>
+bar_text_OffsetX="0" <br>
+bar_text_OffsetY="0" <br>
+bar_text_verticalSpacing="-6"<br>
+bar_text_alignment="center"<br>
+bar_fontFamily="verdana" <br>
+bar_fontSize="10" <br>
+bar_textBold="false"<br>
+<br>
+<font color="DD0000">// X & Y offset of all bars <br></font>
+bars_xOFFset="0"<br>
+bars_yOFFset="0"<br>
+<br>
+<font color="DD0000">// distance/space between each bar<br></font>
+bar_spacing="32"<br>
+<br>
+<font color="DD0000">// individualGrowth: <br></font>
+<font color="333333">// "true" = next bar begins after the previous bar has reached maxHeight <br>
+// "false" = all bars grow at same time </font><br>
+bar_individualGrowth="true"<br>
+<br>
+<font color="DD0000">// Speed of bar's height-growth <br></font>
+bar_growthRate="20"<br>
+<br>
+
+<font color="DD0000">// Amount of bars (make sure it's Equal to or less than the amount of 'bar' sections) <br></font>
+<font color="DD0000">// increase 'bar_quantity' value as you add more 'bar' sections <br></font>
+bar_quantity="3"<br>
+<br>
+<br>
+<br>
+
+<font color="000000"><strong>Below is the section of code you will copy and paste for bar2, bar3, and so on...</strong></font><br><br>
+
+<font color="DD0000">// AmountValue = actual item value (decimal or whole number)</font><br>
+bar1_AmountValue="88.96"<br>
+<br>
+<font color="DD0000">// Item value symbols, such as "x" or "%" or "#" - before and after value</font><br>
+bar1_ValueSymbol_before="$"<br>
+bar1_ValueSymbol_after="k"<br>
+<br>
+<font color="DD0000">// max growth value (bar's maximum height in pixels) </font><br>
+<font color="DD0000">// max height can represent percentage of backgroundMID_height: </font><br>
+<font color="DD0000">// if you want 100% of chart, when: backgroundMID_height="100" then: bar1_maxHeight="100"</font><br>
+<font color="DD0000">// if you want 50% of chart, when: backgroundMID_height="200" then: bar1_maxHeight="100"</font><br>
+bar1_maxHeight="89"<br>
+<br>
+<font color="DD0000">// itemNAME Should be short and simple. Supports multiline </font><br>
+bar1_itemNAME="<br>
+CHERRIES"<br>
+<br>
+<font color="DD0000">// popUPinfo = item details ( supports multiline )</font><br>
+bar1_popUPinfo=" CHERRIES <br>
+ Produced: 342 lbs.<br>
+ Sold: 308 lbs.<br>
+ Price lb: $1.75<br>
+ Gross: $539.00<br>
+ Profit: $479.50" <br>
+<br>
+<font color="DD0000">// pop-up text, background, and border color </font><br>
+bar1_popUPtxt_Color="FFFFFF"<br>
+bar1_popUPtxt_borderColor="000000"<br>
+bar1_popUPtxt_bgColor="AA0000" <br>
+<br>
+<font color="DD0000">// Bar's value/data text Color when cursor is ON/OFF item</font><br>
+bar1_textColor_ON="FF8989" <br>
+bar1_textColor_OFF="AAAAAA" <br>
+<br>
+<font color="DD0000">// Bar's Color and opacity when cursor is ON/OFF item</font><br>
+bar1_color_ON="AF0000"<br>
+bar1_color_OF="A00000"<br>
+bar1_opacity_ON="100" <br>
+bar1_opacity_OFF="90" <br>
+<br>
+<font color="DD0000">// width / 'Fatness' of bar </font><br>
+bar1_width="32"<br>
+<br>
+<font color="DD0000">// Bar's X & Y position offset </font><br>
+bar1_xOFFset="0"<br>
+bar1_yOFFset="0"<br>
+<br>
+<br>
+<br>
+
+<font color="006900">// The rest of the settings below are not totally necessary for function and may be removed for less code</font><br>
+<br>
+<font color="DD0000">// bar's background-gradient style. <br></font>
+<font color="333333">// Choose from: <br>
+// "solid" (default)<br>
+// "v_top"<br>
+// "v2_top"<br>
+// "v_btm"<br>
+// "h_left"<br>
+// "h_right"<br>
+// "h2_left"<br>
+// "h2_right"<br>
+// "r_top"<br>
+// "r_btm"<br></font>
+<font color="#838383">( Letter reference: v=vertical, h=horizontal, r=radial )<br></font><br>
+bar1_gradientStyle="v2_top" <br>
+<br>
+<br>
+<font color="DD0000">// Bar's border opacity and color</font><br>
+bar1_borderOpacity="45" <br>
+bar1_borderColor="FFFFFF"<br>
+<br>
+<font color="DD0000">// Bar edge glow </font><br>
+bar1_glow="true" <br>
+bar1_glowColor="FF2626" <br>
+bar1_glowBlur="12" <br>
+bar1_glowOpacity="100" <br>
+bar1_glowStrength="120"<br>
+<br>
+<font color="DD0000">// Bar edge bevel/emboss </font><br>
+bar1_bevel="true"<br>
+bar1_bevelDistance="2"<br>
+bar1_bevelAngle="45"<br>
+bar1_bevelColorA="FFFFFF"<br>
+bar1_bevelColorB="000000"<br>
+bar1_bevelOpacityA="70"<br>
+bar1_bevelOpacityB="90"<br>
+bar1_bevelBlur="2"<br>
+bar1_bevelStrength="120"<br>
+<font color="DD0000">// bevel type: "inner", "outer", or "full" </font><br>
+bar1_bevelType="full"<br>
+<br>
+<font color="DD0000">// Color blend for bar </font><br>
+bar1_blendMode=""<br>
+<br>
+
+</p>
+<br><br>
+
+
+<hr width="100%" size="1" color="#000000"> 
+<p align="center" style="font-family:verdana,arial; font-size:12px; color:#666666;"> 
+ZIP includes:</p>
+<table align="center"><tr><td align="left">
+<p align="left" style="font-family:verdana,arial; font-size:12px; color:#666666;"> 
+<b>1.</b> RJF_XMLproductChart.fla <br>
+<b>2.</b> RJF_XMLproductChart.swf <br>
+<b>3.</b> RJF_XMLchart.html <br>
+<b>4.</b> RJF_XMLchart.xml <br>
+<b>5.</b> 4 different XML samples <br>
+<b>6.</b> help_.html <br>
+</p>
+</td></tr></table>
+
+
+<hr width="100%" size="2" color="#000000"> 
+<p align="center" style="font-family:verdana,arial; font-size:12px; color:#000000; margin:10px;"> 
+Sorry if I missed anything, or if anything is out of place... :)
+<br><br>
+If you have any suggestions or questions or need help, please eMail me: 
+<br>
+<a href="mailto:help@rjflash.com">help@rjflash.com</a>
+<br>I'll be glad to help! <br></p>
+
+<p align="center" style="font-family:verdana,arial; font-size:12px; color:#000000; margin:12px;"> 
+Thanks for choosing RJFlash design.<br></p>
+</td></tr></table>
+
+
+</td></tr>
+
+<tr><td align="center" valign="bottom"><p align="center" style="font-family:verdana; color:#333333; font-size:11px; margin:4px;">
+<a href="http://www.rjflash.com" target="_rjf">www.rjflash.com</a><br></p>
+
+
+</td></tr></table></body></html>
+
+
+
+
+

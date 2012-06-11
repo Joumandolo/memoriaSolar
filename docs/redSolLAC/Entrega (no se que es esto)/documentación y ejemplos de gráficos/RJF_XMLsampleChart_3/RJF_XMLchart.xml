@@ -1,0 +1,297 @@
+<RJF_xmlChart1
+
+chartTitle="Top Video cards - Sales Comparison:  G-Horse  -  Rad-ON  (March 2010)"
+chartTitle_textColor="FFFFDD"
+chartTitle_fontSize="12"
+chartTitle_textBold="true"
+chartTitle_fontFamily="verdana"
+chartTitle_xOffset="0"
+chartTitle_yOffset="0"
+
+chartFadeIN="true"
+chartFadeIN_rate="4"
+chartFadeIN_delay="10"
+
+chartLine_Quantity="4"
+chartLine_1_txt="0"
+chartLine_2_txt="10"
+chartLine_3_txt="100"
+chartLine_4_txt="200"
+chartLine_txtSymbolBefore=""
+chartLine_txtSymbolAfter=""
+chartLine_Spacing="50"
+chartLine_txtColor="9a9a9a"
+chartLine_txtSize="9"
+chartLine_txtFamily="verdana"
+chartLine_txtBold="true"
+chartLine_txtAlignment="left"
+chartLine_txt_xOffset="1"
+chartLine_txt_yOffset="-2"
+chartLine_Color="131313"
+chartLine_Thickness="1"
+chartLine_Opacity="10"
+chartLine_widthOffset="0"
+chartLine_xOffset="0"
+chartLine_yOffset="0"
+
+chart_dropShadow="true"
+chart_dropShadowColor="000000"
+chart_dropShadow_distance="0"
+chart_dropShadow_opacity="70"
+chart_dropShadow_blur="10"
+chart_dropShadow_strength="100"
+
+rcMenu_showXMLReload="true"
+rcMenu_textXMLReload="Reload XML Data"
+rcMenu_text="Activeden.net (RJFlash)"
+rcMenu_text_URL="http://activeden.net/?ref=RJFlash"
+rcMenu_text_URLtarget="_blank"
+
+backgroundTOP_width="560"
+backgroundTOP_height="22"
+backgroundTOP_xOFFset="0"
+backgroundTOP_yOFFset="0"
+backgroundTOP_color="292929"
+backgroundTOP_opacity="100"
+backgroundTOP_borderColor="000000"
+backgroundTOP_borderOpacity="100"
+
+backgroundMID_width="560"
+backgroundMID_height="150"
+backgroundMID_xOFFset="0"
+backgroundMID_yOFFset="50"
+backgroundMID_color="535353"
+backgroundMID_opacity="100"
+backgroundMID_borderColor="000000"
+backgroundMID_borderOpacity="100"
+
+backgroundBTM_width="560"
+backgroundBTM_height="48"
+backgroundBTM_xOFFset="0"
+backgroundBTM_yOFFset="0"
+backgroundBTM_color="292929"
+backgroundBTM_opacity="100"
+backgroundBTM_borderColor="000000"
+backgroundBTM_borderOpacity="100"
+
+backgroundBTM_text_Quantity="4"
+backgroundBTM_text_1="Week 1"
+backgroundBTM_text_2="Week 2"
+backgroundBTM_text_3="Week 3"
+backgroundBTM_text_4="Week 4"
+backgroundBTM_text_spacing="128"
+backgroundBTM_text_xOFFset="-65"
+backgroundBTM_text_yOFFset="28"
+backgroundBTM_text_color="A9A390"
+backgroundBTM_text_size="10"
+backgroundBTM_text_bold="true"
+
+popUPtxt_position="barX"
+popUPtxt_mouseHide="false"
+popUPtxt_fade="true"
+popUPtxt_fadeIN_rate="12"
+popUPtxt_fadeOUT_rate="8"
+popUPtxt_xOFFset="0"
+popUPtxt_yOFFset="-2"
+popUPtxt_width="140"
+popUPtxt_height="62"
+popUPtxt_fontSize="11"
+popUPtxt_fontBold="true"
+popUPtxt_alignment="left"
+popUPtxt_verticalSpacing="-6"
+popUPtxt_dropShadow="true"
+popUPtxt_dropShadow_distance="0"
+popUPtxt_dropShadow_color="000000"
+popUPtxt_dropShadow_opacity="50"
+popUPtxt_dropShadow_blur="10"
+popUPtxt_dropShadow_strength="100"
+
+bar_hiLite_show="true"
+bar_hiLite_opacity="56"
+bar_hiLite_blur="12"
+
+bar_text_OffsetX="0" 
+bar_text_OffsetY="1" 
+bar_text_verticalSpacing="-6"
+bar_text_alignment="center"
+bar_fontFamily="verdana" 
+bar_fontSize="10" 
+bar_textBold="false"
+
+bars_xOFFset="17"
+bars_yOFFset="-1"
+bar_spacing="30"
+bar_individualGrowth="true"
+bar_growthRate="36"
+
+
+bar_quantity="8"
+
+
+bar1_AmountValue="74" bar1_maxHeight="83"
+bar1_itemNAME="
+G-Horse"
+bar1_ValueSymbol_before="" bar1_ValueSymbol_after=""
+bar1_popUPinfo=" G-Horse 
+ Quantity Sold: 74
+ Sale Price: $ 267.99 
+ Gross: $19,831.26" 
+bar1_popUPtxt_Color="FFFFFF" bar1_popUPtxt_borderColor="FFFFFF" bar1_popUPtxt_bgColor="6699EE" 
+bar1_textColor_ON="FFFFFF" bar1_textColor_OFF="6699DD"
+bar1_color_ON="2343FF" bar1_color_OFF="234399"
+bar1_opacity_ON="100" bar1_opacity_OFF="90" 
+bar1_width="16" 
+bar1_xOFFset="0" bar1_yOFFset="0"
+bar1_gradientStyle="h2_left" 
+bar1_borderOpacity="40"  bar1_borderColor="AAAAAA" bar1_borderThickness="1"
+bar1_glow="true" bar1_glowColor="0000FF" bar1_glowBlur="10" bar1_glowOpacity="100" bar1_glowStrength="100"
+bar1_blendMode="add"
+
+
+bar2_AmountValue="56" bar2_maxHeight="76"
+bar2_itemNAME="
+Rad-ON"
+bar2_ValueSymbol_before="" bar2_ValueSymbol_after=""
+bar2_popUPinfo=" Rad-ON 
+ Quantity Sold: 56
+ Sale Price: $ 249.99 
+ Gross: $13,999.44" 
+bar2_popUPtxt_Color="FFFFFF" bar2_popUPtxt_borderColor="FFFFFF" bar2_popUPtxt_bgColor="FA4333" 
+bar2_textColor_ON="FFFFFF" bar2_textColor_OFF="DD3300"
+bar2_color_ON="FF2313" bar2_color_OFF="990000"
+bar2_opacity_ON="100" bar2_opacity_OFF="90" 
+bar2_width="16"
+bar2_xOFFset="4" bar2_yOFFset="0"
+bar2_gradientStyle="h2_right" 
+bar2_borderOpacity="40" bar2_borderColor="AAAAAA" bar2_borderThickness="1"
+bar2_glow="true" bar2_glowColor="FF0000" bar2_glowBlur="10" bar2_glowOpacity="100" bar2_glowStrength="100"
+bar2_blendMode="add"
+
+
+bar3_AmountValue="81" bar3_maxHeight="90"
+bar3_itemNAME="
+G-Horse"
+bar3_ValueSymbol_before="" bar3_ValueSymbol_after=""
+bar3_popUPinfo=" G-Horse 
+ Quantity Sold: 81
+ Sale Price: $ 267.99 
+ Gross: $21,707.19" 
+bar3_popUPtxt_Color="FFFFFF" bar3_popUPtxt_borderColor="FFFFFF" bar3_popUPtxt_bgColor="6699EE" 
+bar3_textColor_ON="FFFFFF" bar3_textColor_OFF="6699DD" 
+bar3_color_ON="2343FF" bar3_color_OFF="234399"
+bar3_opacity_ON="100" bar3_opacity_OFF="90" 
+bar3_width="16"
+bar3_xOFFset="32" bar3_yOFFset="0"
+bar3_gradientStyle="h2_left" 
+bar3_borderOpacity="40" bar3_borderColor="AAAAAA" bar3_borderThickness="1"
+bar3_glow="true" bar3_glowColor="0000FF" bar3_glowBlur="10" bar3_glowOpacity="100" bar3_glowStrength="100"
+bar3_blendMode="add"
+
+
+bar4_AmountValue="78" bar4_maxHeight="86"
+bar4_itemNAME="
+Rad-ON"
+bar4_ValueSymbol_before="" bar4_ValueSymbol_after=""
+bar4_popUPinfo=" Rad-ON 
+ Quantity Sold: 78
+ Sale Price: $ 249.99 
+ Gross: $19,499.22" 
+bar4_popUPtxt_Color="FFFFFF" bar4_popUPtxt_borderColor="FFFFFF" bar4_popUPtxt_bgColor="FA4333" 
+bar4_textColor_ON="FFFFFF" bar4_textColor_OFF="DD3300"
+bar4_color_ON="FF2313" bar4_color_OFF="990000"
+bar4_opacity_ON="100" bar4_opacity_OFF="90" 
+bar4_width="16"
+bar4_xOFFset="4" bar4_yOFFset="0"
+bar4_gradientStyle="h2_right" 
+bar4_borderOpacity="40" bar4_borderColor="AAAAAA" bar4_borderThickness="1"
+bar4_glow="true" bar4_glowColor="FF0000" bar4_glowBlur="10" bar4_glowOpacity="100" bar4_glowStrength="100"
+bar4_blendMode="add"
+
+
+bar5_AmountValue="99" bar5_maxHeight="99"
+bar5_itemNAME="
+G-Horse"
+bar5_ValueSymbol_before="" bar5_ValueSymbol_after=""
+bar5_popUPinfo=" G-Horse 
+ Quantity Sold: 99
+ Sale Price: $ 267.99  
+ Gross: $26,531.01" 
+bar5_popUPtxt_Color="FFFFFF" bar5_popUPtxt_borderColor="FFFFFF" bar5_popUPtxt_bgColor="6699EE" 
+bar5_textColor_ON="FFFFFF" bar5_textColor_OFF="6699DD"
+bar5_color_ON="2343FF" bar5_color_OFF="234399"
+bar5_opacity_ON="100" bar5_opacity_OFF="90" 
+bar5_width="16"
+bar5_xOFFset="32" bar5_yOFFset="0"
+bar5_gradientStyle="h2_left" 
+bar5_borderOpacity="40" bar5_borderColor="AAAAAA" bar5_borderThickness="1"
+bar5_glow="true" bar5_glowColor="0000FF" bar5_glowBlur="10" bar5_glowOpacity="100" bar5_glowStrength="100"
+bar5_blendMode="add"
+
+
+bar6_AmountValue="69" bar6_maxHeight="78"
+bar6_itemNAME="
+Rad-ON"
+bar6_ValueSymbol_before="" bar6_ValueSymbol_after=""
+bar6_popUPinfo=" Rad-ON 
+ Quantity Sold: 69
+ Sale Price: $ 249.99 
+ Gross: $17,249.31" 
+bar6_popUPtxt_Color="FFFFFF" bar6_popUPtxt_borderColor="FFFFFF" bar6_popUPtxt_bgColor="FA4333" 
+bar6_textColor_ON="FFFFFF" bar6_textColor_OFF="DD3300"
+bar6_color_ON="FF2313" bar6_color_OFF="990000"
+bar6_opacity_ON="100" bar6_opacity_OFF="90" 
+bar6_width="16"
+bar6_xOFFset="4" bar6_yOFFset="0"
+bar6_gradientStyle="h2_right" 
+bar6_borderOpacity="40" bar6_borderColor="AAAAAA" bar6_borderThickness="1"
+bar6_glow="true" bar6_glowColor="FF0000" bar6_glowBlur="10" bar6_glowOpacity="100" bar6_glowStrength="100"
+bar6_blendMode="add"
+
+
+bar7_AmountValue="108" bar7_maxHeight="102"
+bar7_itemNAME="
+G-Horse"
+bar7_ValueSymbol_before="" bar7_ValueSymbol_after=""
+bar7_popUPinfo=" G-Horse 
+ Quantity Sold: 108
+ Sale Price: $ 267.99 
+ Gross: $28,942.92" 
+bar7_popUPtxt_Color="FFFFFF" bar7_popUPtxt_borderColor="FFFFFF" bar7_popUPtxt_bgColor="6699EE" 
+bar7_textColor_ON="FFFFFF" bar7_textColor_OFF="6699DD"
+bar7_color_ON="2343FF" bar7_color_OFF="234399"
+bar7_opacity_ON="100" bar7_opacity_OFF="90" 
+bar7_width="16"
+bar7_xOFFset="32" bar7_yOFFset="0"
+bar7_gradientStyle="h2_left" 
+bar7_borderOpacity="40" bar7_borderColor="AAAAAA" bar7_borderThickness="1"
+bar7_glow="true" bar7_glowColor="0000FF" bar7_glowBlur="10" bar7_glowOpacity="100" bar7_glowStrength="100"
+bar7_blendMode="add"
+
+
+bar8_AmountValue="127" bar8_maxHeight="113"
+bar8_itemNAME="
+Rad-ON"
+bar8_ValueSymbol_before="" bar8_ValueSymbol_after=""
+bar8_popUPinfo=" Rad-ON 
+ Quantity Sold: 127
+ Sale Price: $ 249.99 
+ Gross: $31,748.73" 
+bar8_popUPtxt_Color="FFFFFF" bar8_popUPtxt_borderColor="FFFFFF" bar8_popUPtxt_bgColor="FA4333" 
+bar8_textColor_ON="FFFFFF" bar8_textColor_OFF="DD3300"
+bar8_color_ON="FF2313" bar8_color_OFF="990000"
+bar8_opacity_ON="100" bar8_opacity_OFF="90" 
+bar8_width="16"
+bar8_xOFFset="4" bar8_yOFFset="0"
+bar8_gradientStyle="h2_right" 
+bar8_borderOpacity="40" bar8_borderColor="AAAAAA" bar8_borderThickness="1"
+bar8_glow="true" bar8_glowColor="FF0000" bar8_glowBlur="10" bar8_glowOpacity="100" bar8_glowStrength="100"
+bar8_blendMode="add"
+
+/>
+
+
+
+
+
+
+

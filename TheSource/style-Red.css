@@ -1,0 +1,47 @@
+#header-top { background:url("images/light/header-bg.png") repeat-x scroll left bottom #d6d6d6; }
+	#slogan { color:#6e6e6e; text-shadow: -1px -1px 1px #ffffff; }
+	
+	#p-menu-left, #p-menu-content, #p-menu-right { background: none; }
+	
+	ul.nav li a { text-shadow: 1px 1px 1px #ffffff; color: #666666; }
+	#cat-nav #searchinput { color: #646464; text-shadow: 1px 1px 1px #dadada; }
+	
+	ul.nav li.current_page_item a, ul.nav li a:hover, #cat-nav-content ul.nav li a:hover, #cat-nav-content ul.nav li.current-cat > a  { color:#000; text-shadow: 1px 1px 1px #ffffff; }
+	
+#cat-nav-left { background:url("images/red/cat-nav-left.png") no-repeat scroll 0 0 transparent; }
+#cat-nav-content { background:url("images/red/cat-nav-content.png") repeat-x scroll 0 0 transparent; }
+#cat-nav-right { background:url("images/red/cat-nav-right.png") no-repeat scroll 0 0 transparent; }
+
+	#cat-nav #search-form { background:url("images/red/search.png") no-repeat scroll 0 0 transparent; }
+	
+#cat-nav-content ul.nav > li.sf-ul.sfHover { background: url(images/light/li-hover.png) no-repeat top right;  }
+	#cat-nav-content ul.nav > li.sf-ul.sfHover > a { background: url(images/light/a-hover.png) no-repeat top left; display: block; }	
+	
+
+	
+	.nav li ul { background-color: #ffffff; background-image: none; border: 1px solid #9d9d9d; border-top: none; }
+	#cat-nav-content ul.nav li li a { background:url("images/light/divider.png") no-repeat scroll left bottom transparent; color: #383838; text-shadow: 1px 1px 1px #ffffff; }
+		#cat-nav-content ul.nav li li a:hover { color: #00b7f3; }
+		
+	#cat-nav-content ul.nav li li { background:url("images/light/bullet.png") no-repeat scroll 16px 17px transparent; }
+	
+	#cat-nav #searchinput { text-shadow: -1px -1px 1px #8d1a13; color: #ffffff; }
+	#cat-nav-content ul li.sf-ul > a:hover, #cat-nav-content ul li.sfHover > a  { color: #fff; text-shadow: 1px 1px 1px #8d1a13; }
+	#cat-nav-content ul.nav li a { color:#fff; text-shadow: 1px 1px 1px #8d1a13; }
+	#cat-nav-content ul.nav li a:hover { color:#fed100; text-shadow: 1px 1px 1px #8d1a13; }
+	#cat-nav-content ul.nav li ul li a:hover { color:#fed100; text-shadow: none; }
+	#cat-nav-content ul li.sf-ul > a:hover, #cat-nav-content ul li.sfHover > a  { color: #383838; text-shadow: none; }
+	.recent-cat .entry.green h3, .recent-cat .entry.orange h3, .recent-cat .entry.blue h3, .recent-cat .entry.light-blue h3 {background:#c83123; text-shadow: 1px 1px 1px #8f160b;}
+	.recent-cat .entry.blue .title, .recent-cat .entry.green .title, .recent-cat .entry.orange .title, .recent-cat .entry.light-blue .title { background: url(images/red/belt.png) no-repeat bottom left;}	
+	
+	.slide a.readmore { background:url("images/red/featured-readmore-right.png") no-repeat scroll right bottom transparent; text-shadow:1px 1px 1px #9b8b00; }
+		.slide a.readmore span { background:url("images/red/featured-readmore-left.png") no-repeat scroll 0 0 transparent; }
+		
+	#recent-posts .entry p.date { background: url(images/red/belt.png) no-repeat bottom left; text-shadow: 1px 1px 1px #9a261b; }
+		#recent-posts .entry p.date span { background: #c83123; }
+		
+		.wp-pagenavi span.current, .wp-pagenavi span.extend, .wp-pagenavi a:active, .wp-pagenavi a:hover {
+background:url("images/red/pagenav_active.png") no-repeat scroll 0 0 transparent !important; text-shadow: 1px 1px 1px #61555c; }
+	
+#page-menu ul.nav ul { background: #fff; }
+#page-menu ul.nav > li > a.sf-with-ul:hover, #page-menu ul.nav > li.sfHover > a { background-color: transparent; }

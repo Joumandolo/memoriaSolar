@@ -3,21 +3,28 @@ DOC = memoria
 CHAP = {1-agradecimientos,2-resumen,3-abstract,4-Introduccion,5-Problema,6-Desarrollo,7-Conclusiones,8-Anexos}
 INS = fichaInscripcion
 
-#BIN=bin
-#FLAGS=-output-directory $(BIN)
+BIN=bin
+FLAGS=-output-directory $(BIN)
 #DEPENDENCIES=$(G)/$(G)_$(T).tex
 
 all:
-	rubber --pdf $(DOC)
-	rubber --pdf $(INS)
+	@pdflatex $(DOC).tex
+	@bibtex $(DOC).gls.aux
+	@pdflatex $(DOC).tex
+	pdflatex $(DOC).tex > .$(DOC).log
+	@pdflatex $(INS).tex
+	pdflatex $(INS).tex > .$(INS).log	
 mem:
-	rubber --pdf $(DOC)
+	@pdflatex $(DOC).tex
+	@bibtex $(DOC).gls.aux
+	@pdflatex $(DOC).tex
+	pdflatex $(DOC).tex > .$(DOC).log
 ins:
-	rubber --pdf $(INS)
+	@pdflatex $(INS).tex
+	pdflatex $(INS).tex > .$(INS).log
 clean:
-	rubber --clean $(DOC)
+	rm -f $(DOC).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl} $(DOC)-blx.bib
+	rm -f chapter/$(CHAP).aux 
 distclean:
-	rubber --pdf --clean $(DOC)
-	rubber --pdf --clean $(INS)
-
-.PHONY: all clean distclean
+	rm -f $(DOC).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl,log,pdf} $(DOC)-blx.bib
+	rm -f chapter/$(CHAP).aux

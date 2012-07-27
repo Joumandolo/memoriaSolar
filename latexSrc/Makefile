@@ -24,7 +24,7 @@ ins:
 	pdflatex $(INS).tex > .$(INS).log
 clean:
 	rm -f $(DOC).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl} $(DOC)-blx.bib
-	rm -f chapter/$(CHAP).aux 
+	rm -f chapters/*.aux 
 distclean:
 	rm -f $(DOC).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl,log,pdf} $(DOC)-blx.bib
-	rm -f chapter/$(CHAP).aux
+	rm -f chapter/*.aux

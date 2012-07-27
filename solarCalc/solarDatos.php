@@ -2,12 +2,16 @@
 $etiqueta = $_POST["etiqueta"];
 $etiquetaDatosCampoFuente = $_POST["campoFuente"];
 $etiquetaDatosCampoDestino = $_POST["campoDestino"];
-$etiquetaDatosWhere = $_POST["where"];
+//echo $etiquetaDatosWhere = htmlentities(utf8_decode($_POST["where"]));
+$etiquetaDatosWhere = utf8_decode($_POST["where"]);
+//echo $etiquetaDatosWhere = utf8_decode("V Región de Valparaíso");//htmlentities($_POST["where"]);
+//$etiquetaDatosWhere = htmlentities($_POST["where"]);
+//$etiquetaDatosWhere = "V Región de Valparaíso";
 
 $datosConexion = array(
-        'servidorBD' => "localhost",
-        'usuario' => "root",
-        'pass' => ".joumandolo",
+        'servidorBD' => "solar.db.7367634.hostedresource.com",
+        'usuario' => "widgetSolar",
+        'pass' => "corbet*Mount54",
         'bd' => "solar"
         );
 
@@ -16,16 +20,17 @@ mysql_select_db($datosConexion['bd'], $conexion);
 
 /* Seleccionar datos de Ubicacion */
 if($etiqueta == 'ubicacion'){
-	if($etiquetaDatosCampoWhere){
-		$q = "SELECT DISTINCT ".$etiquetaDatosCampoDestino." FROM comunas2 WHERE ".$etiquetaDatosCampoFuente."='".$etiquetaDatosWhere."' ORDER BY ".$etiquetaDatosCampoDestino." ASC";
+	if($etiquetaDatosCampoDestino == "pais"){
+		$q = "SELECT DISTINCT ".$etiquetaDatosCampoDestino." FROM comunas ORDER BY ".$etiquetaDatosCampoDestino." ASC";
 		$r = mysql_query($q, $conexion) or die(mysql_error());
 		while($fila = mysql_fetch_row($r)){ $ciudades[] = $fila; }
-		$datos = array( 'options' => $ciudades,	);
-	}elseif($etiquetaDatosCampoDestino){
-		$q = "SELECT DISTINCT ".$etiquetaDatosCampoDestino." FROM comunas2 ORDER BY ".$etiquetaDatosCampoDestino." ASC";
+		$datos = array( 'options' => array_utf8_encode_recursive($ciudades) );
+	}else{
+		$q = "SELECT DISTINCT ".$etiquetaDatosCampoDestino." FROM comunas WHERE ".$etiquetaDatosCampoFuente."='".$etiquetaDatosWhere."' ORDER BY ".$etiquetaDatosCampoDestino." ASC";
+		//$q = "SELECT DISTINCT comuna FROM comunas WHERE region ='V Region de Valparaiso' ORDER BY comuna ASC";
 		$r = mysql_query($q, $conexion) or die(mysql_error());
 		while($fila = mysql_fetch_row($r)){ $ciudades[] = $fila; }
-		$datos = array( 'options' => $ciudades, );
+		$datos = array( 'options' => array_utf8_encode_recursive($ciudades) );
 	}
 }elseif($etiqueta == 'perfil'){
 	$q = "SELECT DISTINCT * FROM iasolar_perfil_consumo";

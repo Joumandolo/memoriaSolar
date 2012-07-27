@@ -1,89 +1,96 @@
 <?php
 /*
-Plugin Name: Calculadora Solar
+Plugin Name: Calculadora Solar 
 Plugin URI: http://www.solaratacama.cl
-Description: Herramienta de calculo y dimencionamiento de plantas solares para redSollac
-Version: 0.3
+Description: Herramienta de calculo y dimencionamiento de plantas solares para redSollac; Compatible con Chrome 19, IE 9, Firefox 12.
+Version: 1.2.
 Author: Manuel Arredondo
-Author URI:
+Author URI: http://wp.mnj.cl/
+License: GPL v3.0
 */
 
-/* Inicializar clases y fucniones*/
-register_activation_hook(__FILE__,'activarPlugin'); 
-register_deactivation_hook( __FILE__, 'desactivarPlugin' );
+/* Agregar opcion al inicializar el plugin */
+//add_action( "init", array( "solarCalc", "iniciar") );
+register_activation_hook(__FILE__, array('solarCalc','crearPagina') ); 
+register_deactivation_hook(__FILE__, array('solarCalc', 'eliminarPagina') );
 
-function activarPlugin(){
-	$page_title = "Calculadora Solar";
+// Clase Widget_ultimosPostPorAutor
+class solarCalc {
 
-	/* verificar si la pagina existe */
-	$pagina = get_page_by_title( $page_title );
-	if( !$pagina->ID ){
-		/* si no existe crear pagina nueva */
-		wp_insert_post( post( $page_title ), $wp_error );
+	private static $paginaId = 0;
+	private static $paginaUrl = "http://";
+	private static $paginaTitulo = "Pagina Nueva";
 
- 		/* agregar contenido al header */
-		//add_action('wp_head', estilos());
-		//add_action('wp_head', 'librerias');
+	private static function setPaginaId($id){self::$paginaId = $id;}
+	private static function getPaginaId(){return self::$paginaId;}
+
+	private static function setPaginaUrl($url){self::$paginaUrl = site_url()."/?page_id=".$url;}
+	private static function getPaginaUrl(){return self::$paginaUrl;}
+
+	private static function setPaginaTitulo($titulo){self::$paginaTitulo = $titulo;}
+	private static function getPaginaTitulo(){return self::$paginaTitulo;}
+	
+	/* Crear pagina  */
+	public function crearPagina(){
+		self::setPaginaTitulo("Calculadora Solar");
+		$pagina = get_page_by_title(self::getPaginaTitulo());
+		self::setPaginaId($pagina->ID);
+		if(!self::getPaginaId()){
+			/* si no existe crear pagina nueva */
+			self::setPaginaId(wp_insert_post( self::post( self::getPaginaTitulo() ), $wp_error ));
+			update_post_meta( self::getPaginaId(), "_wp_page_template", "page-full.php" );
+			self::setPaginaUrl(self::getPaginaId());
+		}else{
+			wp_delete_post( self::getPaginaId() );
+			self::setPaginaId(wp_insert_post( self::post( self::getPaginaTitulo() ), $wp_error ));
+			update_post_meta( self::getPaginaId(), "_wp_page_template", "page-full.php" );
+			self::setPaginaUrl(self::getPaginaId());
 		}
 	}
 
-function desactivarPlugin(){
-	$page_title = "Calculadora Solar";
-
-	/* si la pagina existe eliminar */
-	$page = get_page_by_title( $page_title );
-	if( $page->ID ) { wp_delete_post( $page->ID ); }
+	public function eliminarPagina(){
+		self::setPaginaTitulo("Calculadora Solar");
+		$pagina = get_page_by_title(self::getPaginaTitulo());
+		self::setPaginaId($pagina->ID);
+		if( self::getPaginaId() ) { wp_delete_post( self::getPaginaId() ); }
 	}
 
-/* estilos css */
-function estilos(){
-	$e = '<link href="wp-content/plugins/solarGraficos/flot/examples/layout.css" rel="stylesheet" type="text/css">'
-		.'<style type="text/css">'
-		.'#grafico.button{position:absolute;cursor:pointer;}'
-		.'#grafico div.button{font-size:smaller;color:#999;background-color:#eee;padding: 2px;}'
-		.'.message{padding-left:50px;font-size:smaller;}'
-		.'</style>';
-	echo $e;
+	/* Contenido de la pagina */
+	private static function contenido(){
+		/* añadimos contenedores */
+		$c = '
+			<div id="calculadoraSolar" style="width:900px;height:870px"></div>
+			<script type="text/javascript">
+				jQuery.ajax({
+        				url: "wp-content/plugins/solarCalc/calculadora.php",
+        				type: "POST",
+					data: {"siteUrl":"'.site_url().'"},
+        				dataType: "html",
+        				async: false,
+        				success: function(data, textStatus, jqXHR){
+        					jQuery("#calculadoraSolar").append(data);
+					},
+				});
+			</script>';
+		return $c;
 	}
 
-/* cargar librerias */
-function librerias(){
-	$l = '<script language="javascript" type="text/javascript" src="wp-content/plugins/solarGraficos/flot/jquery.flot.js"></script>'
-	.'<script language="javascript" type="text/javascript" src="wp-content/plugins/solarGraficos/flot/jquery.flot.navigate.js"></script>'
-	.'<script language="javascript" type="text/javascript" src="wp-content/plugins/solarGraficos/dateFormat.js"></script>';
-	echo $l;
+	/* Estructura de la pagina */
+	private static function post($p){
+		$post = array(
+			'menu_order' => 1,
+			'post_author' => 11,
+			'post_content' => self::contenido(),
+			'post_excerpt' => "Nueva herramienta para calcular sistemas fotovoltaicos.",
+			//'post_date' => date("Y-m-d H:i:s"),
+			'post_status' => 'publish', 
+			'post_title' => $p,
+			'post_type' => 'page',
+			'post_parent' => 3,
+			'comment_status' => 'closed',
+			'post_category' => ""
+			);  
+		return $post;
+	}
 }
-
-/* rederizar graficas */
-function contenido(){
-	/* añadimos contenedores */
-	$c = '
-		<div id="calculadora" style="width:600px;height:400px"></div>
-		<script type="text/javascript">
-			jQuery.ajax({
-        			url: "wp-content/plugins/solarGraficos/calculadora.php",
-        			type: "POST",
-        			dataType: "html",
-        			async: false,
-        			success: function(data, textStatus, jqXHR){
-        				jQuery("#solar").append(data);
-				},
-			});
-		</script>';
-	return $c;
-}
-
-function post($p){
-	$post = array(
-		'menu_order' => 3,
-		'post_content' => contenido(), 
-		'post_date' => date("Y-m-d H:i:s"),
-		'post_status' => 'publish', 
-		'post_title' => $p,
-		'post_type' => 'page',
-		'comment_status' => 'closed',
-		'post_category' => array(1)
-		);  
-	return $post;
-	}
 ?>

@@ -1,9 +1,21 @@
 <?php
+error_reporting(0);
+//sleep(1);
 /* Calcular la radiacion sobre el plano horizontal horaria a partir de la raciacion diaria de media mensual */
+/*BD*/
+$datosConexion = array(
+        'servidorBD' => "solar.db.7367634.hostedresource.com",
+        'usuario' => "widgetSolar",
+        'pass' => "corbet*Mount54",
+        'bd' => "solar"
+        );
+
+$conexion = mysql_connect($datosConexion['servidorBD'], $datosConexion['usuario'], $datosConexion['pass']);
+mysql_select_db($datosConexion['bd'], $conexion);
 
 /* Definicion de Constantes */
 /*Mes del año*/
-$ma = array("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic");
+$ma = array("ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic");
 /*Numero de dia del año, mitad de mes*/
 $nda = array(17,47,75,105,135,162,198,228,258,288,318,344);
 /*Numero de disa del mes*/
@@ -14,18 +26,41 @@ $hd = array(0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5,11.5,12.5,13.5,14.5,15.
 $cs = 1353;
 
 /* Definicion de datos que dependen de la comuna a calcular */
+/*Comuna*/
+$comuna = utf8_decode($_POST["comuna"]);
+/*Consultar BD*/
+$q = "SELECT * FROM ene_wh_dia WHERE comuna='".$comuna."'";
+$r = mysql_query($q, $conexion) or die(mysql_error());
+$RGHd = mysql_fetch_row($r);
+
+$q = "SELECT latitud FROM comunas WHERE comuna='".$comuna."'";
+$r = mysql_query($q, $conexion) or die(mysql_error());
+$l = mysql_fetch_row($r); $l = $l[0];
+ 
 /*Latitud*/
-$l = -23.3;
+//$l = -23.3;
 /*Radiacion solar global Horizontal diaria de media mensual*/
-$RGHd = 8647;
+//$RGHd = $fila;
 
 /*Datos ingresados por el usuario*/
 /*Oientacion*/
-$ori = 0;
+$ori = $_POST["ori"];
 /*Inclinacion*/
-$incl = 0;
+$incl = $_POST["incl"];
 /*Albedo*/
-$alb = 0.2;
+$alb = $_POST["alb"];
+/*potencia peak del panel [W/m2]*/
+$ppp = 114.2857;
+/*Potencia nominal planta [W]*/
+$pnp = $_POST["pnp"];
+/*eficiencia del panel*/
+$eps = $ppp / 1000;
+/*area de la planta*/
+$ap = $pnp / $ppp;
+/*factor de planta*/
+$fp = $_POST["fp"];
+/*valor kwh*/
+$vkwh = $_POST["vkwh"];
 
 /*Ecuaciones de calculo*/
 /*Angulo del dia [rad]*/
@@ -168,16 +203,78 @@ function RGhS($alb,$incl,$ori,$RGHd,$l,$nda,$cs,$hd){
 	return round($RGhS);
 }
 
+/* Energia total solar al mes [Wh/mes]*/
+function energiaSolarTotal($alb,$incl,$ori,$RGHd,$l,$nda,$cs,$hd){
+	foreach($hd as $var) $energiaSolarT = $energiaSolarT + RGhS($alb,$incl,$ori,$RGHd,$l,$nda,$cs,$var);
+	return $energiaSolarT;
+}
+/* Energia total producida en el mes por la planta [Wh/mes]*/
+function energiaProducida($ap,$ep,$fp,$et,$nda){
+	$energiaTotal = round($et * $ap * $ep * $fp * $nda);
+	return $energiaTotal;
+}
+
 /* Realizar los calculos y mostrar el resultado */
 /*iterar para todos los meses del año*/
+
+//$filaMes = '<th id=col1 >Mes</th>';
+//$filaRadiacion = '<td id=col1>Radiación solar[kWh/m2/dia]</td>';
+//$filaEnergia = '<td id=col1>Energia AC [kWh]</td>';
+//$filaCosto = '<td id=col1>Valor de la energía</td>';
+for($i = 0; $i < 12; $i++){
+	$energiaSolarT = round(energiaSolarTotal($alb,$incl,$ori,$RGHd[$i+1],$l,$nda[$i],$cs,$hd) / 1000,2);
+	$energiaProducida = energiaProducida($ap,$eps,$fp,$energiaSolarT,$ndm[$i]);
+	$energiaValor = round($energiaProducida * $vkwh,2);
+	$radiacionHora = array();
+	foreach($hd as $var) $radiacionHora[] = array($var,RGhS($alb,$incl,$ori,$RGHd[$i+1],$l,$nda[$i],$cs,$var));
+
+	$r = $r + ($energiaSolarT * $nda[$i]) ;
+	$e = $e + $energiaProducida;
+	$c = $c + $energiaValor;
+
+	$filaRadiacion[] = array($i,$energiaSolarT);
+	$filaEnergia[] = array($i,$energiaProducida);
+	$filaMes[] = array($i,$ma[$i]);
+	$filaCosto[] = array($i,$energiaValor);
+	$filaRadiacionHora[] = array('label' => $ma[$i], "data" => $radiacionHora, 'color' => $i); 
+}
+
+/* Codificar los datos en JSON */
+$r = round($r,0);
+$e = round($e,0);
+$c = round($c,2);
+$datos = array(
+	array('label' => 'Energia producida[kWh]', "data" => $filaEnergia, 'yaxis' => 1),
+	array('label' => 'Radiación solar[kWh]', "data" => $filaRadiacion, 'yaxis' => 2),
+	array('label' => 'meses', "data" => $filaMes, 'yaxis' => 3),
+	array('label' => 'costo', "data" => $filaCosto, 'yaxis' => 4),
+	array('label' => 'totalR', "data" => $r, 'yaxis' => 5),
+	array('label' => 'totalE', "data" => $e, 'yaxis' => 5),
+	array('label' => 'totalC', "data" => $c, 'yaxis' => 5),
+);
+$datos = array_merge($datos,$filaRadiacionHora);
+
+	header('Content-type: application/json');
+$datos = json_encode($datos);
+echo $datos;
+
+/*echo "	<table>
+		<tr>$filaMes<th>Total</th></tr>
+		<tr>$filaRadiacion<td id='val'>$r</td></tr>
+		<tr>$filaEnergia<td id='val'>$e</td></tr>
+		<tr>$filaCosto<td id='val'>$c</td></tr>
+	</table>
+	";*/
+
+/*
 for($i = 0; $i < 12; $i++){
 	echo $ma[$i]." - ".$nda[$i]." - ".$ndm[$i]."<br>";
-	echo $l." - ".$RGHd." - ".$cs."<br>";
+	echo round($l,2)." - ".$RGHd[$i+1]." - ".$cs."<br>";
 	//echo gamma($nda[$i])." - ".delta($nda[$i])." - ".ws($l,$nda[$i])."<br>";
 	//echo rse($l,$nda[$i],$cs)." - ".kt($RGHd,$l,$nda[$i],$cs)." - ".hsd($l,$nda[$i])."<br>";
-	echo RDHd($RGHd,$l,$nda[$i],$cs)."<br>";
+	//echo RDHd($RGHd[$i+1],$l,$nda[$i],$cs)."<br>";
 	//echo a($l,$nda[$i])." - ".b($l,$nda[$i])."<br><br>";
-	foreach($hd as $var) echo $var." | "; echo "<br><br>";
+	//foreach($hd as $var) echo $var." | "; echo "<br><br>";
 	//foreach($hd as $var) echo w($var)." | "; echo "<br>";
 	//foreach($hd as $var) echo hs($l,$nda[$i],$var)." | "; echo "<br><br>";
 	//foreach($hd as $var) echo acimut($l,$nda[$i],$var)." | "; echo "<br><br>";
@@ -190,9 +287,17 @@ for($i = 0; $i < 12; $i++){
 	//foreach($hd as $var) echo anguloHorizontal($ori,$l,$nda[$i],$var)." | "; echo "<br><br>";
 	//foreach($hd as $var) echo anguloVertical($ori,$RGHd,$l,$nda[$i],$var)." | "; echo "<br><br>";
 	//foreach($hd as $var) echo anguloIncidencia($incl,$ori,$RGHd,$l,$nda[$i],$var)." | "; echo "<br><br>";
-	foreach($hd as $var) echo RDrhS($incl,$ori,$RGHd,$l,$nda[$i],$cs,$var)." &#09; "; echo "<br><br>";
-	foreach($hd as $var) echo RDfhS($alb,$incl,$ori,$RGHd,$l,$nda[$i],$cs,$var)." &#09; "; echo "<br><br>";
-	foreach($hd as $var) echo RGhS($alb,$incl,$ori,$RGHd,$l,$nda[$i],$cs,$var)." &#09; "; echo "<br><br>";
+	echo "Energia solar directa en la superficie hora [Wh/m2]:<br>";
+	foreach($hd as $var) echo RDrhS($incl,$ori,$RGHd[$i+1],$l,$nda[$i],$cs,$var)." &#09; "; echo "<br><br>";
+	echo "Energia sollar difusa en la superficie hora [Wh/m2]:<br>";
+	foreach($hd as $var) echo RDfhS($alb,$incl,$ori,$RGHd[$i+1],$l,$nda[$i],$cs,$var)." &#09; "; echo "<br><br>";
+	echo "Energia solar global en la superficie hora[Wh/m2]:<br>";
+	foreach($hd as $var) echo RGhS($alb,$incl,$ori,$RGHd[$i+1],$l,$nda[$i],$cs,$var)." &#09; "; echo "<br>";
+	echo "Total energia solar irradiada dia [Wh/m2/dia]:";
+	$energiaSolarT = 0;
+	foreach($hd as $var) $energiaSolarT = $energiaSolarT + RGhS($alb,$incl,$ori,$RGHd[$i+1],$l,$nda[$i],$cs,$var);
+	echo $energiaSolarT; echo "<br>";
+	echo "Total energia producida al mes[Wh/mes]:".energiaProducida($ap,$eps,$fp,$energiaSolarT,$ndm[$i]);
 	echo "<br> ---------------------------------------------------- <br>";
-}
+}*/
 ?>

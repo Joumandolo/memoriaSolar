@@ -1,0 +1,4 @@
+INSERT INTO comunas (comuna,region,provincia,latitud,longitud) (SELECT comunas2.comuna, comunas3.region, comunas3.provincia, comunas2.latitud, comunas2.longitud FROM comunas2, comunas3 WHERE comunas2.comuna=comunas3.comuna)
+
+tranformar datos del exel de eduardo, radiacion por comuna en KWh/m2/mes -> Wh/m2/dia
+* 1000 / numero de dias del mes

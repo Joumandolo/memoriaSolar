@@ -1,0 +1,40 @@
+\BOOKMARK [0][-]{chapter*.1}{Resumen}{}
+\BOOKMARK [0][-]{chapter*.2}{Abstract}{}
+\BOOKMARK [0][-]{chapter*.4}{\315ndice General}{}
+\BOOKMARK [0][-]{chapter*.4}{\315ndice de Tablas}{}
+\BOOKMARK [0][-]{chapter*.5}{\315ndice de Figuras}{}
+\BOOKMARK [0][-]{chapter*.7}{Glosario}{}
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}
+\BOOKMARK [0][-]{chapter.2}{Alcances de la Memoria}{}
+\BOOKMARK [1][-]{section.2.1}{Problema a resolver}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Objetivo principal de la soluci\363n}{chapter.2}
+\BOOKMARK [1][-]{section.2.3}{Objetivos espec\355ficos de la soluci\363n}{chapter.2}
+\BOOKMARK [1][-]{section.2.4}{Requerimientos del sistema}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.4.1}{Requerimientos funcionales}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.2}{requerimientos no funcionales}{section.2.4}
+\BOOKMARK [0][-]{chapter.3}{Introducci\363n a la Energ\355a Solar}{}
+\BOOKMARK [1][-]{section.3.1}{El Sol}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{La radiaci\363n solar}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Energ\355a Fotovoltaica}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{Sistemas fotovoltaicos}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.4.1}{Paneles solares}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.2}{Inversores}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.3}{Almacenamiento}{section.3.4}
+\BOOKMARK [0][-]{chapter.4}{Soluci\363n propuesta}{}
+\BOOKMARK [1][-]{section.4.1}{Arquitectura de la soluci\363n}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.1.1}{Sofware utilizado}{section.4.1}
+\BOOKMARK [2][-]{subsection.4.1.2}{Hardware}{section.4.1}
+\BOOKMARK [1][-]{section.4.2}{Dise\361o de la soluci\363n}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{Aplicaciones}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.2}{Estaciones}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.3}{Almacenamiento de datos}{section.4.2}
+\BOOKMARK [0][-]{chapter.5}{Pruebas del sistema}{}
+\BOOKMARK [1][-]{section.5.1}{Comuicacion de las estaciones de monitoreo}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.1.1}{Estacion de monitoreo Fundacion Chile, Satiago}{section.5.1}
+\BOOKMARK [2][-]{subsection.5.1.2}{Estacion de monitoreo SubSole, Antofagasta}{section.5.1}
+\BOOKMARK [1][-]{section.5.2}{comparacion de datos y graficas}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.2.1}{Datos del proceso de captura anterior}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.2}{datos del proceso de captura actual}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.3}{comparacion de graficas}{section.5.2}
+\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}
+\BOOKMARK [0][-]{chapter.7}{Anexos}{}

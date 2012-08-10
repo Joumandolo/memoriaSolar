@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: memoria.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: chapters/6-Introduccion.aux
+A level-1 auxiliary file: chapters/7-Alcances.aux
+A level-1 auxiliary file: chapters/8-Solar.aux
+A level-1 auxiliary file: chapters/9-Solucion.aux
+A level-1 auxiliary file: chapters/10-Pruebas.aux
+A level-1 auxiliary file: chapters/11-Conclusiones.aux
+A level-1 auxiliary file: chapters/12-Anexos.aux
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: memoria-blx.bib
+Database file #2: include/bibliografia.bib
+Warning--I didn't find a database entry for "datosSolares:1"
+Warning--I didn't find a database entry for "matrizEnergia:1"
+Warning--I didn't find a database entry for "colegioIng:1"
+Warning--I didn't find a database entry for "colegioIng:2"
+Warning--I didn't find a database entry for "panel:1"
+Warning--I didn't find a database entry for "panel:2"
+Warning--I didn't find a database entry for "aplicaciones:wplugins"
+Biblatex version: 0.9
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+You've used 14 entries,
+            6083 wiz_defined-function locations,
+            1204 strings with 10025 characters,
+and the built_in function-call counts, 33928 in all, are:
+= -- 1279
+> -- 1116
+< -- 322
++ -- 244
+- -- 372
+* -- 1921
+:= -- 2196
+add.period$ -- 0
+call.type$ -- 14
+change.case$ -- 97
+chr.to.int$ -- 34
+cite$ -- 26
+duplicate$ -- 3800
+empty$ -- 3780
+format.name$ -- 648
+if$ -- 7930
+int.to.chr$ -- 0
+int.to.str$ -- 34
+missing$ -- 0
+newline$ -- 234
+num.names$ -- 557
+pop$ -- 4185
+preamble$ -- 1
+purify$ -- 110
+quote$ -- 0
+skip$ -- 2206
+stack$ -- 0
+substring$ -- 309
+swap$ -- 1073
+text.length$ -- 337
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 604
+warning$ -- 0
+while$ -- 279
+width$ -- 0
+write$ -- 219
+(There were 7 warnings)

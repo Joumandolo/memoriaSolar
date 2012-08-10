@@ -10,6 +10,7 @@ FLAGS=-output-directory $(BIN)
 all:
 	@pdflatex $(DOC).tex
 	@bibtex $(DOC).gls.aux
+	@bibtex $(DOC).aux
 	@pdflatex $(DOC).tex
 	pdflatex $(DOC).tex > .$(DOC).log
 	@pdflatex $(INS).tex
@@ -17,14 +18,17 @@ all:
 mem:
 	@pdflatex $(DOC).tex
 	@bibtex $(DOC).gls.aux
+	@bibtex $(DOC).aux
 	@pdflatex $(DOC).tex
 	pdflatex $(DOC).tex > .$(DOC).log
 ins:
 	@pdflatex $(INS).tex
 	pdflatex $(INS).tex > .$(INS).log
 clean:
-	rm -f $(DOC).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl} $(DOC)-blx.bib
+	rm -f $(DOC).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl,bbl,blg} $(DOC)-blx.bib
+	rm -f $(INS).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl} $(DOC)-blx.bib
 	rm -f chapters/*.aux 
 distclean:
-	rm -f $(DOC).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl,log,pdf} $(DOC)-blx.bib
+	rm -f $(DOC).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl,log,pdf,bbl,blg} $(DOC)-blx.bib
+	rm -f $(INS).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl,log,pdf} $(DOC)-blx.bib
 	rm -f chapter/*.aux

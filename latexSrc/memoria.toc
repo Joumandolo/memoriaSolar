@@ -1,0 +1,122 @@
+\select@language {spanish}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}
+\defcounter {refsection}{0}
+\select@language {spanish}
+\defcounter {refsection}{0}
+\contentsline {chapter}{Resumen}{\es@scroman {iv}}{chapter*.1}
+\defcounter {refsection}{0}
+\contentsline {chapter}{Abstract}{\es@scroman {vii}}{chapter*.2}
+\defcounter {refsection}{0}
+\contentsline {chapter}{\'Indice General}{\es@scroman {x}}{chapter*.4}
+\defcounter {refsection}{0}
+\contentsline {chapter}{\'Indice de Tablas}{\es@scroman {xi}}{chapter*.4}
+\defcounter {refsection}{0}
+\contentsline {chapter}{\'Indice de Figuras}{\es@scroman {xii}}{chapter*.5}
+\defcounter {refsection}{0}
+\contentsline {chapter}{Glosario}{\es@scroman {xiv}}{chapter*.7}
+\defcounter {refsection}{0}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
+\defcounter {refsection}{0}
+\contentsline {chapter}{\numberline {2}Alcances de la Memoria}{3}{chapter.2}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {2.1}Problema a resolver}{3}{section.2.1}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {2.2}Objetivo principal de la soluci\IeC {\'o}n}{6}{section.2.2}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {2.3}Objetivos espec\IeC {\'\i }ficos de la soluci\IeC {\'o}n}{6}{section.2.3}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {2.4}Requerimientos del sistema}{7}{section.2.4}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {2.4.1}Requerimientos funcionales}{7}{subsection.2.4.1}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {2.4.2}requerimientos no funcionales}{7}{subsection.2.4.2}
+\defcounter {refsection}{0}
+\contentsline {chapter}{\numberline {3}Introducci\IeC {\'o}n a la Energ\IeC {\'\i }a Solar}{10}{chapter.3}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {3.1}El Sol}{10}{section.3.1}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {3.2}La radiaci\IeC {\'o}n solar}{12}{section.3.2}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {3.3}Energ\IeC {\'\i }a Fotovoltaica}{14}{section.3.3}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {3.4}Sistemas fotovoltaicos}{16}{section.3.4}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {3.4.1}Paneles solares}{16}{subsection.3.4.1}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {3.4.2}Inversores}{18}{subsection.3.4.2}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {3.4.3}Almacenamiento}{18}{subsection.3.4.3}
+\defcounter {refsection}{0}
+\contentsline {chapter}{\numberline {4}Soluci\IeC {\'o}n propuesta}{19}{chapter.4}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {4.1}Arquitectura de la soluci\IeC {\'o}n}{19}{section.4.1}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {4.1.1}Sofware utilizado}{21}{subsection.4.1.1}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Wordpress}{21}{section*.18}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Perfil Gr\IeC {\'a}fico}{21}{section*.19}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Plugins}{22}{section*.20}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Widgets}{22}{section*.21}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Multiusuario}{22}{section*.22}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{PHP}{22}{section*.23}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{MySQL}{24}{section*.24}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{CSS}{25}{section*.25}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{jQuery}{26}{section*.26}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {4.1.2}Hardware}{26}{subsection.4.1.2}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Datalogger Campbell CR1000}{26}{section*.27}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Interfaz Ethernet NL200 Campbell}{28}{section*.28}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{MultiModem Multitech modelo MTCBA-G-F4}{29}{section*.29}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Piran\IeC {\'o}metro PSP-Eppley}{30}{section*.30}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Sensor de temperatura y humedad HMP60}{30}{section*.31}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Bater\IeC {\'\i }a PS100}{31}{section*.32}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Panel fotovoltaico SX310M}{31}{section*.33}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de la soluci\IeC {\'o}n}{32}{section.4.2}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {4.2.1}Aplicaciones}{33}{subsection.4.2.1}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Sitio web RedSolLAC}{33}{section*.34}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{SolarGraficos}{33}{section*.35}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{SolarCalc}{36}{section*.36}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {4.2.2}Estaciones}{36}{subsection.4.2.2}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {4.2.3}Almacenamiento de datos}{38}{subsection.4.2.3}
+\defcounter {refsection}{0}
+\contentsline {chapter}{\numberline {5}Pruebas del sistema}{41}{chapter.5}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {5.1}Comuicacion de las estaciones de monitoreo}{41}{section.5.1}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {5.1.1}Estacion de monitoreo Fundacion Chile, Satiago}{41}{subsection.5.1.1}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {5.1.2}Estacion de monitoreo SubSole, Antofagasta}{41}{subsection.5.1.2}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {5.2}comparacion de datos y graficas}{41}{section.5.2}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {5.2.1}Datos del proceso de captura anterior}{41}{subsection.5.2.1}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {5.2.2}datos del proceso de captura actual}{41}{subsection.5.2.2}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {5.2.3}comparacion de graficas}{41}{subsection.5.2.3}
+\defcounter {refsection}{0}
+\contentsline {chapter}{\numberline {6}Conclusiones}{42}{chapter.6}
+\defcounter {refsection}{0}
+\contentsline {chapter}{\numberline {7}Anexos}{43}{chapter.7}

@@ -1,14 +1,14 @@
 \chapter{Solución propuesta}
 \label{solucion}
-Hoy por hoy el desarrollo de Internet ha alcanzado niveles realmente impresionantes, no solo en lo que respecta a avances en capacidad de transmisión y almacenamiento de datos sino también en su modelo de crecimiento y expansión en la sociedad post-moderna en la era de de la información. Prácticamente no hay rincón del planeta en donde no pueda hoy en día llegar la red de redes.\\
+Hoy por hoy el desarrollo de Internet ha alcanzado niveles realmente impresionantes, no solo en lo que respecta a avances en capacidad de transmición y almacenamiento de datos sino también en su modelo de crecimiento y expansión en la sociedad post-moderna en la era de de la información. Prácticamente no hay rincón del planeta en donde no pueda hoy en día llegar la red de redes.\\
 
 \section{Arquitectura de la solución}
 \label{arquitectura}
-De acuerdo al problema planteado y a los requerimientos especificados, es esencial implementar un sistema que pueda difundirse en la sociedad de manera masiva y veloz. La RedSolLAC quiere y debe poder llegar al mayor número de personas interesadas en producir energías limpias lo mas próximo en el tiempo.\\
+De acuerdo al problema planteado y a los requerimientos especificados, es escencial implementar un sistema que pueda difundirse en la sociedad de manera masiva y veloz. La RedSolLAC quiere y debe poder llegar al mayor número de personas interesadas en producir energías limpias lo mas proximo en el tiempo.\\
 
-Actualmente la RedSolLAC solo cuenta con un sitio Web donde publica información respecto de plantas solares productoras de energía, sin embargo con el objetivo de expandir sus alcances, objetivos y adherir miembros a la red, es que requiere de nuevas herramientas atractivas para los futuros integrantes. Es acá donde la presente memoria interviene, para desarrollar un nuevo sistema que integre el sitio Web ya existente con nuevas componentes que marquen la diferencia.
+Actualmente la RedSolLAC solo cuenta con un sitio Web donde publica información respecto de plantas solares productoras de energía, sin embargo con el objetivo de expander sus alcances, objetivos y aderir miembros a la red, es que requiere de nuevas herramientas atractivas para los futuros integrantes. Es aca donde la presente memoria interviene, para desarrollar un nuevo sistema que integre el sitio Web ya existente con nuevas componentes que marquen la diferencia.
 
-Para dar cumplimiento a los requerimientos especificados se propone el siguiente Diagrama General de Arquitectura:
+Para dar cumpliemiento a los requerimientos especificados se propone el siguiente Diagrama General de Arquitectura:
 
 \begin{figure}[h!]
         \centering
@@ -17,24 +17,24 @@ Para dar cumplimiento a los requerimientos especificados se propone el siguiente
 	\label{da}
 \end{figure}
 
-En el diagrama(Fig:\ref{da}) apreciamos las 3 partes que componen el nuevo sistema desarrollado: aplicaciones, el cual consiste en un servidor Web que implementa la plataforma CMS Wordpress, bajo esta plataforma se desarrollar las aplicaciones principales del sistema las cuales sera visitadas por los usuarios finales. Las Estaciones, que don parte fundamental del proceso de adquisición de datos en el sistema a la cuales se les debe integrar un sistema de comunicación compatible con la plataforma de almacenamiento de datos. Finalmente el componente de Almacenamiento de Datos, el cual esta compuesto por un servidor Web que administra los procesos de registro, acceso y mantención de datos y un servidor de base de datos para. Cada una de estas partes debe interactuar con las demás de manera muy precisa para conseguir el comportamiento deseado.\\
+En el diagrama(Fig:\ref{da}) apreciamos las 3 partes que componen el nuevo sistema desarrollado: aplicaciones, el cual consiste en un servidor Web que implementa la plataforma CMS Wordpres, bajo esta plataforma se desarrollar las aplicaciones principales del sistema las cuales sera vistatas por los usuarios finales. Las Estaciones, que don parte fundamental del proceso de adquisicion de datos en el sistema a la cuales se les debe integrar un sistema de comunicacion compatible con la plataforma de almacenamiento de datos. Finalmente el componente de Almacenamiento de Datos, el cual esta compuesto por un servidor Web que administra los procesos de registro, acceso y mantencion de datos y un servidor de base de datos para. Cada una de estas partes debe interactuar con las demas de manera muy precisa para conseguir el comportamiento deseado.\\
 
-A continuación se describen las diferentes herramientas tanto de hardware como de software que implementa el sistema:
+A continuacion se describen las diferentes herramientas tanto de hardware como de software que implementa el sistema:
 
 \subsection{Sofware utilizado}
 \subsubsection{Wordpress}
-Wordpress es una avanzada plataforma semántica de publicación en la Web, libre, de código abierto y gratuito con altos estándares de diseño y usabilidad. Es un sistema de manejador de contenidos (\gloss{cms}) basado en estilo de publicaciones de blogs, además se distribuye bajo la licencia GPL2. Está echo en lenguaje PHP, utiliza el motor de bases de datos MySql y hojas de estilo CSS para la parte visual. Su arquitectura está pensada y diseñada de forma modular, lo que le permite adaptarse y ser configurable de acuerdo con los requerimientos de cada usuario.\\
+Wordpress es una avanzada plataforma semántica de publicación en la Web, libre, de codigo abierto y gratuito con altos estandares de diseño y usabilidad. Es un sistema de manejador de contenidos (\gloss{cms}) basado en estilo de publicaciones de blogs, ademas se distribuye bajo la licencia GPL2. Está echo en lenguaje PHP, utiliza el motor de bases de datos MySql y hojas de estilo CSS para la parte visual. Su arquitectura está pensada y diseñada de forma modular, lo que le permite adaptarse y ser configurable de acuerdo con los requerimientos de cada usuario.\\
 La primera versión fue liberada el año 2003 por Matt Mullenweg y es un rama del otro proyecto llamado b2/cafelog. Actualmente esta plataforma está en su versión 3.0 y ha sido descargada más de 65 millones de veces. Se estima que Wordpress a la fecha es la herramienta de publicación de contenido más utilizada y popular de la Red, con aproximadamente un 14\% de participación en Internet y con más del 22\% de utilización sitios nuevos o que se publican por primera vez.
 
-Wordpress está echo de tal manera que permite a sus usuarios modificar o configurar partes esenciales del sistema, lo que lo hace flexible para agregar funcionalidades y adaptarse a los requerimientos. Además cuanta con un framework y una \gloss{api} que facilita la labor de los programadores.\\
+Wordpress está echo de tal manera que permite a sus usuarios modificar o configurar partes esenciales del sistema, lo que lo hace flexible para gregar funcionalidades y adaptarse a los requerimientos. Además cuanta con un framework y una \gloss{api} que facilita la labor de los programadores.\\
 
 \paragraph{Perfil Gráfico}	
-La parte visual de esta plataforma funciona a través de un sistema llamado \gloss{themes}(para efectos prácticos en adelante "Perfiles"). Los "Perfiles" son un conjunto de \gloss{bibliotecas} programadas en PHP y JavaScript que permiten organizar la forma en que se presentan los contenidos del sitio sin alterar el contenido. Wordpress al estar diseñado de manera modular, permite a sus usuarios contar con gran cantidad de "Perfiles" diferentes, mediante una interfaz de administración permite cambiar estos "Perfile" de manera rápida y sencilla. Adicionalmente en el mercado, existen extensos depósitos de "Perfiles" que pueden ser instalados en cualquier sitio compatible con la versión indicada por el creador.
+La parte visual de esta plataforma funciona a través de un sistema llamado \gloss{themes}(para efectos practicos en adelante "Perfiles"). Los "Perfiles" son un conjunto de \gloss{bibliotecas} programadas en PHP y JavaScript que permiten organizar la forma en que se presentan los contenidos del sitio sin alterar el contenido. Wordpress al estar diseñado de manera modular, permite a sus usuarios contar con gran cantidad de "Perfiles" diferentes, mediante una interfaz de administración permite cambiar estos "Perfile" de manera rápida y sencilla. Adicionalmente en el mercado, existen extensos depósitos de "Perfiles" que pueden ser instalados en cualquier sitio compatible con la versión indicada por el creador.
 
 En el sitio de Wordpress se puede encontrar una extensa documentación y una API que indica a los programadores que deseen desarrollar nuevos "Perfiles", cómo deben estructurar los paquete y qué funcionalidades pueden agregar o quitar. Adicionalmente los "Perfiles" pueden publicarse o bien Wordpress da la libertad a sus usuarios de vender trabajos basados en su framework.\\
 
 \paragraph{Plugins}
-Los "\gloss{plugins}" funcionan casi de la misma manera que los "Perfiles" y así también la mayoría de los componente que dispone Wordpress. Estos son un conjunto de bibliotecas programadas en PHP y JavaScript que pueden instalarse o desinstalares desde el panel de administración.\\
+Los "\gloss{plugins}" funcionan casi de la misma manera que los "Perfiles" y así también la mayoría de los componente que dispone Wordpress. Estos son un conjunto de bibliotecas programadas en PHP y JavaScript que pueden instalarse o desinstalarse desde el panel de administración.\\
 Cada "Plugin" está diseñado para agregar nuevas funcionalidades o modificar el comportamiento normal de los sitios, la documentación de Wordpress entrega pautas estrictas de cómo deben estar programadas las bibliotecas para que las nuevas funcionalidades no interfieran con el funcionamiento normal del sistema.
 
 \paragraph{Widgets}
@@ -66,7 +66,7 @@ Es un lenguaje de programación interpretado de alto rendimiento, diseñado orig
 	MySQL es un sistema de gestión de bases de datos relacional, multihilo y multiusuario con más de seis millones de instalaciones. MySQL AB desde enero de 2008 una subsidiaria de Sun Microsystems y ésta a su vez de Oracle Corporation desde abril de 2009, desarrolla MySQL como software libre en un esquema de licenciamiento dual. Por un lado, se ofrece bajo la GNU GPL para cualquier uso compatible con esta licencia, pero para aquellas empresas que quieran incorporarlo en productos privativos deben comprar a la empresa una licencia específica que les permita este uso. Está desarrollado en su mayor parte en ANSI C.\\
 
 Al contrario de proyectos como Apache, donde el software es desarrollado por una comunidad pública y los derechos de autor del código están en poder del autor individual, MySQL es patrocinado por una empresa privada, que posee el copyright de la mayor parte del código.\\
-Esto es lo que posibilita el esquema de licenciamiento anteriormente mencionado. Además de la venta de licencias privativas, la compañía ofrece soporte y servicios. Para sus operaciones contratan trabajadores alrededor del mundo que colaboran vía Internet. MySQL AB fue fundado por David Axmark, Allan Larsson y Michael Widenius. Sus características principales son:
+Esto es lo que posibilita el esquema de licenciamiento anteriormente mencionado. Además de la venta de licencias privativas, la compañía ofrece soporte y servicios. Para sus operaciones contratan trabajadores alrededor del mundo que colaboran vía Internet. MySQL AB fue fundado por David Axmark, Allan Larsson y Michael Widenius. Sus caracteristicas principales son:
 
 \begin{itemize}
 \item Usa GNU Automake, Autoconf, y Libtool para portabilidad.
@@ -91,7 +91,7 @@ La idea que se encuentra detrás del desarrollo de CSS es separar la estructura 
 
 \subsubsection{jQuery}
 jQuery es una biblioteca de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web. Fue presentada el 14 de enero de 2006 en el BarCamp NYC. Es software libre y de código abierto, posee un doble licenciamiento bajo la Licencia MIT\cite{licencia:mit} y la Licencia Pública General de GNU v2\cite{licencia:gnu}, permitiendo su uso en proyectos libres y privativos.1 jQuery, al igual que otras bibliotecas, ofrece una serie de funcionalidades basadas en JavaScript que de otra manera requerirían de mucho más código, es decir, con las funciones propias de esta biblioteca se logran grandes resultados en menos tiempo y espacio.
-Para incrementer la funcionalidad de jQuery se le agregaron algunos plugins como Flot que permite crear de manera sencilla gráficos a partir de conjuntos de pares de datos.
+Para incrementer la funcionalidad de jQuery se le agregaron algunos plugins como Flot que permite crear de manera sencilla graficos a partir de conjuntos de pares de datos.
 
 \subsection{Hardware}
 Durante el desarrollo e implementación del software involucrado en esta memoria fue necesario interiorizarse con una serie de elementos de hardware que forman parte de la mayoría de las estaciones de monitoreo para plantas de energía solar así como elementos comunes empleados en la construcción de estas mismas.\\
@@ -113,7 +113,7 @@ de pulsos y ocho puertos digitales I/O ports complementados con los puertos CS I
 	\label{cr1000}
 \end{figure}
 
-Campbell Scientific es una compañía dedicada a la construcción y distribución de estos equipos. Junto con los equipos mantiene y provee un lenguaje de programación llamado CRBasic el cual está basado en \gloss{Basic}, mediante este lenguaje es posible crea diferentes scripts de control que permiten manejar el comportamiento del "datalogger", como es por ejemplo los datos provenientes de los diferentes sensores y el envío de datos a través de un módem celular o interfaz Ethernet. Las características principales de este "datalogger" son:
+Campbell Scientific es una compañía dedicada a la construcción y distribución de estos equipos. Junto con los equipos mantiene y provee un lenguaje de programación llamado CRBasic el cual está basado en \gloss{Basic}, mediante este lenguaje es posible crea diferentes scripts de control que permiten manejar el comportamiento del "datalogger", como es por ejemplo los datos provenientes de los diferentes sensores y el envío de datos a través de un módem celular o interfaz Ethernet. Las caracteristicas principales de este "datalogger" son:
 
 \begin{itemize}
 \item Ideal para aplicaciones de medición solar, vientos, estaciones meteorológicas, calidad del aire, humedad del suelo, nivel de agua, prevenciones de avalanchas y otros.
@@ -168,7 +168,7 @@ Este periférico construido y distribuido por Multitech es un módem que permite
 	\label{modem} 
 \end{figure}
 
-Para poder operar con este módem es necesario tener contratado un plan de datos de telefonía móvil con alguna de las compañías que operan en el sector donde se instalan las estaciones de monitoreo. Sus características principales son:\\
+Para poder operar con este módem es necesario tener contratado un plan de datos de telefonía móvil con alguna de las compañías que operan en el sector donde se instalan las estaciones de monitoreo. Sus caracteristicas principales son:\\
 
 \begin{itemize}
 \item GPRS Clase 10.
@@ -219,7 +219,7 @@ Modulo fotovoltaico de alta eficiencia, compuesto por celdas de nitrito de silic
         \caption{Panel Solar SX310M} 
 \end{figure}
 
-Sus características principales son:\\
+Sus caracteristicas principales son:\\
 
 \begin{itemize}
 \item Tensión: 12.00 V.
@@ -232,7 +232,7 @@ Sus características principales son:\\
 \end{itemize}
 
 \section{Diseño de la solución}
-Basándonos en el análisis de la sección \ref{arquitectura} se diseño una solución de 3 componentes, las cuales podemos apreciar de manera mas clara en el Diagrama de Despliegue(Fig:\ref{despliegue}). Este diagrama detalla de manera precisa la implementación que tiene cada uno de los componentes.\\
+Basandonos en el analisis de la seccion \ref{arquitectura} se diseño una solucion de 3 componentes, las cuales podemos apreciar de manera mas clara en el Diagrama de Despliegue(Fig:\ref{despliegue}). Este diagrama detalla de manera precisa la implementacion que tiene cada uno de los componenetes.\\
 
 \begin{figure}[h!]
         \centering
@@ -242,20 +242,20 @@ Basándonos en el análisis de la sección \ref{arquitectura} se diseño una sol
 \end{figure}
 
 \subsection{Aplicaciones}
-En la componente de aplicaciones se distinguen 3 partes: Sitio Web de la RedSolLAC el cual fue desarrollado con anterioridad al inicio de esta memoria, la segunda parte es el modulo solarGraficos que permite visualizar los datos originados por las estaciones meteorológicas y la tercera parte el modulo solarCalc, el cual consiste en una calculadora para dimensionar sistemas fotovoltaicos, el cual utilizando el modulo de datos y los parámetros ingresados por el usuario entrega un informe de producción de energía.
+En la componente de aplicaciones se distinguen 3 partes: Sitio Web de la RedSolLAC el cual fue desarrollado con anterioridad al inicio de esta memoria, la segunda parte es el modulo solarGraficos que permite visualizar los datos originados por las estaciones meteorologicas y la tercera parte el modulo solarCalc, el cual consiste en una calculadora para dimensionar sistemas fotovoltaicos, el cual utilizando el modulo de datos y los parametros ingresados por el usuario entrega un informe de produccion de energia.
 
 \subsubsection{Sitio web RedSolLAC}
-Inicialmente, antes de desarrollar esta memoria, RedSolLAC en su conformación desarrollo un sitio web el cual le proporciono una valiosa herramienta de difusión. RedSolLAC en un principio no requería de un sistema de publicación Web complejo, necesitaba un sistema que le permitiese de manera sencilla agregar nuevas publicaciones e información, así como de administrar la parte visual, estos requerimientos generaron la implementación del CMS Wordpress.\\
-Posteriormente RedSolLAC se vio en la necesidad de implementar nuevas herramientas innovadoras que pudiesen generar curiosead en sus usuarios antiguos así como en los futuros usuarios que tendría el sitio.\\
+Inicialmente, antes de desarrollar esta memoria, RedSolLAC en su conformacion desarrollo un sitio web el cual le proporciono una valiosa herramienta de difucion. RedSolLAC en un principio no requeria de un sistema de publicacion Web complejo, necesitaba un sistema que le permitiese de manera sencilla agregar nuevas publicaciones e informacion, asi como de administrar la parte vizual, estos requerimientos generaron la implementacion del CMS Wordpress.\\
+Posterirormente RedSolLAC se vio en la necesidad de implementar nuevas herramientas innovadoras que pudiesen generar curiosiad en sus usuarios antiguos asi como en los futuros usuarios que tendria el sitio.\\
 
-Las características del sitio sobre el cual de implementan las mejoras planteadas en esta solución son:
+Las caracteristicas del sitio sobre el cual de implementan las mejoras planteadas en esta solucion son:
 \begin{table}[h!]
-\caption{Características sitio Web RedSolLAC}
+\caption{Caracteristicas sitio Web RedSolLAC}
 \begin{tabular}{| c | p{11cm} |}
         \hline
         \textbf{}  &       \textbf{}        \\
         \hline
-	Wordpress&Versión 3.4.1\\
+	Wordpress&Version 3.4.1\\
 	\hline
 	Theme(Perfil)&Revelation V1.0\\
 	\hline
@@ -263,11 +263,11 @@ Las características del sitio sobre el cual de implementan las mejoras plantead
 	\hline
 	Hosting&Godaddy.com, Deluxe Linux, 150Mb, 500 Email, Ancho de banda ilimitado, 25 BD Mysql, DNS, 50 cuentas FTP\\
 	\hline
-	Base de datos&versión 5.0\\
+	Base de datos&version 5.0\\
 	\hline
-	PHP&Versión 5.2\\
+	PHP&Version 5.2\\
 	\hline
-	Dominio&RedSolLAC.org\\
+	Dominio&redsollac.org\\
 	\hline
 \end{tabular}
 \end{table}
@@ -280,11 +280,11 @@ Las características del sitio sobre el cual de implementan las mejoras plantead
 \end{figure}
 
 \subsubsection{SolarGraficos}
-SolarGraficos es el nombre de la primera aplicación desarrollada en esta memoria y que cumple con los requerimientos de exponer los datos de manera sencilla e intuitiva los datos capturados por las estaciones meteorológicas en el sitio web de RedSolLAC. Esta aplicación fue desarrollada en PHP 5 y complementada con Javascript y jQuery, adicionalmente utiliza la librería Flot para crear un gráfico que incluye las mediciones individuales de los siguientes parámetros: la Redición Global Horizontal(GHI), la temperatura Ambiente(Tc) y la Humedad relativa del aire(HR).\\
+SolarGraficos es el nombre de la primera aplicacion desarrollada en esta memoria y que cumple con los requerimientos de exponer los datos de manera sencilla e instuitiva los datos capturados por las estaciones meteorologicas en el sitio web de RedSolLAC. Esta aplicacion fue desarrollada en PHP 5 y complementada con Javascript y jQuery, adicionalmente utiliza la libreria Flot para crear un grafico que incluye las mediciones individuales de los siguientes parametros: la Radicion Global Horizontal(GHI), la temperatura Ambiente(Tc) y la Humedad relatica del aire(HR).\\
 
-La aplicación fue desarrollada siguiendo la estructura de programación de plugins de Wordpress\cite{aplicaciones:wplugins}, usando las funciones de la API que registran y eliminan gatilladores en tiempo de ejecución. El plugin creado registra una nueva pagina de Wordpress la cual utilizando una llamada ajax de la implementación de jquery solicita la ejecución del fichero php solarGrafico.php, este fichero contiene el código esencial que conforma la aplicación gráfica.
+La aplicacion fue desarrllada siguiendo la estructura de programacion de plugins de Wordpress\cite{aplicaciones:wplugins}, usando las funciones de la API que registran y eliminan gatilladores en tiempo de ejecucion. El plugin creado registra una nueva pagina de Wordpress la cual utilizando una llamada ajax de la implementacion de jquery solicita la ejecucion del fichero php solarGrafico.php, este fichero contiene el codigo escencial que conforma la aplicacion grafica.
 
-En primera instancia solarGrafico.php crea la estructura estática de la aplicación(Ver Fig:\ref{solarGraficoFoto2}) y escribe cierto código javascript que permite luego en tiempo de ejecución del lado del cliente hacer las llamadas necesarias que muestran los datos solicitados(Ver Fig:\ref{solarGraficoS}). Una vez creada la estructura de la calculadora se solicita al Servidor de Almacenamiento de datos mediante una consulta ajax sincrónica por los datos del día, el cual es el periodo por defecto. {una vez estos datos están completamente cargados, la aplicación crea un gráfico por defecto que contienen las 3 curvas mencionadas con anterioridad(GHI, HR y Tc) en el periodo del día actual, luego de crear el gráfico se cargan las barras que muestran la ultima lectura de cada curva y el modulo de descarga de datos. Finalizada esta carga inicial el sistema ejecuta 3 llamadas ajax sincrónicas(Ver Fig:\ref{solarGraficoE}) al Servidor de Almacenamiento de Datos solicitando datos de los periodos correspondientes a una semana, un mes y un año tomando como referencia la fecha actual. a medida que los datos se cargan la opción de visualizar dicho periodo va estando disponible en la interfaz de usuario(Ver Fig:\ref{solarGraficoFoto1}) para que este pueda solicitar ser graficada. Debido a que las llamadas para cargar los datos de los periodos de tiempo mas extensos son llamadas asincronicas el navegador no se bloquea y el usuario puede seguir utilizando la aplicación mientras que estos datos están cargados.
+En primera instancia solarGrafico.php crea la estructura estatica de la aplicacion(Ver Fig:\ref{solarGraficoFoto2}) y escribe cierto codigo javascript que permite luego en tiempo de ejecucion del lado del cliente hacer las llamdas necesarias que muestran los datos solicitados(Ver Fig:\ref{solarGraficoS}). Una vez creada la estructura de la calculadora se solicita al Servidor de Almacenamiento de datos mediante una consulta ajax sincronica por los datos del dia, el cual es el periodo por defecto. {una vez estos datos estan completamente cargados, la aplicacion crea un grafico por defecto que contienen las 3 curvas mencionadas con aterioridad(GHI, HR y Tc) en el periodo del dia actual, luego de crear el grafico se cargan las barras que muestran la ultima lectura de cada curba y el modulo de descarga de datos. Finalizada esta carga incial el sistema ejecuta 3 llamadas ajax asincronicas(Ver Fig:\ref{solarGraficoE}) al Servidor de Almacenamiento de Datos solicitando datos de los periodos correspondientes a una semana, un mes y un año tomando como referencia la fecha actual. a medida que los datos se cargan la opcion de visualizar dicho periodo va estando disponible en la interfaz de usuario(Ver Fig:\ref{solarGraficoFoto1}) para que este pueda solicitar ser graficada. Debido a que las llamadas para cargar los datos de los periodos de tiempo mas extensos son llamadas asincronicas el navegador no se bloquea y el usuario puede seguir utilizando la aplicacion mientras que estos datos estan cargados.
 
 \begin{figure}[h!]
         \centering
@@ -308,16 +308,16 @@ En primera instancia solarGrafico.php crea la estructura estática de la aplicac
 \begin{figure}[h!]
         \centering
         \includegraphics[scale=0.4]{images/graficosSecuencia}
-        \caption{Imagen de la aplicación SolarGraficos - Estructura}
+        \caption{Imagen de la aplicacion SolarGraficos - Estructura}
         \label{solarGraficoFoto2}
 \end{figure}
 
 \subsubsection{SolarCalc}
 
 \subsection{Estaciones}
-El componente Estaciones abarca todas las estaciones de medicion que están adaptadas para registrar datos en la componente de almacenamiento de datos, para ello fue necesario acondicionar cada estación y agregarles un modulo de comunicación, este modulo de comunicación depende del lugar geográfico donde se ubica la estación ya que esto determinara la tecnología que este modulo implementara, cualquiera sea la tecnología el sistema fue diseñado para que cada estación se conecte a internet y a través de esta red pueda libremente acceder al modulo de almacenamiento de datos. Adicionalmente y para dar cumplimiento a los requerimientos de seguridad y resguardo de datos ante posibles fallas fue necesario programar el modulo para que pudiese almacenar datos de manera local independiente del estado de la conexión, diseñando un protocolo manual de restauración de datos.
+El componente Estaciones abarca todas las estaciones demedicion que estan adaptadas para registrar datos en la componente de almacenamiento de datos, para ello fue necesario acondicionar cada estacion y agregarles un modulo de comunicacion, este modulo de comunicacion depende del lugar geografico donde se ubica la estacion ya que esto determinara la tecnologia que este modulo implementara, cualquiera sea la tecnologia el sistema fue diseñado para que cada estacion se conecte a internet y a travez de esta red pueda libremente acceder al modulo de almacenamiento de datos. Adicionalmente y para dar cumplimiento a los requerimientos de seguridad y resguardo de datos ante posibles fallas fue necesario progrmar el modulo para que pudiese almacenar datos de manera local independiente del estado de la conexion, diseñando un protocolo manual de restauracion de datos.
 
-Principalmente Fundación Chile ofrece a sus clientes dos tipos de estaciones, Serie Dédalo y serie Icaro,cada una de ellas tienen componentes diferentes y fueron diseñadas para diferentes requerimientos de clientes, las especificaciones generales de cada una de las Series se encuentran en la sección de anexos, Dédalo(Ver:\ref{dedalo}) e Icaro(Ver:\ref{icaro}). Para realizar las pruebas del sistema se utilizo una estación Serie Dédalo, las características especificas de esta estación se presentan en el cuadro siguiente(Ver:\ref{estacionPrueba}):
+Principlamente Fundacion Chile ofrece a sus clientes dos tipos de estaciones, Serie Dedalo y serie Icaro,cada una de ellas tienen componentes diferentes y fueron diseñadas para diferentes requerimientos de clientes, las especificaciones generales de cada una de las Series se encuentran en la seccion de anexos, Dedalo(Ver:\ref{dedalo}) e Icaro(Ver:\ref{icaro}). Para realizar las prubas del sistema se utilizo una estacion Serie Dedalo, las caracteristicas especificas de esta estacion se presentan en el cuadro siguiente(Ver:\ref{estacionPrueba}):
 
 \begin{table}[h!]
 \label{estacionPrueba}
@@ -329,41 +329,41 @@ Principalmente Fundación Chile ofrece a sus clientes dos tipos de estaciones, S
 \end{tabular}
 \end{table}
 
-Para que dicha estación opere de manera correcta es necesario programar su Datalogger con el siguiente script:
+Para que dicha estacion opere de manera correcta es necesario progrmar su Datalogger con el siguiente script:
 
 (explicaion del script)
 
-Para graficar de mejor manera cual es el comportamiento de la estación dentro de este componente del sistema se presenta un diagrama de estados y un diagrama de secuencia del comportamiento que tienen cada una de las estaciones.
+Para graficar de mejor manera cual es el comportamiento de la estacion dentro de este componente del sistema se presenta un diagrama de estados y un diagrama de secuencia del comportamiento que tienen cada una de las estaciones.
 
 \begin{figure}[h!]
         \centering
         \includegraphics[scale=0.25]{images/estacionEstados}
-        \caption{Diagrama de Estado estación meteorológica}
+        \caption{Diagrama de Estado estacion meteorologica}
         \label{despliegue}
 \end{figure}
 
-(explicación diagrama)
+(explicacion diagrma)
 
 \begin{figure}[h!]
         \centering
         \includegraphics[scale=0.25]{images/estacionSecuencia}
-        \caption{Diagrama de Secuencia estación meteorológica}
+        \caption{Diagrama de Secuencia estacion meteorologica}
         \label{despliegue}
 \end{figure}
 
-(explicación diagrama)
+(explicacion diagrama)
 
 \subsection{Almacenamiento de datos}
-El componente de almacenamiento de datos era inexistente, anterior al desarrollo de este sistema cada estación almacenaba datos en su memoria interna y era necesario que una persona accediera físicamente a cada estación, ésta apoyado con un pc portatil se conectaba a las estaciones y descargaba los datos. Este proceso resultaba bastante complejo y en varias ocasiones se perdían datos. Este módulo se compone de un servidor de bases de datos y un servidor Web el cual contiene scripts necesarios para el manejo y mantención de la base de datos, así como proporcionar un acceso seguro para que las estaciones registren sus datos.\\
+El componente de almacenamiento de datos era inexistente, anterior al desarrollo de este sistema cada estacion almacenaba datos en su memoria interna y era necesario que una persona accediera fisicamente a cada estación, ésta apoyado con un pc portatil se conectaba a las estaciones y descargaba los datos. Este proceso resultaba bastante complejo y en varias ocacion se perdian datos. Este módulo se compone de un servidor de bases de datos y un servidor Web el cual cotiene scripts necesarios para el manejo y mantención de la base de datos, asi como proporcionar un acceso seguro para que las estaciones registren sus datos.\\
 
-El sistema de Almacenamiento de datos esta compuesto por un solo servidor el cual implementa el servidor Web Apache HTTPD y el servidor de bases de datos MySQL, el servicio MySQL se encarga directamente de almacenar los datos en bruto que llegan desde las estaciones y atender las solicitudes de datos del componente de aplicaciones mientras que el servicio Web implementa ciertas rutinas escritas en PHP que aportan al sistema de seguridad e integridad de los datos así como a la mantención de los datos, adicionalmente implementa rutinas que forman parte del sistema de respaldo manual que incorpora la componente para casos de perdida de conexión.\\ Uno de los requerimientos claves de este sistema es la robustas y la integridad de los datos, así como la confiabilidad de ellos. Este sistema tiene restringido el ingreso de datos solo al modulo de estaciones y en ocasiones especiales al sistema de mantenimiento manual, por lo que implementa rutinas en PHP a revés del servidor Web que impiden que cualquier actor diferente de una estación pueda registrar datos nuevos. Estas rutinas son ejecutadas directamente por las estaciones a trabes del datalogger haciendo llamadas GET con ciertas llaves de seguridad.\\
-El sistema implementa una salida de datos libre, esto quiere decir que cualquiera que te posea acceso a la base de datos puede solicitar el envió de estos a sus aplicaciones sin la necesidad de llaves extras de seguridad. Para el caso especifico de este sistema son algunos elementos de la componente te aplicaciones quienes hacen estas solicitudes.\\
+El sistema de Almacenamiento de datos esta compuesto por un solo servidor el cual implenta el servidor Web Apache HTTPd y el servidr de bases de datos MySQL, el servcio MySQL se encarga directamente de almacenar los datos en bruto que llegan desde las estaciones y atender las solicitudes de datos del componente de aplicaciones mientras que el servicio Web implemnta ciertas rutinas escritas en PHP que aportan al sistema de seguridad e integridad de los datos asi como a la mantencion de los datos, adicionalmente implementa rutinas que forman parte del sistema de respaldo manual que incorpora la componente para casos de perdida de conexion.\\ Uno de los requerimientos claves de este sistema es la robustes y la integridad de los datos, asi como la confibilidad de ellos. Este sistema tiene restrigido el ingreso de datos solo al modulo de estaciones y en ocaciones especiales al sistema de mantenimiento manual, por lo que implementa rutinas en PHP a raves del servidor Web que impiden que cualquier actor diferente de una esacion pueda registrar datos nuevos. Estas rutinas son ejecutadas directamente por las estaciones a trabes del datalogger haciendo llamadas GET con ciertas llaves de seguridad.\\
+El sistema implementa una salida de datos libre, esto quiere decir que cualquiera que te posea acceso a la base de datos puede solicitar el envio de estos a sus aplicaciones sin la necesidad de llaves extras de segurirdad. Para el caso especifico de este sistema son algunos elementos de la componene te aplicaciones quienes hacen estas solicitudes.\\
 
-Cuándo una estación hace una llamada GET, el servidor Web mediante una rutina en PHP verifica las llaves de seguridad, verifica los datos que le son enviados de la estación y luego los envía a la base de datos, una vez que la petición GET es recibida esta devuelve a la estación un mensaje 200 si la llamada fue recibida o un mensaje 404 si la llamada no fue recibida. En cualquier caso para el datalogger es indiferente si la petición fue aceptada o no ya que el datalogger implementa su propia base de datos local a modo de respaldo. Una ves que la estación entrega los datos al sistema de almacenamiento esta tampoco tienen la posibilidad de verificar si estos fueron almacenados correctamente.
+Cuendo una estacion hace una llamada GET, el servidor Web mediante una rutina en PHP verifica las llaves de segurirdad, verifica los datos que le son enviados de la estacion y luego los envia a la base de datos, una vez que la peticion GET es recibida esta devuelve a la estacion un mesaje 200 si la llamada fue recibida o un mensaje 404 si la llamada no fue recibida. En cualquier caso para el datalogger es indiferente si la peticion fue aceptada o no ya que el dataloger implementa su propia base de datos local a modo de respaldo. Una ves que la estacion entrega los datos al sistema de almacenamiento esta tampoco tienen la posibilidad de verificar si estos fueron almacenados correctamente.
 
 \begin{figure}[h!]
         \centering
-        \includegraphics[scale=0.25]{images/datosEstados}
+        \includegraphics[scale=0.25]{images/datosEstaos}
         \caption{Diagrama de Estados Sistema de Almacenamiento}
         \label{almacenamientoSecuencia}
 \end{figure}

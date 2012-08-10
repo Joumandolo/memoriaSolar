@@ -53,34 +53,55 @@ Desarrollar e implementar un sistema informático para la RedSolLAC que permita 
 \item Realizar pruebas de la plataforma en conjunto con todos sus componentes, comparar los datos obtenidos con datos recopilados de otras fuentes. Estas prubas permitiran validar el funcionamiento del software asi como la acertividad del metodo de calculo y estimacion electrica implementado en la solución.
 \end{itemize}
 
-\section{Requerimientos de software}
+\section{Requerimientos del sistema}
 
-graficar cuervas en base a los datos obtenido por la estacion
-el grafico debe poder escalarse
-selecionar opcion para el periodo de tiempo a graficar
-agregar o quitar curvas en la grafica
-los parametros de la grafica debe ser entendible y legible por cualquier elctor
-la estacion debe conectarse a internet y registrar datos cada 1 minutoen una base de datos externa
-la estacion debe tener un respaldo de los datos en caso de perder conexion a internet
-debe existir un procedimiento de respaldo de datos y restauracion en casos de eventos
-el software debe tener una interfaz que permita la descarga de datos de acuerod a un rango de fechas dado por el usuario
-debe proporcionar un modulo que muestre las ultimas mediciones obtenidas con la posibilidad de ser integradas en un sitio web
-debe poder integrarse con worpress
-posibilidad de configurar o conectar diferentes estaciones
-mostrar las caracteristicas de la estacion que grafica
-las curvas deben tener colores diferentes
-los datos deben ser obtenidos asincronicamente de acuerdo a los periodos de tiempo
-la generacion de la grafica no debe demorar mas de 3 segundos
+\subsection{Requerimientos funcionales}
+\begin{table}[h!]
+\caption{Tabla de requerimientos funcionales}
+\begin{tabular}{| c | p{11cm} |}
+	\hline
+	\textbf{Requerimiento}	&	\textbf{Detalle}	\\
+	\hline
+	RF-1	&	Registro de datos en linea, las estaciones deben ser programadas para registrar los datos capturados en una base de datos externa en internet, el regisstro de datos debe ser cada 1 minuto.	\\
+	\hline
+	RF-2	&	La aplicacion debe ser capas de visualizar datos actuales historicos e instantaneos, se debe prporcionar un modulo de visualizacion de datos que permita al usuario visualizar de manera total o parcial los datos registrados por las estaciones, permitiendo seleccionar periodos de tiempo y diferentes tipos de datos proporcionados por los diferentes sensores que conforman la estacion(ver Fig:\ref{fig:demanda}). 	\\
+	\hline
+	RF-3	&	Descarga de datos, los datos registrados por las estaciones deben estar disponibles para su descarga en un formato practico para la utilizacion de estos por usuarios expertos, pudiendo estos usuarios descargar datos de acuerdo a un periodo de tiempo especificado.	\\
+	\hline
+	RF-4	&	Permitir el ingreso de informacion, la aplicacion debe permitir el ingreso de parametros geograficos, informacion tecnica de planta y datos economicos para realizar los calculos del dimencionamiento de una planta de energia solar 	\\
+	\hline
+	RF-5	&	Implementar un modelo de calculo de energia horario basado en el document: ""	\\
+	\hline
+	RF-6	&	Calcular y exponer resultados de produccion energetica, los resultados deben ser verificables y comparables con otros sistemas, los calculos deben presentar errores no superiroes al 5\%	\\
+	\hline
+\end{tabular}
+\end{table}
 
-
-implementar modelo de calculo para la radiacion que admita multiples variables del medio que influye el resultado
-mostrar una tabla resumen con datos y costos de produccion de energia mensual y anual
-permitir escoger angulo de orientacion e inclinacion del los modulos
-ingreso del factor de eficiencia de la instalacion
-permitir que el usuario ingrese parametros de ubicacion ....  
+\subsection{requerimientos no funcionales}
+\begin{table}[h!]
+\caption{Tabla de requerimientos no funcionales}
+\begin{tabular}{| c | p{11cm} |}
+	\hline
+	\textbf{Requerimiento}	&	\textbf{Detalle}	\\
+	\hline
+	RNF-1	&	La aplicacion debe ser independiente del Sistema operativo y del navegador utilizado por el usuarios final	\\
+	\hline
+	RNF-2	&	Es necesario que la aplicacion se integre con la imagen coorporativa de la RedSolLac	\\
+	\hline
+	RNF-3	&	El sistema debe entregar estabilidad y muy alta confiabilidad en el registro y amacenamiento de datos	\\
+	\hline
+	RNF-4	&	La aplicacion debe ser portable y facilmente adaptable para funcionar con multiples fuentes de datos 	\\
+	\hline
+	RNF-5	&	La aplicacion debe proporcionar un minimo estandar de seguridad que permita asegurar la confiabilidad de los datos	\\
+	\hline
+	RNF-6	&	La aplicacion debe entregar un resultado al usuario final en tiempo aceptable no mayor a 5 seg	\\
+	\hline
+\end{tabular}
+\end{table}
 
 \begin{figure}[h!]
         \centering
         \includegraphics[scale=0.5]{images/demandaGeneracionSubSole}
-        \caption{\tiny Gráfico de ejemplo de la curva de demanda de energía versus la generación de energía solar fotovoltaica en la planta Subsole.}
+        \caption{Gráfico de ejemplo de la curva de demanda de energía versus la generación de energía solar fotovoltaica en la planta Subsole.}
+	\label{fig:demanda}
 \end{figure}

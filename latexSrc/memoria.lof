@@ -1,0 +1,70 @@
+\select@language {spanish}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}
+\defcounter {refsection}{0}
+\select@language {spanish}
+\defcounter {refsection}{0}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \relax \fontsize {6}{7}\selectfont Esquema planta fotovoltaica Subsole 307,2 kWp(STC) a la red el\IeC {\'e}ctrica EMELAT - Regi\IeC {\'o}n de Atacama}}{2}{figure.1.1}
+\defcounter {refsection}{0}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Planta fotovoltaica 307,2 kWp, sector Los Loros - Tierra Amarilla, regi\IeC {\'o}n de Atacama - Chile}}{4}{figure.2.1}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Estaci\IeC {\'o}n de medici\IeC {\'o}n de radiaci\IeC {\'o}n solar en Fundaci\IeC {\'o}n Chile, Vitacura - Santiago.}}{4}{figure.2.2}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Esquema planta fotovoltaica Subsole 307,2 kWp(STC) a la red el\IeC {\'e}ctrica EMELAT - Regi\IeC {\'o}n de Atacama}}{5}{figure.2.3}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Gr\IeC {\'a}fico de ejemplo de la curva de demanda de energ\IeC {\'\i }a versus la generaci\IeC {\'o}n de energ\IeC {\'\i }a solar fotovoltaica en la planta Subsole.}}{7}{figure.2.4}
+\defcounter {refsection}{0}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Esquema que muestra la orbita de la Tierra con respecto al Sol y muestra los puntos del Afelio y el Perihelio}}{11}{figure.3.1}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Gr\IeC {\'a}fico de clasificaci\IeC {\'o}n del espectro de la radiaci\IeC {\'o}n solar\cite {recursoSolar:1}}}{13}{figure.3.2}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Distancia que atraviesa la radiaci\IeC {\'o}n en la atm\IeC {\'o}sfera dependiendo del \IeC {\'a}ngulo de incidencia}}{13}{figure.3.3}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Descomposici\IeC {\'o}n de la radiaci\IeC {\'o}n solar\cite {recursoSolar:1}}}{14}{figure.3.4}
+\defcounter {refsection}{0}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de Arquitectura}}{20}{figure.4.1}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Datalogger Campbell CR1000}}{27}{figure.4.2}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Perif\IeC {\'e}rico Campbell NL200}}{28}{figure.4.3}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces MultiModem Multitech MTCBA-G-F4}}{29}{figure.4.4}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Piran\IeC {\'o}metro psp-eplay}}{30}{figure.4.5}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Sensor HMP60}}{30}{figure.4.6}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Bater\IeC {\'\i }a PS100}}{31}{figure.4.7}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Panel Solar SX310M}}{31}{figure.4.8}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Diagrama de Despliegue}}{32}{figure.4.9}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagrama de Despliegue}}{34}{figure.4.10}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Diagrama de Estados solarGraficos}}{35}{figure.4.11}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Diagrama de Secuencia solarGraficos}}{36}{figure.4.12}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Imagen de la aplicacion SolarGraficos - Cargando datos}}{36}{figure.4.13}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Imagen de la aplicaci\IeC {\'o}n SolarGraficos - Estructura}}{37}{figure.4.14}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Diagrama de Estado estaci\IeC {\'o}n meteorol\IeC {\'o}gica}}{38}{figure.4.15}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Diagrama de Secuencia estaci\IeC {\'o}n meteorol\IeC {\'o}gica}}{38}{figure.4.16}
+\defcounter {refsection}{0}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Diagrama de Estados Sistema de Almacenamiento}}{39}{figure.4.17}
+\defcounter {refsection}{0}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}
+\addvspace {10\p@ }

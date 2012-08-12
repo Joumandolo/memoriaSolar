@@ -13,32 +13,34 @@ Para dar cumplimiento a los requerimientos especificados se propone el siguiente
 \begin{figure}[h!]
         \centering
         \includegraphics[width=300pt]{images/diagramaArquitectura}
-        \caption{Diagrama de Arquitectura}
+        \caption{Diagrama general de arquitectura}
 	\label{da}
 \end{figure}
 
-En el diagrama(Fig:\ref{da}) apreciamos las 3 partes que componen el nuevo sistema desarrollado: aplicaciones, el cual consiste en un servidor Web que implementa la plataforma CMS Wordpress, bajo esta plataforma se desarrollar las aplicaciones principales del sistema las cuales sera visitadas por los usuarios finales. Las Estaciones, que don parte fundamental del proceso de adquisición de datos en el sistema a la cuales se les debe integrar un sistema de comunicación compatible con la plataforma de almacenamiento de datos. Finalmente el componente de Almacenamiento de Datos, el cual esta compuesto por un servidor Web que administra los procesos de registro, acceso y mantención de datos y un servidor de base de datos para. Cada una de estas partes debe interactuar con las demás de manera muy precisa para conseguir el comportamiento deseado.\\
+En el diagrama(Fig:\ref{da}) apreciamos las 3 partes que componen el nuevo sistema desarrollado, en primer lugar la componente de "Aplicaciones", el cual consiste en un servidor Web que implementa la plataforma CMS Wordpress. Bajo esta plataforma se desarrollan las aplicaciones principales del sistema, las cuales seran visitadas por los usuarios finales. Las "Estaciones", que son parte fundamental del proceso de adquisición de datos en el sistema,  a estas se les debe integrar un sistema de comunicación compatible con la plataforma de almacenamiento de datos. Finalmente la componente de "Almacenamiento de Datos", la cual consiste en un servidor Web que administra los procesos de registro, acceso y mantención de datos y un servidor de base de datos. Cada una de estas partes debe interactuar con las demás de manera muy precisa para conseguir el comportamiento requerido.\\
 
 A continuación se describen las diferentes herramientas tanto de hardware como de software que implementa el sistema:
 
 \subsection{Sofware utilizado}
 \subsubsection{Wordpress}
-Wordpress es una avanzada plataforma semántica de publicación en la Web, libre, de código abierto y gratuito con altos estándares de diseño y usabilidad. Es un sistema de manejador de contenidos (\gloss{cms}) basado en estilo de publicaciones de blogs, además se distribuye bajo la licencia GPL2. Está echo en lenguaje PHP, utiliza el motor de bases de datos MySql y hojas de estilo CSS para la parte visual. Su arquitectura está pensada y diseñada de forma modular, lo que le permite adaptarse y ser configurable de acuerdo con los requerimientos de cada usuario.\\
-La primera versión fue liberada el año 2003 por Matt Mullenweg y es un rama del otro proyecto llamado b2/cafelog. Actualmente esta plataforma está en su versión 3.0 y ha sido descargada más de 65 millones de veces. Se estima que Wordpress a la fecha es la herramienta de publicación de contenido más utilizada y popular de la Red, con aproximadamente un 14\% de participación en Internet y con más del 22\% de utilización sitios nuevos o que se publican por primera vez.
+Wordpress es una avanzada plataforma semántica de publicación en la Web. Libre, de código abierto y gratuito con altos estándares de diseño y usabilidad. Es un sistema de manejador de contenidos (\gloss{cms}) basado en estilo de publicaciones de blogs, además se distribuye bajo la licencia GPL2. Está echo en lenguaje PHP, utiliza el motor de bases de datos MySql y hojas de estilo CSS para la parte visual. Su arquitectura está pensada y diseñada de forma modular, lo que le permite adaptarse y ser configurable de acuerdo con los requerimientos de cada usuario.\\
+La primera versión fue liberada el año 2003 por Matt Mullenweg y es un rama del otro proyecto llamado b2/cafelog. Actualmente esta plataforma está en su versión 3.0. Se estima que Wordpress a la fecha es la herramienta de publicación de contenido más utilizada y popular de la Red, con aproximadamente un 14\% de participación en Internet y con más del 22\% de utilización sitios nuevos o que se publican por primera vez.
 
-Wordpress está echo de tal manera que permite a sus usuarios modificar o configurar partes esenciales del sistema, lo que lo hace flexible para agregar funcionalidades y adaptarse a los requerimientos. Además cuanta con un framework y una \gloss{api} que facilita la labor de los programadores.\\
+Wordpress está echo de tal manera que permite a sus usuarios modificar o configurar partes esenciales del sistema, lo que lo hace flexible para agregar funcionalidades y adaptarse a los requerimientos de los usuarios. Además cuanta con un framework y una \gloss{api} que facilita la labor de los programadores.\\
+
+Algunas caracteristicas especificas de wordpress son:
 
 \paragraph{Perfil Gráfico}	
-La parte visual de esta plataforma funciona a través de un sistema llamado \gloss{themes}(para efectos prácticos en adelante "Perfiles"). Los "Perfiles" son un conjunto de \gloss{bibliotecas} programadas en PHP y JavaScript que permiten organizar la forma en que se presentan los contenidos del sitio sin alterar el contenido. Wordpress al estar diseñado de manera modular, permite a sus usuarios contar con gran cantidad de "Perfiles" diferentes, mediante una interfaz de administración permite cambiar estos "Perfile" de manera rápida y sencilla. Adicionalmente en el mercado, existen extensos depósitos de "Perfiles" que pueden ser instalados en cualquier sitio compatible con la versión indicada por el creador.
+La parte visual de esta plataforma funciona a través de un sistema llamado \gloss{themes}(para efectos prácticos en adelante "Perfiles"). Los "Perfiles" son un conjunto de \gloss{bibliotecas} programadas en PHP y JavaScript que permiten organizar la forma en que se presentan los contenidos del sitio sin alterar el contenido. Wordpress al estar diseñado de manera modular, permite a sus usuarios contar con gran cantidad de "Perfiles" diferentes. Mediante una interfaz de administración permite cambiar estos "Perfile" de manera rápida y sencilla. Adicionalmente en el mercado, existen extensos depósitos de "Perfiles" que pueden ser instalados en cualquier sitio compatible con la versión indicada por el creador.
 
-En el sitio de Wordpress se puede encontrar una extensa documentación y una API que indica a los programadores que deseen desarrollar nuevos "Perfiles", cómo deben estructurar los paquete y qué funcionalidades pueden agregar o quitar. Adicionalmente los "Perfiles" pueden publicarse o bien Wordpress da la libertad a sus usuarios de vender trabajos basados en su framework.\\
+En el sitio de Wordpress se puede encontrar una extensa documentación y una API que indica a los programadores que deseen desarrollar nuevos "Perfiles", cómo deben estructurar los ficheros y qué funcionalidades pueden agregar o quitar. Adicionalmente los "Perfiles" pueden publicarse o bien Wordpress da la libertad a sus usuarios de vender trabajos basados en su framework.\\
 
 \paragraph{Plugins}
-Los "\gloss{plugins}" funcionan casi de la misma manera que los "Perfiles" y así también la mayoría de los componente que dispone Wordpress. Estos son un conjunto de bibliotecas programadas en PHP y JavaScript que pueden instalarse o desinstalares desde el panel de administración.\\
+Los \"\gloss{plugins}\"  funcionan casi de la misma manera que los \"Perfiles\" y así también la mayoría de los componente que dispone Wordpress. Estos son un conjunto de bibliotecas programadas en PHP y JavaScript que pueden instalarse o desinstalares desde el panel de administración.\\
 Cada "Plugin" está diseñado para agregar nuevas funcionalidades o modificar el comportamiento normal de los sitios, la documentación de Wordpress entrega pautas estrictas de cómo deben estar programadas las bibliotecas para que las nuevas funcionalidades no interfieran con el funcionamiento normal del sistema.
 
 \paragraph{Widgets}
-Los "Widgets" son pequeños programas autónomos que permiten agregar nuevas funcionalidades al sistema, pero que a diferencia de un "Plugin" común y corriente posen de una interfaz visual y están diseñados para exponer al usuario algún dato o funcionalidad específica. Estos pequeños programas pueden agregarse y quitarse de manera muy rápida y pueden y tienen la característica de ser móviles. Generalmente son programas que se agregan en las barras laterales.
+Los \"Widgets\" son pequeños programas autónomos que permiten agregar nuevas funcionalidades al sistema, pero que a diferencia de un \"Plugin\" común y corriente posen una interfaz visual y están diseñados para exponer al usuario algún dato o funcionalidad específica. Estos pequeños programas pueden agregarse y quitarse de manera muy rápida y pueden y tienen la característica de ser móviles. Generalmente son programas que se agregan en las barras laterales.
 
 \paragraph{Multiusuario}
 Wordpress permite la creación y administración de muchos usuarios, los cuales pueden tener diferentes responsabilidades dentro del sistema, tales como administrar el contenido o bien la configuración del sitio. Esto permite que la mantención del sitio y a la vez las responsabilidades, puedan estar muy bien distribuidas sin riesgo de que algún usuario realice tareas no permitidas por su nivel de acceso.
@@ -85,8 +87,7 @@ Esto es lo que posibilita el esquema de licenciamiento anteriormente mencionado.
 \end{itemize}
 
 \subsubsection{CSS}
-El nombre hojas de estilo en cascada viene del inglés Cascading Style Sheets, del que toma sus siglas. CSS es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML. El W3C (World Wide Web Consortium) es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.\\
-
+El nombre hojas de estilo en cascada viene del inglés \"Cascading Style Sheets\", del que toma sus siglas. CSS es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML. El W3C es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.\\
 La idea que se encuentra detrás del desarrollo de CSS es separar la estructura de un documento de su presentación. La información de estilo puede ser adjuntada como un documento separado o en el mismo documento HTML. En este último caso podrían definirse estilos generales en la cabecera del documento o en cada etiqueta particular.
 
 \subsubsection{jQuery}

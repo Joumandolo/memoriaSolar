@@ -17,36 +17,35 @@ Para dar cumplimiento a los requerimientos especificados se propone el siguiente
 	\label{da}
 \end{figure}
 
-En el diagrama(Fig:\ref{da}) apreciamos las 3 partes que componen el nuevo sistema desarrollado, en primer lugar la componente de "Aplicaciones", el cual consiste en un servidor Web que implementa la plataforma CMS Wordpress. Bajo esta plataforma se desarrollan las aplicaciones principales del sistema, las cuales seran visitadas por los usuarios finales. Las "Estaciones", que son parte fundamental del proceso de adquisición de datos en el sistema,  a estas se les debe integrar un sistema de comunicación compatible con la plataforma de almacenamiento de datos. Finalmente la componente de "Almacenamiento de Datos", la cual consiste en un servidor Web que administra los procesos de registro, acceso y mantención de datos y un servidor de base de datos. Cada una de estas partes debe interactuar con las demás de manera muy precisa para conseguir el comportamiento requerido.\\
+En el diagrama(Fig:\ref{da}) apreciamos las 3 partes que componen el nuevo sistema desarrollado, en primer lugar la componente de ''Aplicaciones'', el cual consiste en un servidor Web que implementa la plataforma CMS Wordpress. Bajo esta plataforma se desarrollan las aplicaciones principales del sistema, las cuales serán visitadas por los usuarios finales. Luego tenemos las ''Estaciones meteorológicas'', que son parte fundamental del proceso de adquisición de datos, cada una de ellas cuenta con diferentes sensores que miden el medio donde están instaladas. A través de un sistema de comunicación envían los datos a la plataforma de almacenamiento de datos. Finalmente la componente de ''Almacenamiento de Datos'', la cual consiste en un servidor Web que administra los procesos de registro, acceso y mantención de datos y un servidor de base de datos. Cada una de estas partes debe interactuar con las demás de manera muy precisa para conseguir el comportamiento requerido.\\
 
 A continuación se describen las diferentes herramientas tanto de hardware como de software que implementa el sistema:
 
 \subsection{Sofware utilizado}
 \subsubsection{Wordpress}
-Wordpress es una avanzada plataforma semántica de publicación en la Web. Libre, de código abierto y gratuito con altos estándares de diseño y usabilidad. Es un sistema de manejador de contenidos (\gloss{cms}) basado en estilo de publicaciones de blogs, además se distribuye bajo la licencia GPL2. Está echo en lenguaje PHP, utiliza el motor de bases de datos MySql y hojas de estilo CSS para la parte visual. Su arquitectura está pensada y diseñada de forma modular, lo que le permite adaptarse y ser configurable de acuerdo con los requerimientos de cada usuario.\\
-La primera versión fue liberada el año 2003 por Matt Mullenweg y es un rama del otro proyecto llamado b2/cafelog. Actualmente esta plataforma está en su versión 3.0. Se estima que Wordpress a la fecha es la herramienta de publicación de contenido más utilizada y popular de la Red, con aproximadamente un 14\% de participación en Internet y con más del 22\% de utilización sitios nuevos o que se publican por primera vez.
+Wordpress es una avanzada plataforma semántica de publicación en la Web; libre, de código abierto y gratuito\footfullcite{software:libre} con altos estándares de diseño y usabilidad. Es un sistema de manejador de contenidos (\gloss{cms}) basado en estilo de publicaciones de blogs. Se distribuye bajo la licencia GPL. Está escrito en lenguaje PHP, utiliza el motor de bases de datos MySql y hojas de estilo CSS para la parte visual. Su arquitectura está pensada y diseñada de forma modular, lo que le permite adaptarse y ser configurable de acuerdo con los requerimientos de cada usuario.\\
+La primera versión fue liberada el año 2003 por Matt Mullenweg y es un rama del otro proyecto llamado b2/cafelog. Actualmente esta plataforma está en su versión 3.0. Se estima que Wordpress a la fecha es la herramienta de publicación de contenido más utilizada y popular de la Red, con aproximadamente un 14\% de participación en Internet y con más del 22\% de utilización sitios nuevos o que se publican por primera vez\cite{software:usoWordpress}.
 
 Wordpress está echo de tal manera que permite a sus usuarios modificar o configurar partes esenciales del sistema, lo que lo hace flexible para agregar funcionalidades y adaptarse a los requerimientos de los usuarios. Además cuanta con un framework y una \gloss{api} que facilita la labor de los programadores.\\
 
-Algunas caracteristicas especificas de wordpress son:
+Algunas características especificas de wordpress son:
 
 \paragraph{Perfil Gráfico}	
-La parte visual de esta plataforma funciona a través de un sistema llamado \gloss{themes}(para efectos prácticos en adelante "Perfiles"). Los "Perfiles" son un conjunto de \gloss{bibliotecas} programadas en PHP y JavaScript que permiten organizar la forma en que se presentan los contenidos del sitio sin alterar el contenido. Wordpress al estar diseñado de manera modular, permite a sus usuarios contar con gran cantidad de "Perfiles" diferentes. Mediante una interfaz de administración permite cambiar estos "Perfile" de manera rápida y sencilla. Adicionalmente en el mercado, existen extensos depósitos de "Perfiles" que pueden ser instalados en cualquier sitio compatible con la versión indicada por el creador.
-
-En el sitio de Wordpress se puede encontrar una extensa documentación y una API que indica a los programadores que deseen desarrollar nuevos "Perfiles", cómo deben estructurar los ficheros y qué funcionalidades pueden agregar o quitar. Adicionalmente los "Perfiles" pueden publicarse o bien Wordpress da la libertad a sus usuarios de vender trabajos basados en su framework.\\
+La parte visual de esta plataforma funciona a través de un sistema llamado \gloss{themes}(para efectos prácticos en adelante ''Perfiles''). Los ''Perfiles'' son un conjunto de \gloss{bibliotecas} programadas en PHP y JavaScript que permiten organizar la forma en que se presentan los contenidos del sitio sin alterar el contenido mismo. Wordpress al estar diseñado de manera modular, permite a sus usuarios contar con gran cantidad de ''Perfiles'' diferentes. Mediante una interfaz de administración permite cambiar estos "Perfile" de manera rápida y sencilla. Adicionalmente en el mercado, existen extensos depósitos de ''Perfiles'' que pueden ser instalados en cualquier sitio compatible con la versión indicada por el programador.
+En el sitio de Wordpress se puede encontrar una extensa documentación y una API que indica a los programadores que deseen desarrollar nuevos ''Perfiles'', cómo deben estructurar los ficheros y qué funcionalidades pueden agregar o quitar. Adicionalmente los ''Perfiles'' pueden publicarse o bien Wordpress da la libertad a sus usuarios de vender trabajos basados en su framework, es decir que éstos quedan en la libertad de licenciar sus códigos como mejor lo estimen conveniente.\\
 
 \paragraph{Plugins}
-Los \"\gloss{plugins}\"  funcionan casi de la misma manera que los \"Perfiles\" y así también la mayoría de los componente que dispone Wordpress. Estos son un conjunto de bibliotecas programadas en PHP y JavaScript que pueden instalarse o desinstalares desde el panel de administración.\\
-Cada "Plugin" está diseñado para agregar nuevas funcionalidades o modificar el comportamiento normal de los sitios, la documentación de Wordpress entrega pautas estrictas de cómo deben estar programadas las bibliotecas para que las nuevas funcionalidades no interfieran con el funcionamiento normal del sistema.
+Los ''\gloss{plugins}''  funcionan casi de la misma manera que los ''Perfiles'' y así también la mayoría de los componente que dispone Wordpress. Estos son un conjunto de bibliotecas\footfullcite{software:biblioteca} programadas en PHP y JavaScript que pueden instalarse o desinstalares desde el panel de administración.\\
+Cada ''Plugin'' está diseñado para agregar nuevas funcionalidades o modificar el comportamiento normal de los sitios, la documentación de Wordpress entrega pautas estrictas de cómo deben estar programadas las bibliotecas para que las nuevas funcionalidades no interfieran con el funcionamiento normal del sistema.
 
 \paragraph{Widgets}
-Los \"Widgets\" son pequeños programas autónomos que permiten agregar nuevas funcionalidades al sistema, pero que a diferencia de un \"Plugin\" común y corriente posen una interfaz visual y están diseñados para exponer al usuario algún dato o funcionalidad específica. Estos pequeños programas pueden agregarse y quitarse de manera muy rápida y pueden y tienen la característica de ser móviles. Generalmente son programas que se agregan en las barras laterales.
+Los ''Widgets'' son pequeños programas autónomos que permiten agregar nuevas funcionalidades al sistema, pero que a diferencia de un ''Plugin'' común y corriente posen una interfaz visual y están diseñados para exponer al usuario algún dato o funcionalidad específica. Estos pequeños programas pueden agregarse y quitarse de manera muy rápida y pueden y tienen la característica de ser móviles. Generalmente son programas que se agregan en las barras laterales.
 
 \paragraph{Multiusuario}
 Wordpress permite la creación y administración de muchos usuarios, los cuales pueden tener diferentes responsabilidades dentro del sistema, tales como administrar el contenido o bien la configuración del sitio. Esto permite que la mantención del sitio y a la vez las responsabilidades, puedan estar muy bien distribuidas sin riesgo de que algún usuario realice tareas no permitidas por su nivel de acceso.
 
 \subsubsection{PHP}
-PHP es un acrónimo recursivo que significa PHP Hypertext Pre-processor. Fue creado originalmente por Rasmus Lerdorf en 1994; sin embargo, la implementación principal de PHP es liderada , en la actualidad, "The PHP Group\cite{php:1}" y sirve como el estándar de facto para PHP al no haber una especificación formal. Publicado bajo la PHP License, la Free Software Foundation considera esta licencia como software libre.\\
+PHP es un acrónimo recursivo que significa PHP Hypertext Pre-processor. Fue creado originalmente por Rasmus Lerdorf en 1994; sin embargo, la implementación principal de PHP es liderada , en la actualidad por ''The PHP Group\cite{php:1}''. Publicado bajo la PHP License, la ''Free Software Foundation'' considera esta licencia como software libre.\\
 
 Es un lenguaje de programación interpretado de alto rendimiento, diseñado originalmente para la creación de páginas web dinámicas. Se usa principalmente para la interpretación del lado del servidor (server-side scripting), pero actualmente puede ser utilizado desde una interfaz de línea de comandos o en la creación de otros tipos de programas incluyendo aplicaciones con interfaz gráfica. Sus características principales son:
 
@@ -65,7 +64,7 @@ Es un lenguaje de programación interpretado de alto rendimiento, diseñado orig
 \end{itemize}
 
 \subsubsection{MySQL}
-	MySQL es un sistema de gestión de bases de datos relacional, multihilo y multiusuario con más de seis millones de instalaciones. MySQL AB desde enero de 2008 una subsidiaria de Sun Microsystems y ésta a su vez de Oracle Corporation desde abril de 2009, desarrolla MySQL como software libre en un esquema de licenciamiento dual. Por un lado, se ofrece bajo la GNU GPL para cualquier uso compatible con esta licencia, pero para aquellas empresas que quieran incorporarlo en productos privativos deben comprar a la empresa una licencia específica que les permita este uso. Está desarrollado en su mayor parte en ANSI C.\\
+	MySQL es un sistema de gestión de bases de datos relacional, multihilo y multiusuario con más de seis millones de instalaciones. MySQL AB desde enero de 2008 una subsidiaria de Sun Microsystems y ésta a su vez de Oracle Corporation desde abril de 2009, desarrolla MySQL como software libre en un esquema de licenciamiento dual. Por un lado, se ofrece bajo la \gloss{gnu} GPL para cualquier uso compatible con esta licencia, pero para aquellas empresas que quieran incorporarlo en productos privativos deben comprar a la empresa una licencia específica que les permita este uso. Está desarrollado en su mayor parte en \gloss{ansic}.\\
 
 Al contrario de proyectos como Apache, donde el software es desarrollado por una comunidad pública y los derechos de autor del código están en poder del autor individual, MySQL es patrocinado por una empresa privada, que posee el copyright de la mayor parte del código.\\
 Esto es lo que posibilita el esquema de licenciamiento anteriormente mencionado. Además de la venta de licencias privativas, la compañía ofrece soporte y servicios. Para sus operaciones contratan trabajadores alrededor del mundo que colaboran vía Internet. MySQL AB fue fundado por David Axmark, Allan Larsson y Michael Widenius. Sus características principales son:
@@ -81,29 +80,24 @@ Esto es lo que posibilita el esquema de licenciamiento anteriormente mencionado.
 \item Ofrece un sistema de seguridad de contraseñas y privilegios mediante verificación basada en el host y el tráfico de contraseñas está cifrado al conectarse a un servidor.
 \item Soporta gran cantidad de datos (hasta 50 millones de registros).
 \item Se permiten hasta 64 índices por tabla (32 antes de MySQL 4.1.2). Cada índice puede consistir desde 1 hasta 16 columnas o partes de columnas y el tamaño máximo son 1000 bytes (500 antes de MySQL 4.1.2).
-\item Los clientes se conectan al servidor MySQL usando "\gloss{sockets}" "\gloss{tcpip}" en cualquier plataforma.
+\item Los clientes se conectan al servidor MySQL usando ''\gloss{sockets}'' ''\gloss{tcpip}'' en cualquier plataforma.
 \item En MySQL 5.0, los clientes y servidores Windows se pueden conectar usando memoria compartida.
 \item MySQL contiene su propio paquete de pruebas de rendimiento proporcionado con el código fuente de la distribución de MySQL.
 \end{itemize}
 
 \subsubsection{CSS}
-El nombre hojas de estilo en cascada viene del inglés \"Cascading Style Sheets\", del que toma sus siglas. CSS es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML. El W3C es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.\\
+\gloss{css} es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML. El \gloss{w3c} es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.\\
 La idea que se encuentra detrás del desarrollo de CSS es separar la estructura de un documento de su presentación. La información de estilo puede ser adjuntada como un documento separado o en el mismo documento HTML. En este último caso podrían definirse estilos generales en la cabecera del documento o en cada etiqueta particular.
 
 \subsubsection{jQuery}
-jQuery es una biblioteca de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web. Fue presentada el 14 de enero de 2006 en el BarCamp NYC. Es software libre y de código abierto, posee un doble licenciamiento bajo la Licencia MIT\cite{licencia:mit} y la Licencia Pública General de GNU v2\cite{licencia:gnu}, permitiendo su uso en proyectos libres y privativos.1 jQuery, al igual que otras bibliotecas, ofrece una serie de funcionalidades basadas en JavaScript que de otra manera requerirían de mucho más código, es decir, con las funciones propias de esta biblioteca se logran grandes resultados en menos tiempo y espacio.
-Para incrementer la funcionalidad de jQuery se le agregaron algunos plugins como Flot que permite crear de manera sencilla gráficos a partir de conjuntos de pares de datos.
+jQuery\cite{software:jquery} es una biblioteca de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol \gloss{dom}, manejar eventos, desarrollar animaciones y agregar interacción con \gloss{ajax} a páginas web. Fue presentada el 14 de enero de 2006 en el BarCamp \gloss{nyc}. Es software libre y de código abierto, posee un doble licenciamiento bajo la Licencia MIT\cite{licencia:mit} y la Licencia Pública General de GNU\cite{licencia:gnu}, permitiendo su uso en proyectos libres y privativos.1 jQuery, al igual que otras bibliotecas, ofrece una serie de funcionalidades basadas en JavaScript que de otra manera requerirían de mucho más código, es decir, con las funciones propias de esta biblioteca se logran grandes resultados en menos tiempo y espacio.
+Para incrementar la funcionalidad de jQuery se le agregaron algunos plugins como Flot\cite{software:flot} que permite crear de manera sencilla gráficos a partir de conjuntos de pares de datos.
 
 \subsection{Hardware}
-Durante el desarrollo e implementación del software involucrado en esta memoria fue necesario interiorizarse con una serie de elementos de hardware que forman parte de la mayoría de las estaciones de monitoreo para plantas de energía solar así como elementos comunes empleados en la construcción de estas mismas.\\
-
-La principal estación de monitoreo utilizada para la realización de las pruebas de software se ubica en el techo del edificio principal de Fundación Chile en la región metropolitana comuna de Vitacura, esta estación cuenta con los siguientes componentes:
+Durante el desarrollo e implementación del software involucrado en esta memoria fue necesario interiorizarse con una serie de elementos de hardware que forman parte de la mayoría de las estaciones meteorológicas para plantas de energía solar así como elementos comunes empleados en la construcción de estas mismas.\\
 
 \paragraph{Datalogger Campbell CR1000}
- 
-Un Datalogger es un pequeño computador que cuenta con diferentes entradas para la conexión de sensores y otros equipos electrónicos tales como modems, teclados o pantallas. Además cuenta con un sistema operativo que permite ingresar scripts para controlar su funcionamiento.\\
-
-Datalogger CR1000 es compacto y ligero tiene una velocidad de ejecución de programa de 100 Hz y 1.500 Hz en burstmode. En su interior, un procesador de 16-bit H8S Hitachi con 32-bit en la arquitectura interna de la CPU.
+Un Datalogger es un pequeño computador que cuenta con diferentes entradas para la conexión de sensores y otros equipos electrónicos tales como modems, teclados o pantallas. Además cuenta con un sistema operativo que permite ingresar scripts para controlar su funcionamiento.\\Datalogger CR1000 es compacto y ligero tiene una velocidad de ejecución de programa de 100 Hz y 1.500 Hz en ''burstmode''. En su interior, un procesador de 16-bit H8S Hitachi con 32-bit en la arquitectura interna de la CPU.
 Ocho entradas analógicas diferenciales (16 single-ended), dos canales contadores
 de pulsos y ocho puertos digitales I/O ports complementados con los puertos CS I/O y RS-232, puerto de 40-pin para periféricos y opción Ethernet(Fig:\ref{cr1000}).
 
@@ -114,12 +108,12 @@ de pulsos y ocho puertos digitales I/O ports complementados con los puertos CS I
 	\label{cr1000}
 \end{figure}
 
-Campbell Scientific es una compañía dedicada a la construcción y distribución de estos equipos. Junto con los equipos mantiene y provee un lenguaje de programación llamado CRBasic el cual está basado en \gloss{Basic}, mediante este lenguaje es posible crea diferentes scripts de control que permiten manejar el comportamiento del "datalogger", como es por ejemplo los datos provenientes de los diferentes sensores y el envío de datos a través de un módem celular o interfaz Ethernet. Las características principales de este "datalogger" son:
+Campbell Scientific es una compañía dedicada a la construcción y distribución de estos equipos. Junto con los equipos mantiene y provee un lenguaje de programación llamado CRBasic el cual está basado en BASIC\cite{hardware:basic}. Mediante este lenguaje es posible crea diferentes scripts de control que permiten manejar el comportamiento del "datalogger", como es por ejemplo los datos provenientes de los diferentes sensores y el envío de datos a través de un módem celular o interfaz Ethernet. Las características principales de este "datalogger" son:
 
 \begin{itemize}
 \item Ideal para aplicaciones de medición solar, vientos, estaciones meteorológicas, calidad del aire, humedad del suelo, nivel de agua, prevenciones de avalanchas y otros.
 \item Comunicación serial, dispone de entradas para dispositivos E/S.
-\item Recolecta y almacena datos además puede controlar periféricos y actuar como sistema central.
+\item Recolecta y almacena datos, además puede controlar periféricos y actuar como sistema central.
 \item Flexibilidad de alimentación energética y sistemas de comunicación, lo que lo hace ideal para instalaciones remotas.
 \item 4 MB de memoria interna y puede ser expandido con módulos adicionales.
 \item Soporta protocolos PakBus, Modbus, SDI-12, y DNP3.
@@ -130,7 +124,7 @@ Campbell Scientific es una compañía dedicada a la construcción y distribució
 \end{itemize}
 
 \paragraph{Interfaz Ethernet NL200 Campbell}
-Esta interfaz es un periférico distribuido por Campbell Scientific al igual que el "datalogger" mencionado anteriormente, que permite anexar una interfaz Ethernet directamente al "datalogger" de manera de lograr una conexión a la red Ethernet de manera directa(Fig:\ref{nl200}). Es mediante este aparato que la información recopilada de la Estación de monitoreo Fundaci'on Chile Vitacura envía los datos al servidor donde se alojan las aplicaciones desarrolladas y la base de datos.\\
+Esta interfaz es un periférico distribuido por Campbell Scientific al igual que el ''datalogger'' mencionado anteriormente, que permite anexar una interfaz Ethernet directamente a Éste de manera de poder establecer una conexión a la red Ethernet de manera directa(Fig:\ref{nl200}). Es mediante este módulo que los datos recopilada de la estación de monitoreo ''Fundación Chile Vitacura'' envía los datos al servidor donde se alojan las aplicaciones desarrolladas.\\
 
 \begin{figure}[h!]
         \centering
@@ -139,7 +133,7 @@ Esta interfaz es un periférico distribuido por Campbell Scientific al igual que
 	\label{nl200} 
 \end{figure}
 
-Como característica adicional hay que mencionar que es un periférico diseñado especialmente para funcionar con el Datalogger antes mencionado y además es un periférico pensado para un consumo de energía muy bajo, lo que lo hace ideal para estar conectado a la batería de la estación. Sus características principales son:
+Como característica adicional hay que mencionar que es un periférico diseñado especialmente para funcionar con el ''datalogger'' antes mencionado y además es un periférico pensado para un consumo de energía muy bajo, lo que lo hace ideal para estar conectado a la batería de la estación. Sus características principales son:
 
 \begin{itemize}
 \item Conector de corriente: DC Barrel.
@@ -160,7 +154,7 @@ Como característica adicional hay que mencionar que es un periférico diseñado
 \end{itemize}
 
 \paragraph{MultiModem Multitech modelo MTCBA-G-F4}
-Este periférico construido y distribuido por Multitech es un módem que permite conectarse a una red GSM y/o GPRS. Este módem funciona en conjunto con el "datalogger" Campbell de la misma forma que lo hace el periférico NL200 salvo que este aparato provee al "datalogger" de una conexión a la Red de manera inalámbrica permitiendo conectar estaciones de monitores en lugares remotos del país(Fig:\ref{modem}).\\
+Este periférico construido y distribuido por Multitech\cite{hardware:multitech} es un módem que permite conectarse a una red GSM y/o GPRS. Este módem funciona en conjunto con el ''datalogger'' Campbell de la misma forma que lo hace el periférico NL200 salvo que este modulo provee al ''datalogger'' de una conexión a la red de manera inalámbrica a través de la red de telefonía celular permitiendo conectar estaciones de monitores en lugares remotos.(Ver Fig:\ref{modem}).\\
 
 \begin{figure}[h!]
         \centering
@@ -169,7 +163,7 @@ Este periférico construido y distribuido por Multitech es un módem que permite
 	\label{modem} 
 \end{figure}
 
-Para poder operar con este módem es necesario tener contratado un plan de datos de telefonía móvil con alguna de las compañías que operan en el sector donde se instalan las estaciones de monitoreo. Sus características principales son:\\
+Para poder operar con este módem es necesario contar con un plan de datos contratado de telefonía móvil con alguna de las compañías que operan en el sector donde se instalan las estaciones de monitoreo. Sus características principales son:\\
 
 \begin{itemize}
 \item GPRS Clase 10.
@@ -178,12 +172,10 @@ Para poder operar con este módem es necesario tener contratado un plan de datos
 \item Packet data up to 85.6K bps.
 \item Pila TCP/IP embedida.
 \item Conector de antena SMA.
-\item 2 años de garantía.
 \end{itemize}
 
 \paragraph{Piranómetro PSP-Eppley}
-El Piranómetro de Precisión Espectral es un instrumento de medición de clase mundial designado para medir la radiación entregada por el sol y la atmósfera, para todo el espectro eléctrico o bien puede configurarse para un segmento específico.\\
-Se compone de una multi unión circular de hilo bobinado junto a una termopila Eppley que tiene la capacidad de soportar fuertes vibraciones y choques mecánicos(Fig:\ref{piranometro}).
+El Piranómetro de Precisión Espectral es un instrumento de medición de clase mundial designado para medir la radiación entregada por el sol y la atmósfera, para todo el espectro eléctrico o bien puede configurarse para un segmento específico. Se compone de una multi-unión circular de hilo bobinado junto a una termo-pila Eppley que tiene la capacidad de soportar fuertes vibraciones y choques mecánicos(Ver Fig:\ref{piranometro}).
 
 \begin{figure}[h!]
         \centering
@@ -233,21 +225,27 @@ Sus características principales son:\\
 \end{itemize}
 
 \section{Diseño de la solución}
-Basándonos en el análisis de la sección \ref{arquitectura} se diseño una solución de 3 componentes, las cuales podemos apreciar de manera mas clara en el Diagrama de Despliegue(Fig:\ref{despliegue}). Este diagrama detalla de manera precisa la implementación que tiene cada uno de los componentes.\\
+Basándonos en el análisis de la sección \ref{arquitectura} se diseño una solución de 3 componentes, las cuales podemos apreciar de manera mas clara en el Diagrama de Despliegue(Fig:\ref{diagramaDespliegue}). Este diagrama detalla de manera precisa la implementación que tiene cada uno de los componentes.\\
 
 \begin{figure}[h!]
         \centering
         \includegraphics[scale=0.25]{images/despliegue}
         \caption{Diagrama de Despliegue}
-	\label{despliegue} 
+	\label{diagramaDespliegue}
 \end{figure}
 
-\subsection{Aplicaciones}
-En la componente de aplicaciones se distinguen 3 partes: Sitio Web de la RedSolLAC el cual fue desarrollado con anterioridad al inicio de esta memoria, la segunda parte es el modulo solarGraficos que permite visualizar los datos originados por las estaciones meteorológicas y la tercera parte el modulo solarCalc, el cual consiste en una calculadora para dimensionar sistemas fotovoltaicos, el cual utilizando el modulo de datos y los parámetros ingresados por el usuario entrega un informe de producción de energía.
+\subsection{Servidor de Aplicaciones}
+En el componente de ''Aplicaciones'' se distinguen 3 partes, en primer lugar el ''Sitio Web de la RedSolLAC'' el cual fue desarrollado con anterioridad al inicio de esta memoria, la segunda parte es el modulo ''solarGraficos'' que permite visualizar los datos originados por las estaciones meteorológicas y finalmente el modulo ''solarCalc'', el cual consiste en una calculadora para dimensionar sistemas fotovoltaicos, que junto al modulo de datos y los parámetros ingresados por el usuario entrega un informe de producción energética.
+
+\begin{figure}[h!]
+        \centering
+        \includegraphics[scale=0.3]{images/webRedSolLAC}i
+        \caption{Sitio Web RedSolLAC}
+        \label{webRed}
+\end{figure}
 
 \subsubsection{Sitio web RedSolLAC}
-Inicialmente, antes de desarrollar esta memoria, RedSolLAC en su conformación desarrollo un sitio web el cual le proporciono una valiosa herramienta de difusión. RedSolLAC en un principio no requería de un sistema de publicación Web complejo, necesitaba un sistema que le permitiese de manera sencilla agregar nuevas publicaciones e información, así como de administrar la parte visual, estos requerimientos generaron la implementación del CMS Wordpress.\\
-Posteriormente RedSolLAC se vio en la necesidad de implementar nuevas herramientas innovadoras que pudiesen generar curiosead en sus usuarios antiguos así como en los futuros usuarios que tendría el sitio.\\
+Inicialmente, antes de desarrollar esta memoria, RedSolLAC desarrollo un sitio web(Ver Fig:\ref{webRed}) el cual le proporciono una valiosa herramienta de difusión, en un principio no requería de un sistema de publicación Web complejo, necesitaba un sistema que le permitiese agregar nuevas publicaciones e información, así como de administrar la parte visual, estos requerimientos condujeron a la implementación del CMS Wordpress. Posteriormente RedSolLAC se vio en la necesidad de implementar nuevas herramientas innovadoras que pudiesen generar curiosidad en sus usuarios antiguos así como en los futuros usuarios que tendría la Red.\\
 
 Las características del sitio sobre el cual de implementan las mejoras planteadas en esta solución son:
 \begin{table}[h!]
@@ -268,103 +266,166 @@ Las características del sitio sobre el cual de implementan las mejoras plantead
 	\hline
 	PHP&Versión 5.2\\
 	\hline
-	Dominio&RedSolLAC.org\\
+	Dominio&redsollac.org\\
 	\hline
 \end{tabular}
 \end{table}
 
-\begin{figure}[h!]
-        \centering
-        \includegraphics[scale=0.4]{images/webRedSolLAC}i
-        \caption{Diagrama de Despliegue}
-        \label{webRed}
-\end{figure}
+
 
 \subsubsection{SolarGraficos}
-SolarGraficos es el nombre de la primera aplicación desarrollada en esta memoria y que cumple con los requerimientos de exponer los datos de manera sencilla e intuitiva los datos capturados por las estaciones meteorológicas en el sitio web de RedSolLAC. Esta aplicación fue desarrollada en PHP 5 y complementada con Javascript y jQuery, adicionalmente utiliza la librería Flot para crear un gráfico que incluye las mediciones individuales de los siguientes parámetros: la Redición Global Horizontal(GHI), la temperatura Ambiente(Tc) y la Humedad relativa del aire(HR).\\
+''SolarGraficos'' es el nombre de la primera aplicación desarrollada en esta memoria y que cumple con los requerimientos de exponer los datos de manera sencilla e intuitiva capturados por las estaciones meteorológicas, en el sitio web de RedSolLAC. Esta aplicación fue desarrollada en PHP 5 y complementada con Javascript y jQuery, adicionalmente utiliza la librería Flot para crear un gráfico que incluye las mediciones individuales de los siguientes parámetros: radiación global horizontal(GHI), temperatura ambiente(Tc) y humedad relativa del aire(HR).\\
 
-La aplicación fue desarrollada siguiendo la estructura de programación de plugins de Wordpress\cite{aplicaciones:wplugins}, usando las funciones de la API que registran y eliminan gatilladores en tiempo de ejecución. El plugin creado registra una nueva pagina de Wordpress la cual utilizando una llamada ajax de la implementación de jquery solicita la ejecución del fichero php solarGrafico.php, este fichero contiene el código esencial que conforma la aplicación gráfica.
+La aplicación fue desarrollada siguiendo la estructura de programación de plugins de Wordpress\cite{aplicacion:wplugins}, usando las funciones de la API que registran y eliminan gatilladores en tiempo de ejecución. El ''plugin'' creado registra una nueva ''pagina de Wordpress'' la cual utilizando una llamada ajax solicita la ejecución del fichero solarGrafico.php. Este fichero contiene el código esencial que conforma la aplicación gráfica.
 
-En primera instancia solarGrafico.php crea la estructura estática de la aplicación(Ver Fig:\ref{solarGraficoFoto2}) y escribe cierto código javascript que permite luego en tiempo de ejecución del lado del cliente hacer las llamadas necesarias que muestran los datos solicitados(Ver Fig:\ref{solarGraficoS}). Una vez creada la estructura de la calculadora se solicita al Servidor de Almacenamiento de datos mediante una consulta ajax sincrónica por los datos del día, el cual es el periodo por defecto. {una vez estos datos están completamente cargados, la aplicación crea un gráfico por defecto que contienen las 3 curvas mencionadas con anterioridad(GHI, HR y Tc) en el periodo del día actual, luego de crear el gráfico se cargan las barras que muestran la ultima lectura de cada curva y el modulo de descarga de datos. Finalizada esta carga inicial el sistema ejecuta 3 llamadas ajax sincrónicas(Ver Fig:\ref{solarGraficoE}) al Servidor de Almacenamiento de Datos solicitando datos de los periodos correspondientes a una semana, un mes y un año tomando como referencia la fecha actual. a medida que los datos se cargan la opción de visualizar dicho periodo va estando disponible en la interfaz de usuario(Ver Fig:\ref{solarGraficoFoto1}) para que este pueda solicitar ser graficada. Debido a que las llamadas para cargar los datos de los periodos de tiempo mas extensos son llamadas asincronicas el navegador no se bloquea y el usuario puede seguir utilizando la aplicación mientras que estos datos están cargados.
+En primera instancia solarGrafico.php, desde el lado del servidor, crea la estructura estática de la aplicación y escribe el código ''javascript'' que permite luego en tiempo de ejecución del lado del cliente hacer las llamadas necesarias que muestran los datos solicitados(Ver Fig:\ref{solarGraficoFoto1}). Una vez creada la estructura de la pagina se solicita al ''Servidor de Almacenamiento de datos'' mediante una consulta ajax sincrónica, los datos del periodo ''día'', el cual es el periodo por defecto. Una vez estos datos están completamente cargados, la aplicación crea un gráfico por defecto que contienen las 3 curvas mencionadas con anterioridad(GHI, HR y Tc) para el periodo del día actual. Luego de crear el gráfico se cargan las barras que muestran la ultima lectura de cada parámetro y el modulo de descarga de datos. Finalizada esta carga inicial el sistema ejecuta 3 llamadas ajax asincrónicas(Ver Fig:\ref{solarGraficoS}) al ''Servidor de Almacenamiento de Datos'' solicitando datos de los periodos correspondientes(semana, mes y año) tomando como referencia la fecha actual. A medida que los datos se cargan la opción de visualizar dicho periodo va apareciendo como disponible en la interfaz de usuario para que este pueda solicitar ser graficada. Debido a que las llamadas para cargar los datos de los periodos de tiempo mas extensos son llamadas sincrónicas el navegador no se bloquea y el usuario puede seguir utilizando la aplicación mientras que éstos van estando disponibles(Ver Fig:\ref{solarGraficoE}).
 
 \begin{figure}[h!]
         \centering
-        \includegraphics[scale=0.4]{images/graficosEstados}
+        \includegraphics[scale=0.35]{images/solarGrafico}
+        \caption{Imagen de la aplicación SolarGraficos}
+        \label{solarGraficoFoto1}
+\end{figure}
+
+\begin{figure}[h!]
+        \centering
+        \includegraphics[scale=0.6]{images/graficosEstados}
         \caption{Diagrama de Estados solarGraficos}
         \label{solarGraficoE}
 \end{figure}
+
 \begin{figure}[h!]
         \centering
-        \includegraphics[scale=0.4]{images/graficosSecuencia}i
+        \includegraphics[scale=0.4]{images/graficosSecuencia}
         \caption{Diagrama de Secuencia solarGraficos}
         \label{solarGraficoS}
 \end{figure}
 
-\begin{figure}[h!]
-        \centering
-        \includegraphics[scale=0.4]{images/graficosSecuencia}
-        \caption{Imagen de la aplicacion SolarGraficos - Cargando datos}
-        \label{solarGraficoFoto1}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[scale=0.4]{images/graficosSecuencia}
-        \caption{Imagen de la aplicación SolarGraficos - Estructura}
-        \label{solarGraficoFoto2}
-\end{figure}
 
 \subsubsection{SolarCalc}
+''solarCalc'' es el nombre que se le ha asignado a la segunda aplicación desarrollada en esta memoria. Su función es recopilar información del usuario referente al tipo de planta fotovoltaica que le gustaría instalar y a la ubicación donde se planea instalar. Luego tomando los datos, realiza un proceso de calculo descrito mas adelante, para finalmente entregar un informe de producción energética. Este informe puede ser utilizado posteriormente en la planificación económica de la futura planta solar.\\
 
-\subsection{Estaciones}
-El componente Estaciones abarca todas las estaciones de medicion que están adaptadas para registrar datos en la componente de almacenamiento de datos, para ello fue necesario acondicionar cada estación y agregarles un modulo de comunicación, este modulo de comunicación depende del lugar geográfico donde se ubica la estación ya que esto determinara la tecnología que este modulo implementara, cualquiera sea la tecnología el sistema fue diseñado para que cada estación se conecte a internet y a través de esta red pueda libremente acceder al modulo de almacenamiento de datos. Adicionalmente y para dar cumplimiento a los requerimientos de seguridad y resguardo de datos ante posibles fallas fue necesario programar el modulo para que pudiese almacenar datos de manera local independiente del estado de la conexión, diseñando un protocolo manual de restauración de datos.
+Para el proceso de calculo utilizado en la calculadora fue necesario modelar un sistema de calculo basado en mediciones horarias, es decir para calcular la radicion total en un mes dado, se utiliza un conjunto de datos de mediciones de radicion global horizontal hora a hora durante una año, con estos datos se construye una muestra diaria basada en la media de cada mes del año, obteniendo una cantidad de radiacion en W/m2 para cada dia del mes. Este modelo permite aplicar una serie de correcciones y mejoras a los modelos tipicamente usados basados en medias mesuales simples ya que permite aplicar correcciones diarias en cuanto a los modelos de nubosidad y diferentes parametros climaticos. Este modelo tambien se sustenta en el comportamiento ciclico del movimiento del Sol y la Tierra que originan el dia y la noche ademas de las estaciones Invierno y verando.\\
+Además este modelo considera una serie de variables ambientales que influyen en el calculo de la radiación total recibida en la superficie de los paneles solares. Las variables mas importantes que influyen en este cálculos son:\\
 
-Principalmente Fundación Chile ofrece a sus clientes dos tipos de estaciones, Serie Dédalo y serie Icaro,cada una de ellas tienen componentes diferentes y fueron diseñadas para diferentes requerimientos de clientes, las especificaciones generales de cada una de las Series se encuentran en la sección de anexos, Dédalo(Ver:\ref{dedalo}) e Icaro(Ver:\ref{icaro}). Para realizar las pruebas del sistema se utilizo una estación Serie Dédalo, las características especificas de esta estación se presentan en el cuadro siguiente(Ver:\ref{estacionPrueba}):
+\paragraph{Temperatura ambiente}
+Esta variable es sumamente influyente, ya que alteran directamente la eficiencia de conversión de los paneles solares, mientras a mas calientes se encuentren éstos menor sera su rendimiento, la magnitud de la influencia de la temperatura depende de cada fabricante, el cual incluye en las especificación ecuaciones para calcular esta perdida.
+
+\paragraph{Velocidad del viento}
+La velocidad del viento, afecta indirectamente a la temperatura o a la ''sensación térmica'' del panel, modificación directamente la temperatura de operación.
+
+\paragraph{Época del año}
+La época del año es una de las variables mas complejas ya que influye en la cantidad de radiación que reciben los paneles durante el día. en verano generalmente esta radiación sera mas alta y en invierno declina, también se considera el ángulo que forma la posición del sol respecto del sistema fotovoltaico, donde en verano sera mas elevada y el tiempo de exposición mas largo(mas horas de luz durante el día), mientras que en invierno el ángulo firmado sera menor por lo que las horas de luz serán considerablemente menores. Existe además ciertas optimizaciones que se les puede aplicar al sistema de manera de modificar el ángulo de inclinación, menor en verano y mayor en invierno.
+
+\paragraph{Ubicación Geográfica}
+Otra variable muy importante es la ubicación geográfica del sistema instalado, esto influye de varias maneras. En primer lugar la orientación que nuestro sistema de paneles solares debe tener, mirando hace el sur en el hemisferio norte y mirando al norte en el hemisferio sur. Además es importante considerar si el sistema estará ubicado en una zona costera, la cual influirá directamente en la proporción de radiación directa, difusa y reflejada. Es importante notar que para obtener resultados mas óptimos la inclinación de los paneles respecto de la horizontal del piso, por lo general debe ser parecida a la latitud en valor absoluto donde este ubicada la planta, así tendríamos que ubicar los paneles casi en posición horizontal cuando el sistema se ubique cercano a la linea del ecuador y en posición vertical cuando instalemos sistemas cercanos a los polos.
+
+\paragraph{Nubosidad}
+El índice de nubosidad influye, como lo mencionamos anteriormente en el tipo de redición que reciben los paneles solares, si la cantidad de nubes es muy alta, la probabilidad de recibir radiación directa es muy baja, mientras que la redición difusa sera en proporción mas elevada. Además las nubes evitan que la redición alcance la superficie por lo que una gran cantidad de ellas no sera beneficioso para la planta de energía. lo mas común es que para hacer este calculo se utiliza un modelo proporcional respecto de la cantidad de radiación extraterrestre y la cantidad de radiación recibida en la superficie de la tierra.
+
+\paragraph{Tipo de superficie}
+Otro factor no tan significativo pero no despreciable sera el tipo de terreno donde se encuentre instalado el sistema. Recordemos que de acuerdo a la composición de la ''Redición Global'' vista en el capitulo \ref{solar}. Una de las 3 componente de ésta corresponde a la cantidad de radiación que refleja el suelo, entonces tenemos que para una superficie negra la absorción sera total y no reflejara parte alguna(ejm. tierra), Mientras que una superficie blanca reflejara prácticamente toda la redición, resultando muy beneficiosa(ejm. Nieve).\\
+
+Como vimos en el apartado anterior las variables que afectan la producción de energía solar son muchas y cada una mas compleja que la anterior por lo que la versión de la calculador que se publica con esta memoria solo incluye los parámetros mas relevantes para este calculo dejando los menos relevantes para futuras mejoras. A medida que la RedSolLAC se haga mas conocida, tendrá acceso a mayor cantidad de datos empíricos, por lo que el modelo predicativo podrá ir desapareciendo para dar paso a un calculo basado en datos reales.\\
+
+\begin{figure}[h!]
+        \centering
+        \includegraphics[scale=0.4]{images/calculadoraFoto1}
+        \caption{Imagen de la Calculadora en el sitio Web}
+        \label{solarCalcFoto1}
+\end{figure}
+
+La calculadora(Ver Fig:\ref{solarCalcFoto1}) inicialmente solicita al usuario el ingreso de la ubicación geográfica donde se ubicará la planta solar, se deben ingresar en orden de aparición ya que la carga de la información es secuencial, es decir al indicar el país, el software configura las opciones de regiones especificas de dicho país y así lo mismo con región y comuna. El segundo paso que el usuario debe hacer es ingresar información técnica de la planta, tal como la potencia nominal que desea instalar, el factor de rendimiento de los equipos, la orientación, es decir si los paneles solares miran hace el norte($0^{\circ}$) o Sur($180^{\circ}$), la inclinación con respecto al plano horizontal, entre 0 y 90 grados(perpendicular a la superficie) y adicionalmente el coeficiente de reflexión el cual dependerá de la superficie sobre la cual se instalen los paneles entre 0 y 1. El ultimo campo a rellenar es el costo de la energía en moneda local. Finalmente al presionar en el botón calcular, tras unos momentos el sistema entregara un resultado(Ver Fig:\ref{solarCalcFoto2}).\\
+
+\begin{figure}[h!]
+        \centering
+        \includegraphics[scale=0.4]{images/calculadoraFoto2}
+        \caption{Imagen de los resultados de la calculadora}
+        \label{solarCalcFoto2}
+\end{figure}
+
+Los siguientes diagramas exponen de forma técnica el funcionamiento de la calculadora y en la sección de anexos\ref{phpCalculadora} se puede ver el ''script'' en PHP que realiza los cálculos\\
+
+\begin{figure}[h!]
+        \centering
+        \includegraphics[scale=0.35]{images/calcSecuencia}
+        \caption{Diagrama de Estados solarCalc}
+        \label{solarCalcS}
+\end{figure}
+\begin{figure}[h!]
+        \centering
+        \includegraphics[scale=0.35]{images/calcEstado}
+        \caption{Diagrama de Secuencia solarCalc}
+        \label{solarCalcE}
+\end{figure}
+
+\subsection{Estaciones meteorológicas}
+La componente ''Estaciones meteorológicas'' abarca todas las estaciones de medición que están adaptadas para registrar datos en el ''Servidor de almacenamiento de datos'', para ello fue necesario acondicionar cada estación y agregarles un modulo de comunicación. Este modulo de comunicación depende del lugar geográfico donde se ubica la estación, debido a que esto determinará la tecnología que este modulo debe implementar. Cualquiera sea la tecnología esta debe permitir que cada estación se conecte a Internet y a través de esta red pueda, contando con las debidas llaves de autenticación, acceder al ''servidor de almacenamiento de datos''. Adicionalmente y para dar cumplimiento a los requerimientos de seguridad y resguardo de datos fue necesario programar el modulo para que pudiese almacenar datos de manera local, independiente del estado de la conexión, diseñando un protocolo manual de restauración de datos, previniendo de esta forma, cualquier posible perdida de datos.\\
+
+Principalmente Fundación Chile ofrece a sus clientes dos tipos de estaciones, serie ''Dédalo'' y serie ''Icaro'', cada una de ellas tienen componentes diferentes y fueron diseñadas para diferentes requerimientos de clientes, las especificaciones generales de cada una de las Series se encuentran en la sección de anexos, Dédalo(Ver:\ref{dedalo}) e Icaro(Ver:\ref{icaro}). Para realizar las pruebas del sistema se utilizo una estación Serie Dédalo, que es la estación ubicada en la comuna de Vitacura en las instalaciones de Fundación Chile, las características especificas de esta estación se presentan en el cuadro siguiente(Ver:\ref{estacionDedalo}):\\
 
 \begin{table}[h!]
-\label{estacionPrueba}
-\caption{Tabla de requerimientos funcionales}
+\label{estacionDedalo}
+\caption{Características especificas estación Dedalo Fundación Chile}
 \begin{tabular}{| c | p{11cm} |}
         \hline
-        \textbf{Requerimiento}  &       \textbf{Detalle}        \\
+        \textbf{Componente}  &       \textbf{Detalle}        \\
         \hline
+	Datalogger&Campbell Sci. CR1000\\
+	\hline
+	Piranometro&Apogee 10.1\\
+	\hline
+	Sensor de Humedad&HMP60 Vaisala\\
+	\hline
+	Sensor de Temperatura&HMP60 Vaisala\\
+	\hline
+	Interfaz de Comunicación&Campbell Sci NL200\\
+	\hline
 \end{tabular}
 \end{table}
 
-Para que dicha estación opere de manera correcta es necesario programar su Datalogger con el siguiente script:
+\newpage
+Para que dicha estación opere de manera correcta es necesario programar su ''datalogger'' con un ''script'' escrito en una implementación del lenguaje Básica llamado CRBasic. El script puede ser apreciado en la sección de anexos(Ver: \ref{getData})\\
 
-(explicaion del script)
+Inicialmente el ''script'' contiene la definición de variables que utilizará durante la ejecución. Tanto las variables de ejecución como las que serán posteriormente referenciadas a los diferentes ''inputs'' de cada sensor.\\
 
-Para graficar de mejor manera cual es el comportamiento de la estación dentro de este componente del sistema se presenta un diagrama de estados y un diagrama de secuencia del comportamiento que tienen cada una de las estaciones.
+Luego sigue la definición de unidades. Cada instrumento mide parámetros en magnitudes físicas diferentes y el lenguaje permite declarar estas unidades.\\
+
+En tercer lugar se declara la definición de tablas de datos que almacenan los datos capturados por los instrumentos conectados al ''datalogger''. Pueden ser declaradas tantas tablas como sea necesario, sin embargo a cada una se le debe asignar la cantidad de registros máxima que puede almacenar. En el eventual caso que sea necesario más de una tabla se debe planificar bien el uso de la memoria, ya que es un recurso limitado en el ''datalogger''.\\
+
+Como cuarto elemento se da inicio a la ejecución del ''script'' con la declaración ''BeginProg'' y ''Scan''. Esta última declaración sera una rutina de ejecución iterativa en el tiempo, parámetro que debe ser declarado en la misma instrucción.\\
+
+Dentro de la declaración ''Scan'' la captura los datos de cada sensor. Luego se establece una nueva conexión TCP/IP mediante la apertura de un ''socket'', si la conexión es exitosa se envían los datos mediante la instrucción GET si no, saltamos dicho paso y cerramos la conexión. Finalmente se almacenan los datos medidos en la tabla de memoria interna del ''datalogger''.\\
+
+Para graficar de mejor manera cual es el comportamiento de la estación se presenta un diagrama de estados y un diagrama de secuencia.
 
 \begin{figure}[h!]
         \centering
-        \includegraphics[scale=0.25]{images/estacionEstados}
+        \includegraphics[scale=0.4]{images/estacionEstados}
         \caption{Diagrama de Estado estación meteorológica}
-        \label{despliegue}
+        \label{estacionEstados}
 \end{figure}
 
-(explicación diagrama)
-
 \begin{figure}[h!]
         \centering
-        \includegraphics[scale=0.25]{images/estacionSecuencia}
+        \includegraphics[scale=0.4]{images/estacionSecuencia}
         \caption{Diagrama de Secuencia estación meteorológica}
         \label{despliegue}
 \end{figure}
 
-(explicación diagrama)
+\subsection{Servidor de almacenamiento de datos}
+Anterior al desarrollo de este sistema cada estación almacenaba datos en su memoria interna y era necesario que una persona accediese físicamente a cada estación con un pc portatil a descargar los datos. Este proceso resultaba bastante complejo y en varias ocasiones se perdían datos.\\ Este componente cuenta con un servidor de bases de datos y un servidor Web el cual es utilizado pa el manejo y mantención de la base de datos y el control de acceso.\\
 
-\subsection{Almacenamiento de datos}
-El componente de almacenamiento de datos era inexistente, anterior al desarrollo de este sistema cada estación almacenaba datos en su memoria interna y era necesario que una persona accediera físicamente a cada estación, ésta apoyado con un pc portatil se conectaba a las estaciones y descargaba los datos. Este proceso resultaba bastante complejo y en varias ocasiones se perdían datos. Este módulo se compone de un servidor de bases de datos y un servidor Web el cual contiene scripts necesarios para el manejo y mantención de la base de datos, así como proporcionar un acceso seguro para que las estaciones registren sus datos.\\
+El sistema de Almacenamiento de datos esta compuesto por un solo servidor el cual implementa el servidor Web Apache HTTPD y el servidor de bases de datos MySQL, el servicio MySQL se encarga directamente de almacenar los datos que llegan desde las estaciones y atender las solicitudes de datos del ''servidor de aplicaciones'' mientras que el servicio Web implementa ciertas rutinas escritas en PHP que componen el sistema de seguridad e integridad de los datos. Adicionalmente implementa rutinas que forman parte del sistema de respaldo manual que incorpora la componente para casos de fallas del sistema.\\
 
-El sistema de Almacenamiento de datos esta compuesto por un solo servidor el cual implementa el servidor Web Apache HTTPD y el servidor de bases de datos MySQL, el servicio MySQL se encarga directamente de almacenar los datos en bruto que llegan desde las estaciones y atender las solicitudes de datos del componente de aplicaciones mientras que el servicio Web implementa ciertas rutinas escritas en PHP que aportan al sistema de seguridad e integridad de los datos así como a la mantención de los datos, adicionalmente implementa rutinas que forman parte del sistema de respaldo manual que incorpora la componente para casos de perdida de conexión.\\ Uno de los requerimientos claves de este sistema es la robustas y la integridad de los datos, así como la confiabilidad de ellos. Este sistema tiene restringido el ingreso de datos solo al modulo de estaciones y en ocasiones especiales al sistema de mantenimiento manual, por lo que implementa rutinas en PHP a revés del servidor Web que impiden que cualquier actor diferente de una estación pueda registrar datos nuevos. Estas rutinas son ejecutadas directamente por las estaciones a trabes del datalogger haciendo llamadas GET con ciertas llaves de seguridad.\\
-El sistema implementa una salida de datos libre, esto quiere decir que cualquiera que te posea acceso a la base de datos puede solicitar el envió de estos a sus aplicaciones sin la necesidad de llaves extras de seguridad. Para el caso especifico de este sistema son algunos elementos de la componente te aplicaciones quienes hacen estas solicitudes.\\
+Uno de los requerimientos claves de este sistema es la robustas y la integridad de los datos, así como la confiabilidad de ellos. Este sistema tiene restringido el ingreso de datos solo al modulo de estaciones y en ocasiones especiales al sistema de mantenimiento manual, por lo que implementa rutinas en PHP a través del servidor Web que impiden que cualquier actor diferente de una estación pueda registrar datos nuevos. Estas rutinas son ejecutadas directamente por las estaciones a través del datalogger haciendo llamadas GET con las llaves de seguridad adecuadas.\\
+El sistema implementa una salida de datos libre, esto quiere decir que cualquiera que posea acceso a la base de datos puede solicitar el envió de estos a sus aplicaciones sin la necesidad de llaves extras de seguridad. Este acceso esta pensado para ser concedido mediante un contrato de prestación de servicios con algún cliente\\
 
-Cuándo una estación hace una llamada GET, el servidor Web mediante una rutina en PHP verifica las llaves de seguridad, verifica los datos que le son enviados de la estación y luego los envía a la base de datos, una vez que la petición GET es recibida esta devuelve a la estación un mensaje 200 si la llamada fue recibida o un mensaje 404 si la llamada no fue recibida. En cualquier caso para el datalogger es indiferente si la petición fue aceptada o no ya que el datalogger implementa su propia base de datos local a modo de respaldo. Una ves que la estación entrega los datos al sistema de almacenamiento esta tampoco tienen la posibilidad de verificar si estos fueron almacenados correctamente.
-
+Cuándo una estación hace una llamada GET, el servidor Web mediante una rutina en PHP verifica las llaves de seguridad, los datos que le son enviados de la estación, luego los envía a la base de datos. Una vez que la petición GET es recibida esta devuelve a la estación un mensaje ''200'' si la llamada fue recibida o un mensaje ''404'' si la llamada no fue recibida. En cualquier caso para el datalogger es indiferente si la petición fue aceptada y el sistema no fue diseñado para realizar esta verificación.\\ En una futura implementación queda planteada la posibilidad de diseñar un protocolo de comunicación que permita la verificación de datos como una forma de mejorar la robustes del sistema.\\
+Los siguientes diagramas detallan de forma mas técnica el comportamiento de esta componente:
 \begin{figure}[h!]
         \centering
-        \includegraphics[scale=0.25]{images/datosEstados}
+        \includegraphics[scale=0.5]{images/datosEstados}
         \caption{Diagrama de Estados Sistema de Almacenamiento}
         \label{almacenamientoSecuencia}
 \end{figure}

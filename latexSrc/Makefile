@@ -31,4 +31,5 @@ clean:
 distclean:
 	rm -f $(DOC).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl,log,pdf,bbl,blg} $(DOC)-blx.bib
 	rm -f $(INS).{aux,out,toc,lot,lof,gls.aux,gls.blg,gls.bbl,log,pdf} $(DOC)-blx.bib
-	rm -f chapter/*.aux
+	rm -f chapters/*.aux
+	rm -f chapters/*.tex.bak

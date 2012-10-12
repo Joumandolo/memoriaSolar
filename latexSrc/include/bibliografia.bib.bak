@@ -1,0 +1,199 @@
+@ONLINE{redSolLac:1,
+	author = {RedSolLAC},
+	year = {},
+	note = {Red conformada por especialistas de energías renovables de Latinoamérica y el Caribe, empresarios dentro y fuera del sector energético.},
+	url = {http://www.redsollac.org/}
+	}
+
+@ONLINE{multitech:1,
+	author = {Multiech},
+	year = {},
+	url = {http://www.multitech.com/en_US},
+	note = {Fabricante de equipos de comunicación. Módems GPRS utilizados en las estaciones de medición}
+}
+
+@ONLINE{campbell:1,
+        author = {Campbell Scientific},
+        year = {},
+        url = {http://www.campbellsci.com},
+	note = {Fabricante de equipos especializados en la captura de datos. Equipos utilizados en la implementación de estaciones de medición.}
+}
+
+@ONLINE{dakota:1,
+        author = {Dakota Solar Centre},
+        year = {},
+        url = {http://www.dkasolarcentre.com.au},
+	note = {Importante centro de investigación de energía solar en Australia, además proporciona ejemplos de como se deben desarrollar algunas aplicaciones.}
+}
+
+@ONLINE{solarserver:1,
+        author = {Solar Server},
+        year = {},
+        url = {http://www.solarserver.com},
+	note = {Comunidades de cooperación y desarrollo de energía renovables no convencionales a nivel europeo e internacional, que es mas o menos a lo que se apunta llegar a largo plazo con la RedSolLac.}
+}
+
+@ONLINE{solarthermal:1,
+        author = {Solar Thermal World},
+        year = {},
+        url = {http://www.solarthermalworld.org},
+        note = {Comunidades de cooperación y desarrollo de energía renovables no convencionales a nivel europeo e internacional, que es mas o menos a lo que se apunta llegar a largo plazo con la RedSolLac.}
+}
+
+@ONLINE{calculadora:1,
+        author = {PV Watts},
+        year = {},
+        url = {http://rredc.nrel.gov/solar/calculators/PVWATTS/version1/},
+        note = {Ejemplo de la funcionalidad que debiese tener la calculadora de energía fotovoltaica.}
+}
+
+@ONLINE{redSolLac:2,
+        author = {RedSolLAC},
+        year = {},
+        url = {http://redsollac.org},
+        note = {Actual sitio de la RedSolLac, el sitio aun no ha sido lanzado oficialmente pero esta en producción con información relevante sobre le proyecto.}
+}
+
+@ONLINE{solar:1,
+        author = {Wikipedia},
+        year = {},
+        url = {http://es.wikipedia.org/wiki/Sistema_Solar},
+        note = {}
+}
+
+@ONLINE{solar:2,
+        author = {Wikipedia},
+        year = {},
+        url = {http://es.wikipedia.org/wiki/Sol},
+        note = {}
+}
+
+@ONLINE{solar:3,
+        author = {Wikipedia},
+        year = {},
+        url = {http://es.wikipedia.org/wiki/Sol#Reacciones_termonucleares_e_incidencia_sobre_la_superficie_terrestre},
+        note = {Reacciones termonucleares e incidencia sobre la superficie terrestre}
+}
+
+@ONLINE{solar:4,
+        author = {Wikipedia},
+        year = {},
+        url = {http://es.wikipedia.org/wiki/Sol#Nacimiento_y_muerte_del_Sol},
+        note = {Nacimiento y muerte del Sol}
+}
+
+@BOOK{recursoSolar:1,
+        author = {Rodrigo Escobar/Fernando Hentzchel},
+	booktitle = {Buenas practicas en Evaluación de Recurso Solar y Eólico},
+        year = {2011},
+	isbn = {978-956-9047-00-8},
+	pages = {15-19},
+        note = {}
+}
+
+@INBOOK{energiaSustentable:1,
+        author = {Gustavo Lagos/Colegio de Ingenieros de Chile},
+        title = {Energía eléctrica fotovoltaica},
+	booktitle = {Energías renovables no convencionales - Energía sustentable para chile},
+        year = {2010},
+        isbn = {978-956-8753-04-7},
+        pages = {101 - 120}
+}
+
+@ONLINE{plantaSolar:1,
+        author = {Prensa Minera},
+        year = {2012},
+	url = {http://www.prensaminera.cl/index.php?option=com_content\&view=article\&id=9523:calama-solar-3-ya-alimenta-con-energia-a-division-chuquicamata\&catid=48:energia\&Itemid=70},
+        note = {Noticia referente a la puesta en marcha de Calama Solar 3, planta solar que alimenta parte del consumo electrico de Chuqicamata.}
+}
+
+@ONLINE{subsole:1,
+        author = {Subsole S.A},
+        year = {},
+	url = {http://www.subsole.com},
+        note = {Informacion exportadora de frutas Subsole S.A.}
+}
+
+@ONLINE{subsole:2,
+        author = {RedSolLAC},
+        year = {},
+	url = {http://redsollac.org/?page_id=1194},
+        note = {Planta solar fotovoltaica de Subsole.}
+}
+
+@BOOK{recursoSolar:2,
+        author = {CNE/PNUD/UTFSM.},
+	booktitle = {Irradacion solar en territorios de la Republica de Chile},
+        year = {2008},
+	isbn = {978-956-279-005-5},
+	pages = {},
+        note = {}
+}
+
+@ONLINE{php:1,
+        author = {The PHP Group},
+        year = {2001 - 2012},
+	url = {http://php.net/copyright.php},
+        note = {Licencia PHP.}
+}
+
+@ONLINE{licencia:mit,
+        author = {Instituto Tecnológico de Massachusetts},
+        year = {1988 - 2012},
+	url = {http://opensource.org/licenses/mit-license.php},
+        note = {Licencia MIT.}
+}
+
+@ONLINE{licencia:gnu,
+        author = {Free Software Foundation, Inc.},
+        year = {1996 - 2012},
+	url = {http://www.gnu.org/licenses/licenses.html},
+        note = {Licencia GPL.}
+}
+
+@ONLINE{aplicacion:wplugins,
+        author = {Free Software Foundation, Inc.},
+        year = {1996 - 2012},
+	url = {http://www.gnu.org/licenses/licenses.html},
+        note = {Licencia GPL.}
+}
+
+@ONLINE{software:jquery,
+        author = {The jQuery Foundation.},
+        year = {2012},
+	url = {http://jquery.com/},
+        note = {Proyectos jQuery}
+}
+
+@MISC{software:libre,
+	url = {},
+	note = {Cuando hablamos de software libre es necesario hacer la diferencia entre 3 conceptos que normalmente se confunden. Es diferente definir un software como software libre, de codigo abierto o gratuito. Cunado decimos que algo es gratuito simplemente se hace referencia a que por dicho elemente no hay cobros asociados, o bien que puedes adquirilo sin la necesidad de pagar, sin embargo cuando se habla de ''software libre'' se hace referencia a la libertad de los usuarios para con dicho software entre las cuales podemos encontrar la libertad de ser usado, copiado, estudiado, modificado, y/o redistribuido. Libertades que Richard Stallman define en la licencia GPL distribuida por la ''Free Software Foundation''. Por otro lado se define que un software es de ''codigo abierto'' quiere decir que su codigo fuente se encuentra disponible para ser usado, aun que esto no implique la gratuidad o el derecho a modificacio y/o distribucion.}
+}
+
+@ONLINE{software:flot,
+        author = {Flot},
+        year = {},
+	url = {http://code.google.com/p/flot/},
+        note = {Attractive Javascript plotting for jQuery}
+}
+@ONLINE{hardware:basic,
+        author = {Wikipedia},
+        year = {},
+	url = {http://es.wikipedia.org/wiki/BASIC},
+        note = {Beginner's All-purpose Symbolic Instruction Code}
+}
+@ONLINE{hardware:multitech,
+        author = {Multi-Tech Company},
+        year = {},
+	url = {http://www.multitech.com/en_US/},
+        note = {}
+}
+@ONLINE{software:usoWordpress,
+        author = {WordPress.org},
+        year = {2011},
+	url = {http://wordpress.org/news/2011/08/state-of-the-word/},
+        note = {State of the Word}
+}
+@MISC{software:bibliotecas,
+	note = {En ciencias de la computación, una biblioteca (del inglés library) es un conjunto de subprogramas utilizados para desarrollar software. Las bibliotecas contienen código y datos, que proporcionan servicios a programas independientes, es decir, pasan a formar parte de estos. Esto permite que el código y los datos se compartan y puedan modificarse de forma modular.},
+}

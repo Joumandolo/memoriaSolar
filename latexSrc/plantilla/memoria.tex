@@ -1,0 +1,63 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[spanish]{babel}
+\usepackage{usmtesis/usmtesis}
+%\usepackage[style=authortitle-icomp,natbib=true,sortcites=true,block=space]{biblatex}
+\usepackage[style=numeric,natbib=true]{biblatex}
+\usepackage{url}
+%\usepackage{footbib}
+\usepackage[refpages]{gloss}
+%\usepackage{natbib}
+
+\bibliography{include/bibliografia}
+%\bibliographystyle{plain}
+%\nolistoftables
+\ingej
+\copyrightyear{2012}
+\submitdate{Julio 2012}
+\convocation{Agosto}{2012}
+\selectlanguage{spanish}
+
+\renewcommand{\glossname}{Glosario}
+\makegloss 
+
+\title{Sistema informático para el manejo de datos de produccion generados por una estación de monitoreo solar fotovoltaica.}
+\author{Manuel José Arredondo Maritano}
+
+\profguia{M.Sc.~Cecilia Reyes Covarrubias}
+\profcorr{M.Sc.~Eduardo Soto Sepúlveda}
+
+\dedicate{\input{chapters/1-Agradecimientos}}%texto de agradecimiento o dedicatoria
+\resumen{\input{chapters/2-Resumen}}
+\abstract{\input{chapters/3-Abstract}}
+
+
+\begin{document}
+
+\beforepreface
+\prefacesection
+\gloss[nocite]{*}
+\printgloss{include/glosario}
+\afterpreface
+
+%\include{chapters/1-Agradecimientos}
+%\include{chapters/2-Resumen}
+%\include{chapters/3-Abstract}
+%\include{chapters/4-Glosario}
+%\include{chapters/5-Indice}
+\include{chapters/6-Introduccion}
+\include{chapters/7-Alcances}
+\include{chapters/8-Solar}
+\include{chapters/9-Solucion propuesta}
+\include{chapters/10-Pruebas}
+\include{chapters/11-Conclusiones}
+\include{chapters/12-Anexos}
+
+%\footbibliographystyle{plain}
+%\footbibliography{include/bibliografia}
+%\bibliographystyle{plain}
+%\bibliography{include/bibliografia}
+\printbibliography[title=Bibliografia] %(5)
+
+\end{document}

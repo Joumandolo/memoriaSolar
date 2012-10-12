@@ -43,6 +43,8 @@ La primera herramienta de la cual dispone ''solarGraficos'' da la posibilidad de
         \caption{default}
         \label{fig:figure1}
 \end{figure}
+Siguiendo con las herramientas de configuracion de la grafica, la imagen \ref{fig} nos muestra la posibilidad de modificar los peridos de tiempo que se muestran para cada una de las diferentes curvas, dado que la cantiadad de datos con la que se dibujan las graficas son bastante grandes, estas toma algun tiempo en cargarse, por lo que si obsevamos con mas detalle, las opciones para mostrar las curbas en periodos de una semana, un mes o un año, iran apareciendo a medida que los datos esten totalmente cargados. Esta carga ocurren de manera trasparente por lo que mientras esto sucede el usuario puede hacer uso de todas las demas funcionalidades de la aplicacion.
+
 \begin{figure}[ht]
 	\begin{minipage}[b]{0.45\linewidth}
         	\centering
@@ -63,20 +65,86 @@ La primera herramienta de la cual dispone ''solarGraficos'' da la posibilidad de
                 \label{fig:figure1}
         \end{minipage}
 \end{figure}
+Para obtener mas detalles respecto de alguna medicion en particular reflejada en la grafica, basta con posicionar el cursor sobre la curva deseada y esta identificara de manera automatica los puntos donde exista una medicion, identificando el punto con un circulo a su alrededor, adicionalmente mostrara una pequeña ventana emergente con informacion detallada de la medicion, udidades, hora y fecha especifica. Las imagenes \ref{fig} muestran como esta caracteristica se aplica a cada una de las curvas en conjunto como por separado.
+
 \subsubsection{Descarga de datos}
 \begin{figure}[ht]
+	\begin{minipage}[b]{0.45\linewidth}
+        	\centering
+        	\includegraphics[width=\textwidth]{./images/cap5chap1img2-1}
+        	\caption{default}
+        	\label{fig:figure1}
+	\end{minipage}
+	\begin{minipage}[b]{0.45\linewidth}
+	 	\centering
+        	\includegraphics[width=\textwidth]{./images/cap5chap1img2-2}
+        	\caption{default}
+        	\label{fig:figure1}
+	\end{minipage}
+	\begin{minipage}[b]{0.45\linewidth}
+		\centering
+        	\includegraphics[width=\textwidth]{./images/cap5chap1img2-3}
+        	\caption{default}
+        	\label{fig:figure1}
+	\end{minipage}
+\end{figure}
+La aplicacion cuenta con un modulo que permite descargar los datos directamente desde el ''Servidor de almacenamiento de datos'' de manera personalizada, para ellos en la seccion inferior derecha bajo el titulo ''Descarga de datos'' hay dos campos denominados ''desde'' y ''hasta'', al hacer click en cada uno de ellos se despliega un calendario que nos permite seleccionar el dia especifico para cada campo\ref{fig}. Mediante esta utilidad podemos especificar el rango de tiempo que contendra el fichero descargado con los datos en formto CSV \ref{fig}. Este fichero puede ser utilizado en diversas aplicaciones externeas para cargar los datos y realizar cualquier tipo de procesamiento deseado.
+
+\clearpage 
+\subsection{SolarCalc}
+\subsubsection{Ingreso al sistema}
+\begin{figure}[ht]
         \centering
-        \includegraphics[width=\textwidth]{./images/cap5chap1img0}
+        \includegraphics[width=\textwidth]{./images/cap5chap1img6}
+        \caption{default}
+        \label{fig:figure1}
+\end{figure}
+Al cargar la calculadora se aprecia la siguiguiente imagen \ref{fig}, adaptada a los requerimientos planteados, es una interfaz sencilla, con la menor cantidad de parametros necesarios, los cuales se van actualizando en tiempo real a medida que el usuario los rellena. Dividida en 4 secciones de acuerdo a la caracterizacion de los parametros requeridos.
+
+\subsubsection{Ubicacion geografica}
+La primera seccion que se debe rellenar es la posicion geografica donde se pretende instalar la planta a simular, por el momento la calculadora solo cuenta con informacion de Chile en todas sus Regiones y Comunas, al momento de seleccionar la comuna 
+el sistema automaticamente establece las coordenas geograficas del centro de esta a modo referencial. Como indica la figura \ref{fig} los parametros deben ser ingresados en orden secuencial, iniciando por el pais, luego la region y finalmente la comuna, de manera de permitir al sistema ir cargando la informacion de fomra dinamica.
+\begin{figure}[ht]
+        \begin{minipage}[b]{0.45\linewidth}
+                \centering
+                \includegraphics[width=\textwidth]{./images/cap5chap1img7-1}
+                \caption{default}
+                \label{fig:figure1}
+        \end{minipage}
+        \begin{minipage}[b]{0.45\linewidth}
+                \centering
+                \includegraphics[width=\textwidth]{./images/cap5chap1img7-2}
+                \caption{default}
+                \label{fig:figure1}
+        \end{minipage}
+\end{figure}
+
+\subsubsection{Especificaciones del sistema PV e informacion de la energia}
+Esta seccion es una de las mas complejas si no se cuenta con cierto conocimiento tecnico de los sistemas fotovoltaicos, aca se debe proporcionar a la calculadora paramentros especificos (Ver Fig:\ref{fig}) de la configuracion de los equipos que quiere instalar en la planta a simular. Los parametros que deben ser ingresados se detallan a continuacion:\\
+\begin{itemize}
+\item[Potencia de la planta]
+\item[Factor de rendimiento]
+\item[Orientacion]
+\item[Inclinacion]
+\item[Albedo]
+\item[Costo de la energia]
+\end{itemize}
+
+\begin{figure}[ht]
+        \centering
+        \includegraphics[width=\textwidth]{./images/cap5chap1img8}
         \caption{default}
         \label{fig:figure1}
 \end{figure}
 
-\subsection{SolarCalc}
-\subsubsection{Ingreso al sistema}
-\subsubsection{Ubicacion geografica}
-\subsubsection{Especificaciones del sistema PV}
-\subsubsection{Informacion de la energia}
 \subsubsection{Resultados}
+Finalmente, luego de llenar toda la informacion solicitada, se debe hacer click en el boton ''calcular'', pasados unso segundos el sistema entregara un resultado dividio en 3 seccion principales (Ver Fig:\ref{fig}). La primera seccion es una tabla de resultados la cual nos informa mes a mes para un año tipico, la cantidad de radicion media, la cantidad de energia producida especificamente para los parametros de configuracion ingresados y el costo de venta que debiese tener la enrgia producida, este ultimo paramentro representa una utilidad en cuanto si se desea utilizar estos calculos en alguna propuesta economica para la instalacion de alguna planta.\\ La seguna seccion nos muestra en la parte inferior izquierda un grafico anual en el tiempo y dos ejes laterales, este grafico nos informa respecto de la eficiencia que tendra el sistema PV comparando la curba de radiacion con la curba de energia producida.\\ Finalmente el grafico de la para inferior derecha tiene como objetivo caracterizar la radicion solar en un año meteorologico tipico para cada mes del año con la cual se realizaron los calculos.
+\begin{figure}[ht]
+        \centering
+        \includegraphics[width=\textwidth]{./images/cap5chap1img9}
+        \caption{default}
+        \label{fig:figure1}
+\end{figure}
 
 \section{Pruebas de comunicación}
 Uno de los problemas más complejos que se enfrentó durante el desarrollo de esta Memoria fue el diseño e implementación de los sistemas de comunicación que permitieron establecer conexiones confiables y seguras entre las distintas componentes del sistema. De acuerdo al diseño planteado en el capítulo \ref{solucion}, se puede apreciar que la comunicación entre la componente de ''Aplicaciones'' y la de ''Almacenamiento de datos'' fue más o menos trivial dentro de lo que se refiere a la comunicación Web en un sistema informático, sin embargo, al momento de interconectar las ''Estaciones de medición'' con el resto del sistema hubo que considerar muchas variables extras tales como: geográficas, ambientales y eléctricas.
@@ -137,26 +205,70 @@ Para verificar el estado de la conexión se exponen dos métodos, en primer luga
         \label{pruebas5}
 \end{figure}
 
-\newpage
-En segundo lugar se verifica la conexión autónoma desde la estación hacia la red de datos mediante la programación del datalogger(Ver Fig:\ref{pruebasLog1}). En el se puede a preciar el registro del servidor Web Apache HTTPD cuando la estación realiza la petición GET.
+\subsection{Comunicacion de las estacion ''VitacuraFch'' con el ''Servidor de datos''}
+Para verificar la conexión autónoma desde la estación hacia la red de datos mediante la programación del datalogger(Ver Fig:\ref{pruebasLog1}). En el se puede a preciar el registro del servidor Web Apache HTTPD cuando la estación realiza la petición GET.
 
 \begin{figure}[h!]
         \centering
         \includegraphics[width=300pt]{images/pruebasLog1}
         \caption{Logs Apache HTTPD - Comunicación con estación meteorológica}
         \label{prubasLog1}
-\end{figure}
+\end{figure}m
 
-\subsection{Comunicación de ''Planta Subsole'' con ''Servidor de datos'' - Vía Módem telefonía celular}
+\subsection{Comunicación de estación ''VitacuraFCh'' con ''Servidor de datos'' - Vía Módem telefonía celular}
 Este tipo de comunicación es el segundo método que se implementó en esta memoria y en comparación al método anterior es mucho mas flexible ya que es posible establecer comunicación con estaciones de forma inalámbrica en diferentes ubicaciones de la geografía nacional, incluso en lugares remotos donde es posible recibir señal de la red telefonía celular. Actualmente el desarrollo de esta tecnología en nuestro país, permite establecer comunicación en lugares bastante remotos como sectores montañosos en la cordillera o bien en medio del Desierto de Atacama.
 
 Para testear la comunicación mediante este modulo de utiliza el software proporcionado por el fabricante del ''datalogger'', el ''PC400'' siguiendo los siguientes pasos:
 
 \begin{enumerate}
-\item
-\item
-\item
+\item Ejecutar el PC400n
+\item Creamos una nueva conexión(Ver Fig:\ref{pruebas1})
+\item En la sección ''comunicación setup'', seleccionamos el dispositivo ''CR800'' y luego seleccionamos el tipo de convección ''Phone Modem'' y luego la opcion ''Use modem from CSI list''.
+\item Seleccionamos el puerto COM donde esta conectado el modem y en la lista siguiente selecionamos el modelo del moden que vamos a utilizar, Para este caso particular fue necesario configurar un nuevo modem).
+\subitem Para configurar un nuevo modem, hacemos click en ''Edit Modem Database'', luego bajo la lista que hay en la nueva ventana desplegada hacemos click en ''New'', ingresamos el nombre del nuevo modem y presionamos ''OK''
+\subitem Finalmente editamos los parametros del nuevo modem. ''Rset strng'' lo seteamos en blanco y ''Initialization Strin'' lo dejamos en \textbf{\&C0\&D0}, luego hacemos click en ''Save''. 
+\item Una vez configurado el modem ingresamos el ''Phone Number'', numero de telefono que tienen el modem al cual vamos a llmar y presionamos en ''Next'' para ir al siguiente paso.
+\item En esta nueva ventana configuramos el ''Baud Rate'' en \textbf{9600} y Finalizamos la configuracion.
+\item Finalmente hacemos click en el boton superior izquierdo con la nueva conexion seleccionada para arir un canal de comunicacion con la estacion.
+\item Una vez establecida la conexión vamos a la solapa superior que dice ''monitor data'' y podemos observar los parámetros que la estación esta midiendo(Ver Fig:\ref{pruebas4}).
+\item Finalmente vamos a la solapa ''collect data'', presionamos en ''collect'' y esperamos a que se complete la descarga(Ver Fig:\ref{pruebas5}).
 \end{enumerate}
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=300pt]{images/pruebas1}
+        \caption{Crear nueva conexión}
+        \label{pruebas1}
+\end{figure}
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=300pt]{images/pruebas2}
+        \caption{Ingresar dirección IP}
+        \label{pruebas2}
+\end{figure}
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=300pt]{images/pruebas3}
+        \caption{Estableciendo conexión}
+        \label{pruebas3}
+\end{figure}
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=300pt]{images/pruebas1}
+        \caption{Crear nueva conexión}
+        \label{pruebas1}
+\end{figure}
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=300pt]{images/pruebas2}
+        \caption{Ingresar dirección IP}
+        \label{pruebas2}
+\end{figure}
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=300pt]{images/pruebas3}
+        \caption{Estableciendo conexión}
+        \label{pruebas3}
+\end{figure}
 
 \section{Verificación de datos}
 Una ves desarrollado el sistema con todas las aplicaciones que cubren los requerimientos planteados en la sección inicial(\ref{alcances}) de esta memoria es necesario verificar que los datos obtenidos sean correctos y de la misma forma los cálculos a los que estos son sometidos.\\
@@ -170,7 +282,6 @@ La primera verificacion apunta a comprovar que el modelo matematico haya sido bi
 A la fecha de desarrollo de esta Memoria es el único software en formato Web existente que ofrece el servicio de calculo y dimensionamiento de sistemas fotovoltaicos que cuenta con información para algunas localidades en Latinoamérica. Sin embargo en su método de calculo implementa un modelo basado en la ''media de la radiación mensual''.\\ 
 \subsection{PVSyst}
 Es un software privativo, de uso profesional para el sector de la industria energética solar. Este software permite diseñar, estudiar, dimensionar y simular sistemas fotovoltaicos, con un método de calculo bastante complejo y cercano al funcionamiento real de una planta solar fotovoltaica considerando complejas variables que influyen en el calculo, tales como el sombreado producido por los mimos módulos del sistema o la sombra generada por cerros cercanos a las instalaciones.\\
-\subsection{}
 
 \subsection{Comparación ''solarCalc'' con ''Plataforma Web para sistemas térmicos''}
 La ''Plataforma Web para sistemas térmicos'' se presenta como el trabajo de Memoria de fin de titulo de magíster del ingeniero correferente de esta Memoria\cite{memoriaEdo}. Este trabajo es una de las bases con las cuales se diseño el sistema de calculo implementado en la calculadora. Para el proceso de verificación se utiliza una ''macro en excel'' originada en dicho trabajo de titulo y los resultados entregados en modo de depuracion por la calculadora.\\
@@ -178,17 +289,43 @@ mediante este método se pretende verificar que la implementación de la calcula
 
 \begin{table}[h!]
 \caption{Resultados verificacion de ecuaciones macro excel}
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
         \hline
-        \textbf{Resultados macro exel}&&&&&&&&&&&&&&&&&&&&&&&\\
+        \textbf{Resultados macro exel}&&&&&&&&\\
         \hline
-        \textbf{Hora del dia}&0.5&1.5&2.5&3.5&4.5&5.5&6.5&7.5&8.5&9.5&10.5&11.5&12.5&13.5&14.5&15.5&16.5&17.5&18.5&19.5&20.5&21.5&22.5&23.5&Total\\
+        \textbf{Hora del dia}&0.5&1.5&2.5&3.5&4.5&5.5&6.5&7.5\\
         \hline
-        \textbf{Radiacion Global Horizontal horaria}&0&0&0&0&0&20.6&203.3&421.1&650.8&862.4&1025.2&1113.7&1113.7&1025.2&862.4&650.8&421.1&203.3&20.6&0&0&0&0&0&8594.2\\
+        \textbf{Radiacion Global Horizontal horaria}&0&0&0&0&0&20.6&203.3&421.1\\
         \hline
-        \textbf{Radiacion Difusa Horizontal horaria}&0&0&0&0&0&5.9&51.5&95.6&135.1&167.4&190.2&202&202&190.2&167.4&135.1&95.6&51.5&5.9&0&0&0&0&0&1695.4\\
+        \textbf{Radiacion Difusa Horizontal horaria}&0&0&0&0&0&5.9&51.5&95.6\\
         \hline
-        \textbf{Radiacion Directa Horizontal horaria}&0&0&0&0&0&14.7&151.8&325.5&515.7&695.1&835&911.7&911.7&835&695.1&515.7&325.5&151.8&14.7&0&0&0&0&0&6899\\
+        \textbf{Radiacion Directa Horizontal horaria}&0&0&0&0&0&14.7&151.8&325.5\\
+        \hline
+\end{tabular}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        &&&&&&&\\
+        \hline
+        8.5&9.5&10.5&11.5&12.5&13.5&14.5&15.5\\
+        \hline
+        650.8&862.4&1025.2&1113.7&1113.7&1025.2&862.4&650.8\\
+        \hline
+        135.1&167.4&190.2&202&202&190.2&167.4&135.1\\
+        \hline
+        515.7&695.1&835&911.7&911.7&835&695.1&515.7\\
+        \hline
+\end{tabular}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Resultados macro exel}&&&&&&&&&\\
+        \hline
+        \textbf{Hora del dia}&16.5&17.5&18.5&19.5&20.5&21.5&22.5&23.5&Total\\
+        \hline
+        \textbf{Radiacion Global Horizontal horaria}&421.1&203.3&20.6&0&0&0&0&0&8594.2\\
+        \hline
+        \textbf{Radiacion Difusa Horizontal horaria}&95.6&51.5&5.9&0&0&0&0&0&1695.4\\
+        \hline
+        \textbf{Radiacion Directa Horizontal horaria}&325.5&151.8&14.7&0&0&0&0&0&6899\\
         \hline
 \end{tabular}
 \end{table}
@@ -321,7 +458,7 @@ El objetivo de realizar esta comparación es verificar que tan cercano o confiab
 \end{table}
 
 \subsection{Comparacion con sistema PV en operacion}
-La ultima verificación a la cual se ha sometido la aplicación construida es una verificación empírica. Utilizando un sistema fotovoltaico en operación se ha obtenido una muestra de un día de mediciones, luego esta muestra se ha comprado con la predicción de la calculadora. Si bien la muestra obtenida en un día de prueba es poco significativo en comparación a los datos de todo un año sabemos que el comportamiento solar es cíclico y su unidad mas pequeña es un día, por lo que esta medición se puede comparar con el resultado de un mes en particular. Este resultado nos da una orientación respecto del máximo error cometido entre un sistema teórico de calculo y un sistema solar fotovoltaico operativos.
+La ultima verificación a la cual se ha sometido la aplicación construida es una verificación empírica. Utilizando un sistema fotovoltaico en operación, se ha obtenido una muestra de un día de mediciones, luego esta muestra se ha comprado con la predicción de la calculadora. Si bien la muestra obtenida en un día de prueba es poco significativo en comparación a los datos de todo un año sabemos que el comportamiento solar es cíclico y su unidad más pequeña es un día, por lo que esta medición se puede comparar con el resultado de un mes en particular. Este resultado nos da una orientación respecto del máximo error cometido entre un sistema teórico de cálculo y un sistema solar fotovoltaico operativos.
 
 (tabla de datos)
 

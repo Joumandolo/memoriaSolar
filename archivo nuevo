@@ -1,0 +1,22 @@
+graficar cuervas en base a los datos obtenido por la estacion
+selecionar opcion para el periodo de tiempo a graficar
+agregar o quitar curvas en la grafica
+los parametros de la grafica debe ser entendible y legible por cualquier elctor
+la estacion debe conectarse a internet y registrar datos cada 1 minutoen una base de datos externa
+la estacion debe tener un respaldo de los datos en caso de perder conexion a internet
+debe existir un procedimiento de respaldo de datos y restauracion en casos de eventos
+el software debe tener una interfaz que permita la descarga de datos de acuerod a un rango de fechas dado por el usuario
+debe proporcionar un modulo que muestre las ultimas mediciones obtenidas con la posibilidad de ser integradas en un sitio web
+debe poder integrarse con worpress
+posibilidad de configurar o conectar diferentes estaciones
+mostrar las caracteristicas de la estacion que grafica
+las curvas deben tener colores diferentes
+los datos deben ser obtenidos asincronicamente de acuerdo a los periodos de tiempo
+la generacion de la grafica no debe demorar mas de 3 segundos
+
+
+implementar modelo de calculo para la radiacion que admita multiples variables del medio que influye el resultado
+mostrar una tabla resumen con datos y costos de produccion de energia mensual y anual
+permitir escoger angulo de orientacion e inclinacion del los modulos
+ingreso del factor de eficiencia de la instalacion
+permitir que el usuario ingrese parametros de ubicacion ....

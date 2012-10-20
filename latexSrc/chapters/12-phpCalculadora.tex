@@ -1,10 +1,11 @@
-\subsection{Script implementacion solarCalc}
+\section{Script implementación solarCalc}
 \label{phpCalculadora}
 \begin{verbatim}
 <?php
 error_reporting(0);
 //sleep(1);
-/* Calcular la radiacion sobre el plano horizontal horaria a partir de la raciacion diaria de media mensual */
+/* Calcular la radiacion sobre el plano horizontal horaria a
+ partir de la raciacion diaria de media mensual */
 /*BD*/
 $datosConexion = array(
         'servidorBD' => "solar.db.7367634.hostedresource.com",
@@ -13,18 +14,21 @@ $datosConexion = array(
         'bd' => "solar"
         );
 
-$conexion = mysql_connect($datosConexion['servidorBD'], $datosConexion['usuario'], $datosConexion['pass']);
+$conexion = mysql_connect($datosConexion['servidorBD'],
+ $datosConexion['usuario'], $datosConexion['pass']);
 mysql_select_db($datosConexion['bd'], $conexion);
 
 /* Definicion de Constantes */
 /*Mes del año*/
-$ma = array("ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic");
+$ma = array("ene","feb","mar","abr","may","jun","jul","ago",
+"sep","oct","nov","dic");
 /*Numero de dia del año, mitad de mes*/
 $nda = array(17,47,75,105,135,162,198,228,258,288,318,344);
 /*Numero de disa del mes*/
 $ndm = array(31,28,31,30,31,30,31,31,30,31,30,31);
 /*Horas del dia */
-$hd = array(0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5,11.5,12.5,13.5,14.5,15.5,16.5,17.5,18.5,19.5,20.5,21.5,22.5,23.5);
+$hd = array(0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5,11.5,
+12.5,13.5,14.5,15.5,16.5,17.5,18.5,19.5,20.5,21.5,22.5,23.5);
 /*Constante solar*/
 $cs = 1353;
 
@@ -73,17 +77,26 @@ function gamma($nda){
 }
 /*Declinacion solar*/
 function delta($nda){
-	$delta = ( (180/M_PI) * (0.006918 - (0.399912*cos(gamma($nda))) + (0.070257*sin(gamma($nda))) - (0.006758*cos(2*gamma($nda))) + (0.000907*sin(2*gamma($nda))) - (0.002697*cos(3*gamma($nda))) + (0.00148*sin(3*gamma($nda))) ) );
+	$delta = ( (180/M_PI) * (0.006918 -
+ (0.399912*cos(gamma($nda))) + (0.070257*sin(gamma($nda))) -
+ (0.006758*cos(2*gamma($nda))) + (0.000907*sin(2*gamma($nda))) -
+ (0.002697*cos(3*gamma($nda))) + (0.00148*sin(3*gamma($nda))) ) );
 	return $delta;
 }
 /*Angulo de puesta de sol*/
 function ws($l,$nda){
-	$ws = ( acos( -tan(($l * M_PI) / 180) * tan((delta($nda) * M_PI) / 180) ) * (180/M_PI) );
+	$ws = ( acos( -tan(($l * M_PI) / 180) * tan((delta($nda) *
+	 M_PI) / 180) ) * (180/M_PI) );
 	return $ws;
 }
-/*Radiacion solar extraterrestre, estimada a partir del indice de nuvocidad [Wh/m2 dia]*/
+/*Radiacion solar extraterrestre, estimada a partir del
+ indice de nuvocidad [Wh/m2 dia]*/
 function rse($l,$nda,$cs){
-	$rse = ( (24 / M_PI) * $cs * (1 + 0.033 * cos(360 * ($nda/365) * (M_PI/180))) * (cos($l * M_PI / 180)) * (cos(delta($nda) * M_PI / 180)) * (sin(ws($l,$nda) * M_PI / 180) - (M_PI / 180 * ws($l,$nda) * cos(ws($l,$nda) * M_PI / 180))));
+	$rse = ( (24 / M_PI) * $cs * (1 + 0.033 * cos(360 *
+	 ($nda/365) * (M_PI/180))) * (cos($l * M_PI / 180)) *
+	 (cos(delta($nda) * M_PI / 180)) * (sin(ws($l,$nda) *
+	 M_PI / 180) - (M_PI / 180 * ws($l,$nda) *
+	 cos(ws($l,$nda) * M_PI / 180))));
 	return $rse;
 }
 /*Indice nubosidad [Wh/m2 dia]*/
@@ -96,7 +109,8 @@ function hsd($l,$nda){
 	$hsd = ws($l,$nda) / 15 * 2 ;
 	return $hsd;
 }
-/*Radiacion solar difusa horizontal diaria de media mensual, a partir de modelo gopinathan KK y soler A, 1995*/
+/*Radiacion solar difusa horizontal diaria de media mensual, 
+a partir de modelo gopinathan KK y soler A, 1995*/
 function RDHd($RGHd,$l,$nda,$cs){
 	$RDHd = $RGHd * (0.91138 - (0.96225 * kt($RGHd,$l,$nda,$cs)));
 	return $RDHd;
@@ -119,34 +133,48 @@ function w($hd){
 }
 /*Altura solar*/
 function hs($l,$nda,$hd){
-	$hs = (asin((sin($l * M_PI / 180) * sin(delta($nda) * M_PI / 180)) + (cos($l * M_PI / 180) * cos(delta($nda) * M_PI / 180) * cos(w($hd) * M_PI / 180))) * (180 / M_PI));
+	$hs = (asin((sin($l * M_PI / 180) * sin(delta($nda) * 
+	M_PI / 180)) + (cos($l * M_PI / 180) * cos(delta($nda) *
+	M_PI / 180) * cos(w($hd) * M_PI / 180))) * (180 / M_PI));
 	return $hs;
 }
 /*Acimut*/
 function acimut($l,$nda,$hd){
-	$acimut = (acos(( (cos(delta($nda) * M_PI / 180) * cos(w($hd) * M_PI / 180)) - (cos($l * M_PI / 180) * sin(hs($l,$nda,$hd) * M_PI / 180)) ) / (cos(hs($l,$nda,$hd) * M_PI / 180) * sin($l * M_PI / 180))) * 180 / M_PI);
+	$acimut = (acos(( (cos(delta($nda) * M_PI / 180) * cos(w($hd) *
+	 M_PI / 180)) - (cos($l * M_PI / 180) * sin(hs($l,$nda,$hd) *
+	 M_PI / 180)) ) / (cos(hs($l,$nda,$hd) * M_PI / 180) * sin($l *	
+	 M_PI / 180))) * 180 / M_PI);
 	return ($hd < 12) ? (-1 * $acimut) : $acimut;
 }	 
 
-/* Funciones para calcular la distribucion horaria de la radiacion a partir de la radiacion diaria de media mensual */
+/* Funciones para calcular la distribucion horaria de la radiacion
+ a partir de la radiacion diaria de media mensual */
 /*Factor radiacion global horizontal hora/dia*/
 function FRGHhd($l,$nda,$hd){
-	$FRGHhd = (abs((M_PI / 24) * (a($l,$nda) + (b($l,$nda) * cos(w($hd) * M_PI / 180))) * ((cos(w($hd) * M_PI / 180) - cos(ws($l,$nda) * M_PI / 180))) / (sin(ws($l,$nda) * M_PI / 180) - ((M_PI / 180) * (ws($l,$nda)) * cos(ws($l,$nda) * M_PI / 180)))));
+	$FRGHhd = (abs((M_PI / 24) * (a($l,$nda) + (b($l,$nda) *
+	cos(w($hd) * M_PI / 180))) * ((cos(w($hd) * M_PI / 180) - 
+	cos(ws($l,$nda) * M_PI / 180))) / (sin(ws($l,$nda) * M_PI / 180) -
+	((M_PI / 180) * (ws($l,$nda)) * cos(ws($l,$nda) * M_PI / 180)))));
 	return $FRGHhd;
 }
 /*Factor radiacion difusa horizontal hora/dia*/
 function FRDfHhd($l,$nda,$hd){
-	$FRDfHhd = ((M_PI / 24) * (cos(w($hd) * M_PI / 180) - cos(ws($l,$nda) * M_PI / 180)) / (sin(ws($l,$nda) * M_PI / 180) - (M_PI / 180 * ws($l,$nda) * cos(ws($l,$nda) * M_PI / 180))));
+	$FRDfHhd = ((M_PI / 24) * (cos(w($hd) * M_PI / 180) - 
+	cos(ws($l,$nda) * M_PI / 180)) / (sin(ws($l,$nda) * 
+	M_PI / 180) - (M_PI / 180 * ws($l,$nda) * cos(ws($l,$nda) * 
+	M_PI / 180))));
 	return $FRDfHhd;
 }
 /*Radiacion global horaria horizontal*/
 function RGHh($RGHd,$l,$nda,$hd){
-	if(hs($l,$nda,$hd) > 0){ $RGHh = ($RGHd * FRGHhd($l,$nda,$hd)); }else{ $RGHh = 0;}
+	if(hs($l,$nda,$hd) > 0){ $RGHh = ($RGHd * FRGHhd($l,$nda,$hd));
+	 }else{ $RGHh = 0;}
 	return $RGHh;
 }
 /*Radiacion difusa horaria horizontal*/
 function RDfHh($RGHd,$l,$nda,$cs,$hd){
-	if(hs($l,$nda,$hd) > 0){ $RDfHh = (RDHd($RGHd,$l,$nda,$cs) * FRDfHhd($l,$nda,$hd)); }else{ $RDfHh = 0; }
+	if(hs($l,$nda,$hd) > 0){ $RDfHh = (RDHd($RGHd,$l,$nda,$cs) * 
+	FRDfHhd($l,$nda,$hd)); }else{ $RDfHh = 0; }
         return $RDfHh;
 }
 /*Radiacion directa horaria horizontal*/
@@ -155,7 +183,10 @@ function RDrHh($RGHd,$l,$nda,$cs,$hd){
 	return $RDrHh;
 }
 
-/* Funciones para calcular la influencia de la orientacion, inclinacion y refleccion a partir de la radiacion horaria horizontal de media diaria*/
+/* Funciones para calcular la influencia de la orientacion,
+ inclinacion y refleccion a partir de la radiacion horaria
+ horizontal de media diaria*/
+
 /*Difrencia del angulo con el azimut*/
 function difAzimut($ori,$l,$nda,$hd){
 	return ($ori - acimut($l,$nda,$hd));
@@ -172,7 +203,8 @@ function anguloVertical($ori,$RGHd,$l,$nda,$hd){
 		$anguloVertical = 90; 
 	}else{ 
 		if( $HS > 0 ) {
-			$anguloVertical = (180 / M_PI * atan(tan($HS * M_PI / 180 ) / cos($AH * M_PI / 180)));
+			$anguloVertical = (180 / M_PI * atan(tan($HS *
+			 M_PI / 180 ) / cos($AH * M_PI / 180)));
 		} else { 
 			$anguloVertical = 90;
 		}
@@ -183,7 +215,9 @@ function anguloVertical($ori,$RGHd,$l,$nda,$hd){
 function anguloIncidencia($incl,$ori,$RGHd,$l,$nda,$hd){
         $HS = hs($l,$nda,$hd);
 	$DA = difAzimut($ori,$l,$nda,$hd);
-	$anguloIncidencia = (180 / M_PI) * acos( cos($HS * M_PI / 180) * cos($DA * M_PI / 180) * sin($incl * M_PI / 180) + sin($HS * M_PI / 180) * cos($incl * M_PI / 180) );
+	$anguloIncidencia = (180 / M_PI) * acos( cos($HS * M_PI / 180) *
+	cos($DA * M_PI / 180) * sin($incl * M_PI / 180) + sin($HS * 
+	M_PI / 180) * cos($incl * M_PI / 180) );
 	return $anguloIncidencia;
 }
 /*Radiacion directa horaria en la superficie orientada */
@@ -191,23 +225,29 @@ function RDrhS($incl,$ori,$RGHd,$l,$nda,$cs,$hd){
 	$AI = anguloIncidencia($incl,$ori,$RGHd,$l,$nda,$hd);
 	$RDrHh = RDrHh($RGHd,$l,$nda,$cs,$hd);
 	$HS = hs($l,$nda,$hd);
-	if($AI < 90){ $RDrhS = $RDrHh / sin($HS * M_PI / 180) * cos($AI * M_PI / 180); }else{ $RDrhS = 0;}
+	if($AI < 90){ $RDrhS = $RDrHh / sin($HS * M_PI / 180) * 
+	cos($AI * M_PI / 180); }else{ $RDrhS = 0;}
 	return round($RDrhS);
 }
 /*Radiacion difuza horaria en la superficie orientada*/
 function RDfhS($alb,$incl,$ori,$RGHd,$l,$nda,$cs,$hd){
-	$RDfhS = ((1 + cos($incl * M_PI / 180)) / 2 * RDfHh($RGHd,$l,$nda,$cs,$hd)) + (($alb * (1 - cos($incl * M_PI / 180))) / 2 * RGHh($RGHd,$l,$nda,$hd));
+	$RDfhS = ((1 + cos($incl * M_PI / 180)) / 2 * 
+	RDfHh($RGHd,$l,$nda,$cs,$hd)) + (($alb *
+	(1 - cos($incl * M_PI / 180))) / 2 *
+	RGHh($RGHd,$l,$nda,$hd));
 	return round($RDfhS);
 }
 /*Radiacion global horaria den la superficie orientada*/
 function RGhS($alb,$incl,$ori,$RGHd,$l,$nda,$cs,$hd){
-	$RGhS = (RDrhS($incl,$ori,$RGHd,$l,$nda,$cs,$hd) + RDfhS($alb,$incl,$ori,$RGHd,$l,$nda,$cs,$hd));
+	$RGhS = (RDrhS($incl,$ori,$RGHd,$l,$nda,$cs,$hd) +
+	 RDfhS($alb,$incl,$ori,$RGHd,$l,$nda,$cs,$hd));
 	return round($RGhS);
 }
 
 /* Energia total solar al mes [Wh/mes]*/
 function energiaSolarTotal($alb,$incl,$ori,$RGHd,$l,$nda,$cs,$hd){
-	foreach($hd as $var) $energiaSolarT = $energiaSolarT + RGhS($alb,$incl,$ori,$RGHd,$l,$nda,$cs,$var);
+	foreach($hd as $var) $energiaSolarT = $energiaSolarT + 
+	RGhS($alb,$incl,$ori,$RGHd,$l,$nda,$cs,$var);
 	return $energiaSolarT;
 }
 /* Energia total producida en el mes por la planta [Wh/mes]*/
@@ -224,11 +264,14 @@ function energiaProducida($ap,$ep,$fp,$et,$nda){
 //$filaEnergia = '<td id=col1>Energia AC [kWh]</td>';
 //$filaCosto = '<td id=col1>Valor de la energía</td>';
 for($i = 0; $i < 12; $i++){
-	$energiaSolarT = round(energiaSolarTotal($alb,$incl,$ori,$RGHd[$i+1],$l,$nda[$i],$cs,$hd) / 1000,2);
-	$energiaProducida = energiaProducida($ap,$eps,$fp,$energiaSolarT,$ndm[$i]);
+	$energiaSolarT = round(energiaSolarTotal($alb,$incl,$ori,
+	$RGHd[$i+1],$l,$nda[$i],$cs,$hd) / 1000,2);
+	$energiaProducida = energiaProducida($ap,$eps,$fp,
+	$energiaSolarT,$ndm[$i]);
 	$energiaValor = round($energiaProducida * $vkwh,2);
 	$radiacionHora = array();
-	foreach($hd as $var) $radiacionHora[] = array($var,RGhS($alb,$incl,$ori,$RGHd[$i+1],$l,$nda[$i],$cs,$var));
+	foreach($hd as $var) $radiacionHora[] =
+	 array($var,RGhS($alb,$incl,$ori,$RGHd[$i+1],$l,$nda[$i],$cs,$var));
 
 	$r = $r + ($energiaSolarT * $ndm[$i]) ;
 	$e = $e + $energiaProducida;
@@ -238,7 +281,8 @@ for($i = 0; $i < 12; $i++){
 	$filaEnergia[] = array($i+1,$energiaProducida);
 	$filaMes[] = array($i,$ma[$i]);
 	$filaCosto[] = array($i,$energiaValor);
-	$filaRadiacionHora[] = array('label' => $ma[$i], "data" => $radiacionHora, 'color' => $i); 
+	$filaRadiacionHora[] = array('label' => $ma[$i], "data" => 
+	$radiacionHora, 'color' => $i); 
 }
 
 /* Codificar los datos en JSON */
@@ -246,8 +290,10 @@ $r = round($r,0);
 $e = round($e,0);
 $c = round($c,2);
 $datos = array(
-	array('label' => 'Energia producida[kWh]', "data" => $filaEnergia, 'yaxis' => 1),
-	array('label' => 'Radiación solar[kWh/m2/dia]', "data" => $filaRadiacion, 'yaxis' => 2),
+	array('label' => 'Energia producida[kWh]',
+	 "data" => $filaEnergia, 'yaxis' => 1),
+	array('label' => 'Radiación solar[kWh/m2/dia]',
+	 "data" => $filaRadiacion, 'yaxis' => 2),
 	array('label' => 'meses', "data" => $filaMes, 'yaxis' => 3),
 	array('label' => 'costo', "data" => $filaCosto, 'yaxis' => 4),
 	array('label' => 'totalR', "data" => $r, 'yaxis' => 5),

@@ -1,8 +1,8 @@
-\subsection{Script CRBasic - Datalogger estacion Fundacion Chile}
+\section{Script CRBasic - Datalogger estación Fundación Chile}
 \label{getData}
 \begin{verbatim}
 'CR800
-'Manuel Arredondo for CR800 Estacion FCH Vitacura
+'Manuel Arredondo for CR800 Estación FCH Vitacura
 '29/08/2012
 
 'Declare Variables and Units
@@ -52,7 +52,9 @@ BeginProg
 		SlrMJ=ApogeeFCH*0.012
 		ApogeeFCH= ApogeeFCH*5.41
 
-		'HMP50 Temperature & Relative Humidity Sensor measurements AirTC and RH
+		'HMP50 Temperature & Relative Humidity Sensor measurements AirTC
+		'and RH
+
 		VoltSe(AirTC,1,mV2500,3,0,0,_50Hz,0.1,-40)
 		VoltSe(RH,1,mV2500,4,0,0,_50Hz,0.1,0)
 		If (RH>100) AND (RH<108) Then RH=100
@@ -60,11 +62,17 @@ BeginProg
 		'Call Data Tables and Store Data
 		CallTable(solarFch)
 
-		'peticion get al servidor de solaratacama.cl para registrar las lecturas en la BD
+		'peticion get al servidor de solaratacama.cl para registrar las
+		'lecturas en la BD
+
 		ipServer = "www.solaratacama.cl"
-		'varsGetRequest = "timestamp="+TimeS+"&battV="+BattV+"&radW="+Rad_W+"&radW2="+Rad_W_2+"&airTc="+AirTC+"&rh="+RH
-		varsGetRequest = "battV="+BattV+"&radW="+ApogeeFCH+"&radW2="+SlrMJ+"&airTc="+AirTC+"&rh="+RH    
-		GetRequest = "GET /solarDatos/getDatalogerFch.php?"+varsGetRequest+" HTTP/1.1"+CHR(13)+CHR(10)
+		'varsGetRequest = "timestamp="+TimeS+"&battV="+BattV+"&radW="+
+		Rad_W+"&radW2="+Rad_W_2+"&airTc="+AirTC+"&rh="+RH
+
+		varsGetRequest = "battV="+BattV+"&radW="+ApogeeFCH+"&radW2="+
+		SlrMJ+"&airTc="+AirTC+"&rh="+RH    
+		GetRequest = "GET /solarDatos/getDatalogerFch.php?"+varsGetRequest+
+		" HTTP/1.1"+CHR(13)+CHR(10)
 		'GetRequest = "GET /getDatalogerFch.php HTTP/1.1"+CHR(13)+CHR(10)
 		socket = TCPOpen(ipServer,80,1024)
 		serial = SerialOpen(ComRS232,9600,0,20000,1000)

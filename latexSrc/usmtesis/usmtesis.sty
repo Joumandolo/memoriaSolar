@@ -30,10 +30,11 @@
 \RequirePackage{tabularx}
 \RequirePackage{graphicx}
 \RequirePackage{times}
+\RequirePackage{fancyhdr}
 
 % Define la cabecera de la página para enumerarla solamente.
 %\newcommand{\properpagestyle}{\pagestyle{myheadings}\markboth{}{}\markright{}}
-\newcommand{\properpagestyle}{\pagestyle{plain}}
+%\newcommand{\properpagestyle}{\pagestyle{plain}}
 
 % Lo primero que se hace es ver si el reporte ha sido cargado. 
 % Un error común es tratar de usar suthesis como un documentstyle.
@@ -62,6 +63,9 @@
 \textheight       22cm
 %\parindent      0em
 %\parskip        2ex
+
+%Definicion de cabecer y pie de pagina
+\fancyhead[L]{\small \chaptermark}
 
 % No permitir salto de páginas en hyphens (Esto dará algunos underfull vbox's,
 % entonces una alternativa es usar \brokenpenalty=100 y manualmente buscar por
@@ -301,7 +305,7 @@
 
 
     \end{quotation}
-    \vfill\newpage\setcounter{page}{2}
+    \vfill\newpage\setcounter{page}{3}
  }
 
 
@@ -312,15 +316,13 @@
     \pagestyle{plain}
     \titlep
     \iffront@pages\signaturepage\else\addtocounter{page}{1}\fi
-    %\ifpermission\permissionpage\else
-    \addtocounter{page}{1}
-    %\fi
     \iffront@pages\ifdedic@tion
         \newpage \begin{flushright}
-        \ \vskip5in
+        \vskip5in
         \Large\em\null\vskip1in
         \dedication@text
         \end{flushright}
+	%\addtocounter{page}{1}
     \fi\fi
 
     \addcontentsline{toc}{chapter}{Resumen}
@@ -339,14 +341,13 @@
 \def\@resumen{}\def\@abstract{}
 
 \def\prefacesection{%
-    \pagenumbering{roman}
-    \pagestyle{plain}
-    \setcounter{page}{9}
+    %\pagenumbering{roman}
+    %\pagestyle{plain}
+    %\setcounter{page}{7}
 
     \iffront@pages
         \renewcommand{\contentsname}{\'Indice General}
-        \tableofcontents
-        \addcontentsline{toc}{chapter}{\'Indice General}
+        \addcontentsline{toc}{chapter}{\'Indice General}\tableofcontents
     \else
         \addtocounter{page}{1}
     \fi
@@ -372,10 +373,10 @@
 \def\afterpreface{
     \newpage
     \pagenumbering{arabic}
-    \pagestyle{plain}
+    \pagestyle{fancy}
     \typeout{Prefacio escrito.}
     \setcounter{page}{1}
-    \properpagestyle
+    %\properpagestyle
 }
 
 % Redefine \thebibliography para ir a una nueva página y colocar la entrada en la 
@@ -391,4 +392,4 @@
 \renewcommand{\bibliography}[1]{\ifprint@bib\@ldbibliography{#1}\fi}
 
 % Comenzar Normal.
-\properpagestyle
+%\properpagestyle

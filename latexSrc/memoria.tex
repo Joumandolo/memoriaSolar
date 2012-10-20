@@ -3,18 +3,16 @@
 \usepackage{hyperref}
 \usepackage[spanish]{babel}
 \usepackage{usmtesis/usmtesis}
-%\usepackage[style=authortitle-icomp,natbib=true,sortcites=true,block=space]{biblatex}
-\usepackage[style=numeric,natbib=true]{biblatex}
+\usepackage[style=numeric]{biblatex}
+%\usepackage[style=numeric,natbib=true]{biblatex}
 \usepackage{url}
-%\usepackage{footbib}
 \usepackage[refpages]{gloss}
-%\usepackage{natbib}
 \usepackage{pdfpages}
 \usepackage{verbatim}
-\usepackage{longtable}
+\usepackage{lscape}
 \usepackage{supertabular}
 
-\bibliography{include/bibliografia}
+\bibliography{include/bibliografia,include/notas}
 %\bibliographystyle{plain}
 %\nolistoftables
 \ingej
@@ -26,7 +24,7 @@
 \renewcommand{\glossname}{Glosario}
 \makegloss 
 
-\title{Sistema informático para el manejo de datos de produccion generados por una estación de monitoreo solar fotovoltaica.}
+\title{Sistema informático para el manejo de datos de producción generados por una estación de monitoreo solar fotovoltaica.}
 \author{Manuel José Arredondo Maritano}
 
 \profguia{M.Sc.~Cecilia Reyes Covarrubias}
@@ -53,7 +51,7 @@
 \include{chapters/6-Introduccion}
 \include{chapters/7-Alcances}
 \include{chapters/8-Solar}
-\include{chapters/9-Solucion propuesta}
+\include{chapters/9-Solucion}
 \include{chapters/10-Pruebas}
 \include{chapters/11-Conclusiones}
 \include{chapters/12-Anexos}
@@ -62,6 +60,6 @@
 %\footbibliography{include/bibliografia}
 %\bibliographystyle{plain}
 %\bibliography{include/bibliografia}
-\printbibliography[title=Bibliografia] %(5)
+\printbibliography[title=Bibliografía] %(5)
 
 \end{document}

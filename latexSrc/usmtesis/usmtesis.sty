@@ -65,7 +65,7 @@
 %\parskip        2ex
 
 %Definicion de cabecer y pie de pagina
-\fancyhead[L]{\small \chaptermark}
+\fancyhead[L]{\tiny \chaptermark}
 
 % No permitir salto de páginas en hyphens (Esto dará algunos underfull vbox's,
 % entonces una alternativa es usar \brokenpenalty=100 y manualmente buscar por
@@ -239,7 +239,8 @@
     \vskip0.25in
     \begin{center}
         %\rm \copyright\ Derechos de \@author, \@copyrightyear
-        \uppercase\expandafter{\@submitdate}
+        \uppercase\expandafter{\@submitdate}\\
+	%\copyleft
     \end{center}\newpage}
 
 \def\signature#1#2{\parbox[b]{1in}{\smash{#1}\vskip12pt}
@@ -296,38 +297,46 @@
         \sigskip \signature{Profesor Correferente}{\@profcorr} \\
     \fi
 
-
     \vskip0.2in plus 1fill minus 0.1in
     \begin{flushright}
         \@submitdate. \\
         Valpara\'iso, Chile.
     \end{flushright}
-
-
     \end{quotation}
-    \vfill\newpage\setcounter{page}{3}
+    \vfill
+    %dejar pagina 3 en blanco
+    \newpage
+    \setcounter{page}{3}
  }
-
 
 \def\beforepreface{
 \typeout{Most over/underfulls in first few pages are the fault of dalthesis.}
 \typeout{Ignore all them.  If uncorrectable errors occur, notify staff.}
     \pagenumbering{roman}
-    \pagestyle{plain}
+    %\pagestyle{plain}
     \titlep
-    \iffront@pages\signaturepage\else\addtocounter{page}{1}\fi
+    \iffront@pages
+	\signaturepage
+    \else
+	%\addtocounter{page}{1}
+    \fi
     \iffront@pages\ifdedic@tion
-        \newpage \begin{flushright}
+        %\newpage
+	 \begin{flushright}
         \vskip5in
         \Large\em\null\vskip1in
         \dedication@text
         \end{flushright}
 	%\addtocounter{page}{1}
+	\setcounter{page}{4}
+	\newpage
     \fi\fi
 
+    \setcounter{page}{5}
     \addcontentsline{toc}{chapter}{Resumen}
     \chapter*{Resumen}\@resumen\newpage
 
+    \setcounter{page}{6}
     \addcontentsline{toc}{chapter}{Abstract}
     \chapter*{Abstract}\@abstract\newpage
 }
@@ -341,15 +350,15 @@
 \def\@resumen{}\def\@abstract{}
 
 \def\prefacesection{%
-    %\pagenumbering{roman}
+    \pagenumbering{roman}
     %\pagestyle{plain}
-    %\setcounter{page}{7}
+    \setcounter{page}{7}
 
     \iffront@pages
         \renewcommand{\contentsname}{\'Indice General}
         \addcontentsline{toc}{chapter}{\'Indice General}\tableofcontents
     \else
-        \addtocounter{page}{1}
+     %   \addtocounter{page}{1}
     \fi
 
     \newpage

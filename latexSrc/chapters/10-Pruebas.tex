@@ -242,7 +242,7 @@ Para testear la comunicación mediante este modulo se utiliza el software propor
 \item En la sección ''comunication setup'', seleccionamos el dispositivo ''CR800'' y luego seleccionamos el tipo de conexión ''Phone Modem'' (Ver Fig:\ref{modem1}) y luego la opción ''Use módem from CSI list'' (Ver Fig:\ref{modem2}).
 \item Seleccionamos el puerto COM donde esta conectado el módem (Ver Fig:\ref{modem3}) y en la lista siguiente, seleccionamos el modelo del miden que vamos a utilizar, Para este caso particular fue necesario configurar un nuevo módem).
 \subitem Para configurar un nuevo módem, hacemos clic en ''Edit Modem Database'' (Ver Fig:\ref{modem4}), luego bajo la lista que hay en la nueva ventana desplegada hacemos clic en ''New'', ingresamos el nombre del nuevo módem y presionamos ''OK''
-\subitem Finalmente editamos los parámetros del nuevo módem. ''Reset strng'' lo seteamos en blanco e ''Initialization String'' lo dejamos en \textbf{\&C0\&D0}, luego hacemos clic en ''Save'' (Ver Fig:\ref{modem5}). 
+\subitem Finalmente editamos los parámetros del nuevo módem. ''Reset string'' lo seteamos en blanco e ''Initialization String'' lo dejamos en \textbf{\&C0\&D0}, luego hacemos clic en ''Save'' (Ver Fig:\ref{modem5}). 
 \item Una vez configurado el módem, ingresamos el ''Phone Number'', numero de teléfono que tienen el módem al cual vamos a llamar y presionamos en ''Next'' para ir al siguiente paso.
 \item En esta nueva ventana configuramos el ''Baud Rate'' en \textbf{9600} y Finalizamos la configuración.
 \item Finalmente hacemos clic en el botón superior izquierdo con la nueva conexión seleccionada para abrir un canal de comunicación con la estación.
@@ -309,7 +309,7 @@ Mediante este método se pretende verificar que la implementación de la calcula
 \resizebox{22cm}{!}{
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
         \hline
-        \textbf{Resultados macro exel}&&&&&&&&&&&&&&&&&&&&&&&&&\\
+        \textbf{Resultados macro excel}&&&&&&&&&&&&&&&&&&&&&&&&&\\
         \hline
         \textbf{Hora del día}&0.5&1.5&2.5&3.5&4.5&5.5&6.5&7.5&8.5&9.5&10.5&11.5&12.5&13.5&14.5&15.5&16.5&17.5&18.5&19.5&20.5&21.5&22.5&23.5&Total\\
         \hline
@@ -353,7 +353,7 @@ Como se puede apreciar en las tablas \ref{excel} y \ref{ecuacionCalc} la pequeñ
 \resizebox{15cm}{!}{
 \begin{tabular}{|c|c|c|c|c|}
         \hline
-	\textbf{Mes}&\textbf{Antofagasta (kWh/m2/dia)}&\textbf{Energía estimada PVWatts (kWh)}&\textbf{Energía estimada solarCalc (kWh)}&\textbf{Energía estimada PVSist (kWh)}\\
+	\textbf{Mes}&\textbf{Antofagasta (kWh/m2/día)}&\textbf{Energía estimada PVWatts (kWh)}&\textbf{Energía estimada solarCalc (kWh)}&\textbf{Energía estimada PVSist (kWh)}\\
 	Ene&	7.70&	630&	794&	652\\
         \hline
 	Feb&	7.62&	593&	751&	622\\
@@ -392,7 +392,7 @@ Tal como se aprecia en la tabla de datos, los resultados obtenidos por la ''sola
 \resizebox{15cm}{!}{
 \begin{tabular}{|c|c|c|c|c|}
         \hline
-	\textbf{Mes}&\textbf{Vitacura (kWh/m2/dia)}&\textbf{Energía estimada Pivotas (kW)}&\textbf{Energía estimada solarCalc (kWh)}&\textbf{Energía estimada PVSist (kWh)}\\
+	\textbf{Mes}&\textbf{Vitacura (kWh/m2/día)}&\textbf{Energía estimada Pivotas (kW)}&\textbf{Energía estimada solarCalc (kWh)}&\textbf{Energía estimada PVSist (kWh)}\\
 	Ene&	7.6&	641&	778&	609\\
         \hline
 	Feb&	7.45&	563&	751&	609\\
@@ -465,18 +465,17 @@ Finalmente la ultima comparación realizada, es para la comuna de Concepción. L
 
 \newpage
 \subsection{Comparación con sistema PV en operación}
-La ultima verificación a la cual se ha sometido la aplicación construida es una verificación empírica. Utilizando un sistema fotovoltaico en operación (Ver Cap \ref{alcances}), se ha obtenido una muestra para el mes de Septiembre 2012, luego esta muestra se ha comparado con la simulación entregada por ''solarCalc'' y por ''PVSyst''. Si bien la muestra obtenida es en un periodo bastante corto como para concluir de manera definitiva sobre la correctitud del sistema, es una muestra que nos da una aproximación respecto de que tan cerca puede estar el resultado teórico con el resultado obtenido en la planta real.\\
+La ultima verificación a la cual se ha sometido la aplicación construida es una verificación empírica. Utilizando un sistema fotovoltaico en operación, se ha obtenido una muestra para el mes de Septiembre 2012, luego esta muestra se ha comparado con la simulación entregada por ''solarCalc'' y por ''PVSyst''. Si bien la muestra obtenida es en un periodo bastante corto como para concluir de manera definitiva sobre la correctitud del sistema, es una muestra que nos da una aproximación respecto de que tan cerca puede estar el resultado teórico con el resultado obtenido en la planta real.\\
 
-\begin{table}
+\begin{table}[h!]
 \caption{Comparación de resultados teóricos v/s empíricos para el mes de Septiembre 2012 (KWh)}
 \centering
 \begin{tabular}{|c|c|c|}
         \hline
         \textbf{MarceloMena}&\textbf{PVSyst}&\textbf{SolarCalc}\\
-        163,4&    164,8&   190\\
+        163,4 Kwh&    164,8 Kwh&   190 Kwh\\
         \hline
 \end{tabular}
 \end{table}
 
-En los resultados obtenidos se pueden apreciar varias cosas, primeramente la similitud de los resultados entre la planta solar y ''PVSyst'' lo que nos da una idea de lo certera que es esta herramienta para el calculo y dimensionamiento de plantas solares obteniendo aproximadamente un 1\% de diferencia. Por otro lado podemos apreciar el resultado entregado por la calculadora de $190 [kWh]$ lo que representa un 16\% mas de la producción real, si bien el resultado es excesivamente alto, es un resultado sumamente esperado debido a que la calculadora no considera en su sistema de calculo la variabilidad que existe por consecuencia de la baja en el rendimiento por temperatura de operación del sistema PV.
-
+En los resultados obtenidos se pueden apreciar varias cosas, primeramente la similitud de los resultados entre la ''planta solar'' y ''PVSyst'' lo que nos da una idea de lo certera que es esta herramienta para el calculo y dimensionamiento de plantas solares obteniendo aproximadamente un 1\% de diferencia. Por otro lado podemos apreciar el resultado entregado por la calculadora de $190 [kWh]$ lo que representa un 16\% mas de la producción real, si bien el resultado es excesivamente alto, es un resultado sumamente esperado debido a que la calculadora no considera en su sistema de calculo la variabilidad que existe por consecuencia de la baja en el rendimiento por temperatura de operación del sistema PV, si consideramos que esta perdida es aproximadamente de un 10\% se obtienen valores cercanos a 171 Kwh, quedando una diferencia de sobre producción de un 4,65\% con el sistema real.

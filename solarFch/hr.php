@@ -6,22 +6,31 @@ $url = $_POST["siteUrl"]."/wp-content/plugins/solarFch/";
 $url2 = "http://".$_SERVER["SERVER_NAME"]."/solarFch.php";
 
 $datosConexion = array(
-	'servidorBD' => "solar.db.7367634.hostedresource.com",
-	'usuario' => "widgetSolar",
-	'pass' => "corbet*Mount54",
-	'bd' => "solar"
-	);
+        'servidorBD' => "solar.db.7367634.hostedresource.com",
+        'usuario' => "widgetSolar",
+        'pass' => "corbet*Mount54",
+        'bd' => "solar",
+        'servidorBD2' => "184.168.194.156",
+        'usuario2' => "datosestaciones",
+        'pass2' => "vB1p1I9k2uz06Y",
+        'bd2' => "datosestaciones",
+        'tabla2' => "solarFch",
+        'tabla' => "solarUnidades"
+        );
 
 $conexion = mysql_connect($datosConexion['servidorBD'], $datosConexion['usuario'], $datosConexion['pass']);
 mysql_select_db($datosConexion['bd'], $conexion);
 
+$conexion2 = mysql_connect($datosConexion['servidorBD2'], $datosConexion['usuario2'], $datosConexion['pass2']);
+mysql_select_db($datosConexion['bd2'], $conexion2);
+
 /* Consultamos la base de datos  */
-$radiacion = "SELECT rh, timestamp FROM solarDatos2 ORDER BY timestamp DESC LIMIT 1";
-$radiacion = mysql_query($radiacion, $conexion) or die(mysql_error());
+$radiacion = "SELECT rh, timestamp FROM ".$datosConexion['tabla2']." ORDER BY timestamp DESC LIMIT 1";
+$radiacion = mysql_query($radiacion, $conexion2) or die(mysql_error());
 $radiacion = mysql_fetch_row($radiacion);
 //var_dump($radiacion);
 
- $unidades = "SELECT etiqueta,unidad FROM solarUnidades";
+ $unidades = "SELECT etiqueta,unidad FROM ".$datosConexion['tabla'];
  $unidades = mysql_query($unidades, $conexion) or die(mysql_error());
  $unidad[] = mysql_fetch_row($unidades);
  mysql_data_seek($unidades,3);

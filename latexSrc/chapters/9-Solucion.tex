@@ -1,10 +1,10 @@
 \chapter{Solución propuesta}
 \label{solucion}
-Hoy por hoy el desarrollo de Internet ha alcanzado niveles realmente impresionantes, no solo en lo que respecta a avances en capacidad de transmisión y almacenamiento de datos sino también en su modelo de crecimiento y expansión en la sociedad post-moderna en la era de de la información. Prácticamente no hay rincón del planeta en donde no pueda hoy en día llegar la red de redes.\\
+En la actualidad el desarrollo de Internet ha alcanzado niveles realmente impresionantes, no solo en lo que respecta a avances en capacidad de transmisión y almacenamiento de datos sino también en su modelo de crecimiento y expansión en la sociedad post-moderna en la era de la información. Prácticamente no hay rincón del planeta en donde no pueda hoy en día llegar la red de redes\cite{iternet}.\\
 
 \section{Arquitectura de la solución}
 \label{arquitectura}
-De acuerdo al problema planteado y a los requerimientos especificados en el capitulo \ref{alcances}, es esencial implementar un sistema que pueda difundirse en la sociedad de manera masiva y veloz. La RedSolLAC quiere y debe poder llegar al mayor número de personas interesadas en producir energías limpias y renovables.\\
+De acuerdo al problema planteado y a los requerimientos especificados en el capítulo \ref{alcances}, es esencial implementar un sistema que pueda difundirse en la sociedad de manera masiva y veloz. La RedSolLAC quiere y debe poder llegar al mayor número de personas interesadas en producir energías limpias y renovables.\\
 
 Actualmente la RedSolLAC solo cuenta con un sitio Web donde publica información respecto de plantas solares productoras de energía, sin embargo con el objetivo de expandir sus alcances, objetivos y adherir miembros a la red, es que requiere de nuevas herramientas atractivas para los futuros integrantes. Es acá donde la presente memoria interviene, para desarrollar un nuevo sistema que integre el sitio Web ya existente con nuevas componentes que marquen la diferencia.
 
@@ -13,7 +13,7 @@ Para dar cumplimiento a los requerimientos se propone la siguiente arquitectura:
 \begin{figure}[h!]
         \centering
         \includegraphics[width=400pt]{images/diagramaArquitectura}
-        \caption{Diagrama general de arquitectura}
+        \caption{Diagrama general de arquitectura.}
 	\label{da}
 \end{figure}
 
@@ -25,11 +25,12 @@ A continuación se describen las diferentes herramientas tanto de hardware como 
 \subsubsection{Wordpress}
 Wordpress es una avanzada plataforma semántica de publicación en la Web; libre, de código abierto y gratuito\footfullcite{foot:softwarelibre,} con altos estándares de diseño y usabilidad. Es un sistema de manejador de contenidos (\gloss{cms}) basado en estilo de publicación de blogs. Se distribuye bajo la licencia GPL. Está escrito en lenguaje PHP, utiliza el motor de bases de datos MySql y hojas de estilo CSS para la parte visual. Su arquitectura está pensada y diseñada de forma modular, lo que le permite adaptarse y ser configurable de acuerdo con los requerimientos de cada usuario.\\
 
-La primera versión fue liberada el año 2003 por Matt Mullenweg y es un rama de otro proyecto llamado b2/cafelog. Actualmente esta plataforma está en su versión 3.0. Se estima que Wordpress a la fecha es la herramienta de publicación de contenido más utilizada y popular de la Red, con aproximadamente un 14\% de participación en Internet y con más del 22\% de utilización sitios nuevos o que se publican por primera vez\cite{software:usoWordpress}.
+La primera versión fue liberada el año 2003 por Matt Mullenweg y es un rama de otro proyecto llamado b2/cafelog. Actualmente esta plataforma está en su versión 3.0. Se estima que Wordpress a la fecha es la herramienta de publicación de contenido más utilizada y popular de la Red, con aproximadamente un 14\% de participación en Internet y con más del 22\% de utilización sitios nuevos o que se publican por primera vez\cite{software:usoWordpress}.\\
 
 Wordpress está echo de tal manera que permite a sus usuarios modificar o configurar partes esenciales del sistema, lo que lo hace flexible para agregar funcionalidades y adaptarse a los requerimientos de los usuarios. Además cuanta con un framework y una \gloss{api} que facilita la labor de los programadores.\\
 
-Algunas características especificas de Wordpress son:
+\newpage
+Algunas características específicas de Wordpress son:
 
 \paragraph{Perfil Gráfico:}	
 La parte visual de esta plataforma funciona a través de un sistema llamado ''\gloss{themes}\footfullcite{foot:themes}'' (para efectos prácticos en adelante ''Perfiles''). Los ''Perfiles'' son un conjunto de bibliotecas programadas en PHP y JavaScript que permiten organizar la forma en que se presentan los contenidos del sitio sin alterar este mismo. Wordpress al estar diseñado de manera modular, permite a sus usuarios contar con gran cantidad de ''Perfiles'' diferentes. Mediante una interfaz de administración permite cambiar estos "Perfiles" de manera rápida y sencilla. Adicionalmente en el mercado, existen extensos depósitos de ''Perfiles'' que pueden ser instalados en cualquier sitio compatible con la versión indicada por el programador.
@@ -109,7 +110,7 @@ de pulsos y ocho puertos digitales I/O ports complementados con los puertos CS I
 	\label{cr1000}
 \end{figure}
 
-Campbell Scientific es una compañía dedicada a la construcción y distribución de estos equipos. Junto con los equipos mantiene y provee un lenguaje de programación llamado CRBasic, el cual está basado en BASIC\cite{hardware:basic}. Mediante este lenguaje es posible crea diferentes scripts de control que permiten manejar el comportamiento del "datalogger", como es por ejemplo los datos provenientes de los diferentes sensores y el envío de datos a través de un módem celular o interfaz Ethernet. Las características principales de este "datalogger" son:
+Campbell Scientific es una compañía dedicada a la construcción y distribución de estos equipos. Junto con los equipos mantiene y provee un lenguaje de programación llamado CRBasic, el cual está basado en BASIC\cite{hardware:basic}. Mediante este lenguaje es posible crear diferentes scripts de control que permiten manejar el comportamiento del "datalogger", como es por ejemplo los datos provenientes de los diferentes sensores y el envío de datos a través de un módem celular o interfaz Ethernet. Las características principales de este "datalogger" son:
 
 \begin{itemize}
 \item Ideal para aplicaciones de medición solar, vientos, estaciones meteorológicas, calidad del aire, humedad del suelo, nivel de agua, prevenciones de avalanchas y otros.
@@ -125,7 +126,7 @@ Campbell Scientific es una compañía dedicada a la construcción y distribució
 \end{itemize}
 
 \paragraph{Interfaz Ethernet NL200 Campbell:}
-Esta interfaz es un periférico distribuido por Campbell Scientific al igual que el ''datalogger'', mencionado anteriormente, que permite anexar una interfaz Ethernet directamente a esta, de manera de poder establecer una conexión a la red Ethernet de forma directa (Fig:\ref{nl200}). Es mediante este módulo, que los datos recopilados de la estación de monitoreo ''Fundación Chile Vitacura'', son enviados al servidor donde se alojan las aplicaciones desarrolladas.\\
+Esta interfaz es un periférico distribuido por Campbell Scientific al igual que el ''datalogger'', mencionado anteriormente, que permite anexar una interfaz Ethernet directamente a ésta, de manera de poder establecer una conexión a la red Ethernet de forma directa (Fig:\ref{nl200}). Es mediante este módulo, que los datos recopilados de la estación de monitoreo ''Fundación Chile Vitacura'', son enviados al servidor donde se alojan las aplicaciones desarrolladas.\\
 
 \begin{figure}[h!]
         \centering
@@ -155,7 +156,7 @@ Como característica adicional hay que señalar que es un periférico diseñado 
 \end{itemize}
 
 \paragraph{MultiModem Multitech modelo MTCBA-G-F4:}
-Este periférico construido y distribuido por Multitech\cite{hardware:multitech} es un módem que permite conectarse a una red GSM y/o GPRS, funciona en conjunto con el ''datalogger'' Campbell de la misma forma que lo hace el periférico NL200 salvo que este módulo provee al ''datalogger'' de una conexión a Internet de manera inalámbrica a través de la red de telefonía celular, permitiendo conectar estaciones de monitoreo en lugares remotos (Ver Fig:\ref{modem}).\\
+Este periférico construido y distribuido por Multitech\cite{hardware:multitech} es un módem que permite conectarse a una red GSM y/o GPRS, funciona en conjunto con el ''datalogger'' Campbell de la misma forma que lo hace el periférico NL200, salvo que este módulo provee al ''datalogger'' de una conexión a Internet de manera inalámbrica a través de la red de telefonía celular, permitiendo conectar estaciones de monitoreo en lugares remotos (Ver Fig:\ref{modem}).\\
 
 \begin{figure}[h!]
         \centering
@@ -185,7 +186,6 @@ El Piranómetro de Precisión Espectral, es un instrumento de medición de clase
 	\label{piranometro}
 \end{figure}
 
-\newpage
 \paragraph{Sensor de temperatura y humedad HMP60:}
 Es una sonda de humedad sencilla, económica y duradera. Es adecuada para aplicaciones de volumen, integración en equipos de otros fabricantes, incubadoras, cajas de manipulación con guantes, invernaderos, cámaras de fermentación y registradoras de datos (Fig:\ref{hr}).
 
@@ -199,23 +199,23 @@ Es una sonda de humedad sencilla, económica y duradera. Es adecuada para aplica
 \paragraph{Batería PS100 Campbell Sci:}
 Baterías de plomo-ácido, la fuente de alimentación cuenta con un regulador de carga, puertos libres con salidas DC 12V, además de un conector para el módulo fotovoltaico.
 
+\newpage
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=200pt]{images/bateria}
+        \includegraphics[width=170pt]{images/bateria}
         \caption{Batería PS100} 
 \end{figure}
 
 \paragraph{Panel fotovoltaico SX310M:}
-Modulo fotovoltaico de alta eficiencia, compuesto por celdas de nitrito de silicio policristalinas.
+Módulo fotovoltaico de alta eficiencia, compuesto por celdas de nitrito de silicio policristalinas.
 
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=100pt]{images/panelSolar}
+        \includegraphics[width=90pt]{images/panelSolar}
         \caption{Panel Solar SX310M} 
 \end{figure}
 
-Sus características principales son:\\
-
+Sus características principales son:
 \begin{itemize}
 \item Tensión: 12.00 V.
 \item Potencia: 10 W.
@@ -233,12 +233,12 @@ Basándonos en el análisis de la sección \ref{arquitectura} se diseñó una so
 \begin{figure}[h!]
         \centering
         \includegraphics[width=15cm,height=12cm]{images/despliegue}
-        \caption{Diagrama de Despliegue}
+        \caption{Diagrama de Despliegue.}
 	\label{diagramaDespliegue}
 \end{figure}
 
 \subsection{Servidor de Aplicaciones}
-En el componente de ''Aplicaciones'' se distinguen 3 partes, en primer lugar el ''Sitio Web de la RedSolLAC'' el cual fue desarrollado con anterioridad al inicio de esta memoria, la segunda parte es el módulo ''solarGraficos'' que permite visualizar los datos originados por las estaciones meteorológicas y finalmente el módulo ''solarCalc'', el cual consiste en una calculadora para dimensionar sistemas fotovoltaicos, que junto al módulo de datos y los parámetros ingresados por el usuario entrega un informe de producción energética.
+En el componente de ''Aplicaciones'' se distinguen 3 partes, en primer lugar el ''Sitio Web de la RedSolLAC'', el cual fue desarrollado con anterioridad al inicio de esta memoria, la segunda parte es el módulo ''solarGraficos'' que permite visualizar los datos originados por las estaciones meteorológicas y finalmente el módulo ''solarCalc'', el cual consiste en una calculadora para dimensionar sistemas fotovoltaicos, que junto al módulo de datos y los parámetros ingresados por el usuario entrega un informe de producción energética.
 
 \begin{figure}[h!]
         \centering
@@ -248,7 +248,7 @@ En el componente de ''Aplicaciones'' se distinguen 3 partes, en primer lugar el 
 \end{figure}
 
 \subsubsection{Sitio web RedSolLAC}
-Inicialmente, antes de desarrollar esta Memoria, RedSolLAC desarrolló un sitio web (Ver Fig:\ref{webRed}) el cual le proporcionó una valiosa herramienta de difusión. En un principio no requería de un sistema de publicación Web complejo, necesitaba un sistema que le permitiese agregar nuevas noticias e información, así como de administrar la parte visual, estos requerimientos condujeron a la implementación del CMS Wordpress. Posteriormente RedSolLAC se vio en la necesidad de implementar nuevas herramientas innovadoras que pudiesen generar curiosidad en sus usuarios antiguos así como en los futuros usuarios que tendría la Red.\\
+Inicialmente, antes de desarrollar esta Memoria, RedSolLAC desarrolló un sitio web (Ver Fig:\ref{webRed}) el cual le proporcionó una herramienta de difusión. En un principio no requería de un sistema de publicación Web complejo, necesitaba un sistema que le permitiese agregar nuevas noticias e información, así como de administrar la parte visual, estos requerimientos condujeron a la implementación del CMS Wordpress. Posteriormente RedSolLAC se vio en la necesidad de implementar nuevas herramientas innovadoras que pudiesen generar curiosidad en sus usuarios antiguos así como en los futuros usuarios que tendría la Red.\\
 Las características del sitio sobre el cual se implementan las mejoras planteadas en esta solución son:
 \begin{table}[h!]
 \caption{Características sitio Web RedSolLAC}
@@ -281,7 +281,7 @@ Las características del sitio sobre el cual se implementan las mejoras plantead
 
 La aplicación fue desarrollada siguiendo la estructura de programación de plugins de Wordpress\cite{aplicacion:wplugins}, usando las funciones de la API que registran y eliminan gatilladores en tiempo de ejecución. El ''plugin'' creado registra una nueva ''pagina de Wordpress'' la cual utilizando una llamada ''Ajax'' solicita la ejecución del fichero ''solarGrafico.php''. Este fichero contiene el código esencial que conforma la aplicación.\\
 
-En primera instancia ''solarGrafico.php'', desde el lado del servidor, crea la estructura estática de la aplicación y escribe el código ''JavaScript'' que permite luego en tiempo de ejecución del lado del cliente hacer las llamadas necesarias que muestran los datos solicitados (Ver Fig:\ref{solarGraficoFoto1}). Una vez creada la estructura de la página se solicita al ''Servidor de Almacenamiento de datos'' mediante una consulta ''Ajax'' sincrónica, los datos del período ''día'', el cual es el período por defecto. Una vez que estos datos están completamente cargados, la aplicación crea un gráfico por defecto que contienen las 3 curvas mencionadas con anterioridad (GHI, HR y Tc) para el periodo del día actual. Luego de crear el gráfico se cargan las barras que muestran la última lectura de cada parámetro y el módulo de descarga de datos. Finalizada esta carga inicial, el sistema ejecuta 3 llamadas ''Ajax'' asincrónicas (Ver Fig:\ref{solarGraficoS}) al ''Servidor de Almacenamiento de Datos'' solicitando datos de los períodos correspondientes (semana, mes y año) tomando como referencia la fecha actual. A medida que los datos se cargan la opción de visualizar dicho período va apareciendo como disponible en la interfaz de usuario para que éste pueda solicitar ser graficada. Gracias a que las llamadas para cargar los datos de los períodos de tiempo más extensos son llamadas asincrónicas, el navegador no se bloquea y el usuario puede seguir utilizando la aplicación. (Ver Fig:\ref{solarGraficoE}).
+En primera instancia ''solarGrafico.php'', desde el lado del servidor, crea la estructura estática de la aplicación y escribe el código ''JavaScript'' que permite luego en tiempo de ejecución del lado del cliente hacer las llamadas necesarias que muestran los datos solicitados (Ver Fig:\ref{solarGraficoFoto1}). Una vez creada la estructura de la página se solicita al ''Servidor de Almacenamiento de datos'' mediante una consulta ''Ajax'' sincrónica, los datos del período ''día'', el cual es el período por defecto. Una vez que estos datos están completamente cargados, la aplicación crea un gráfico por defecto que contienen las 3 curvas mencionadas con anterioridad (GHI, HR y Tc) para el periodo del día actual. Luego de crear el gráfico se cargan las barras que muestran la última lectura de cada parámetro y el módulo de descarga de datos. Finalizada esta carga inicial, el sistema ejecuta 3 llamadas ''Ajax'' asincrónicas (Ver Fig:\ref{solarGraficoS}) al ''Servidor de Almacenamiento de Datos'' solicitando datos de los períodos correspondientes (semana, mes y año) tomando como referencia la fecha actual. A medida que los datos se cargan, la opción de visualizar dicho período va apareciendo como disponible en la interfaz de usuario para que éste pueda solicitar sea graficada. Gracias a que las llamadas para cargar los datos de los períodos de tiempo más extensos son llamadas asincrónicas, el navegador no se bloquea y el usuario puede seguir utilizando la aplicación. (Ver Fig:\ref{solarGraficoE}).
 
 \begin{figure}[h!]
         \centering
@@ -307,37 +307,37 @@ En primera instancia ''solarGrafico.php'', desde el lado del servidor, crea la e
 
 \newpage
 \subsubsection{SolarCalc}
-''solarCalc'' es el nombre que se le ha asignado a la segunda aplicación desarrollada en esta Memoria. Su función, es recopilar información del usuario referente al tipo de planta fotovoltaica que le gustaría instalar y a la ubicación donde se planea construir. Luego, tomando los datos, realiza un proceso de cálculo descrito más adelante, para finalmente entregar un informe de producción energética, este informe puede ser utilizado posteriormente en la planificación económica de la futura planta solar.\\
+''solarCalc'' es el nombre que se le ha asignado a la segunda aplicación desarrollada en esta Memoria. Su función, es recopilar información del usuario referente al tipo de planta fotovoltaica que le gustaría instalar y a la ubicación donde se planea construir. Luego, tomando los datos, realiza un proceso de cálculo descrito más adelante, para finalmente entregar un informe de producción energética. Este informe puede ser utilizado posteriormente en la planificación económica de la futura planta solar.\\
 
 Para el proceso de cálculo, fue necesario modelar un sistema basado en mediciones horarias, es decir para calcular la radiación total en un mes dado, se utiliza un conjunto de datos de GHI de media mensual por un periodo de una año, con estos datos se construye una muestra horaria basada en un modelo de distribución estadístico, obteniendo una cantidad de radiación en $W/m^2$ día para cada mes del año. Este modelo permite aplicar una serie de correcciones y mejoras a los modelos típicamente usados, basados en medias mensuales simples, ya que permite aplicar correcciones diarias en cuanto a los modelos de nubosidad, diferentes parámetros climáticos y características de la luminosidad solar. Este modelo también se sustenta en el comportamiento cíclico del movimiento del Sol y la Tierra que originan el día y la noche, además de las estaciones invierno y verano.\\
 
 Por otra parte, este modelo considera una serie de variables ambientales que influyen en el cálculo de la radiación total recibida en la superficie de los paneles solares. Las variables más importantes que influyen en este cálculo son:
 
 \paragraph{Temperatura ambiente:}
-Esta variable es sumamente influyente, ya que altera directamente la eficiencia de conversión de los paneles solares, mientras más calientes se encuentren éstos, menor sera su rendimiento, la magnitud de la influencia de la temperatura depende de cada fabricante, el cual incluye en las especificación ecuaciones para calcular esta perdida.
+Esta variable altera directamente la eficiencia de conversión de los paneles solares(Ver Anexo:\ref{simpvsistmm}), mientras más calientes se encuentren éstos, menor será su rendimiento. La magnitud de la influencia de la temperatura depende de cada fabricante, el cual incluye en las especificaciones ecuaciones para calcular esta perdida.
 
 \paragraph{Velocidad del viento:}
-La velocidad del viento, afecta indirectamente a la temperatura o a la ''sensación térmica'' del panel, modificando directamente la temperatura de operación.
+La velocidad del viento, afecta directamente a la temperatura del panel. Todo objeto expuesto al viento esta afecto a una perdida de calor, este fenómeno se conoce en física como convección. 
 
 \paragraph{Época del año:}
-La época del año es una de las variables más complejas, ya que influye en la cantidad de radiación que reciben los paneles durante el día. En verano esta radiación sera mas alta y en invierno disminuye. Además, se considera el ángulo que forma la posición del sol respecto del sistema fotovoltaico, donde en verano sera mas elevada y el tiempo de exposición mas largo (más horas de luz durante el día), mientras que en invierno el ángulo formado sera menor por lo que las horas de luz serán considerablemente inferiores. Existe además ciertas optimizaciones que pueden ser aplicadas al sistema, tales como la modificación del ángulo de inclinación, menor en verano y mayor en invierno.
+La época del año influye en la cantidad de radiación que reciben los paneles durante el día. En verano esta radiación será más alta y en invierno disminuye. Además, se considera el ángulo que forma la posición del sol respecto del sistema fotovoltaico, donde en verano será más elevada y el tiempo de exposición más largo (más horas de luz durante el día), mientras que en invierno el ángulo formado será menor por lo que las horas de luz serán considerablemente inferiores. Existen además ciertas optimizaciones que pueden ser aplicadas al sistema, tales como la modificación del ángulo de inclinación, menor en verano y mayor en invierno.
 
 \paragraph{Ubicación Geográfica:}
-Otra variable muy importante es la ubicación geográfica del sistema instalado, esto influye de varias maneras. En primer lugar, la orientación de paneles solares que para un óptimo funcionamiento debe estar mirando hacia el sur en el hemisferio norte y mirando al norte en el hemisferio sur. Además es importante considerar si el sistema estará ubicado en una zona costera, la cual influirá directamente en la proporción de radiación directa, difusa y reflejada. Es importante notar que para obtener resultados más óptimos la inclinación de los paneles respecto de la horizontal del piso, por lo general debe ser parecida a la latitud en valor absoluto, así tendríamos que ubicar los paneles casi en posición horizontal cuando el sistema se ubique cercano a la línea del Ecuador y en posición vertical cuando instalemos sistemas cercanos a los polos.
+La ubicación geográfica del sistema instalado influye de varias maneras. En primer lugar, la orientación de paneles solares que para un óptimo funcionamiento debe estar mirando hacia el sur en el hemisferio norte y mirando al norte en el hemisferio sur. Además es importante considerar si el sistema estará ubicado en una zona costera, la cual influirá directamente en la proporción de radiación directa, difusa y reflejada. Es importante notar que para obtener resultados óptimos, la inclinación de los paneles respecto de la horizontal del piso, por lo general debe ser parecida a la latitud geográfica en valor absoluto, así tendríamos que ubicar los paneles casi en posición horizontal cuando el sistema se ubique cercano a la línea del Ecuador(paralelo 0) y en posición vertical cuando instalemos sistemas cercanos a los polos(paralelo 90).
 
 \paragraph{Nubosidad:}
 El índice de nubosidad influye, en el tipo de radiación que reciben los paneles solares, de acuerdo a lo explicado en el capítulo \ref{solar} si la cantidad de nubes es muy alta, la probabilidad de recibir radiación directa es muy baja, mientras que la redición difusa será en proporción más elevada. Además las nubes evitan que la radiación alcance la superficie, por lo que una gran cantidad de ellas no será beneficioso para la producción de energía. Lo más común es que para hacer este cálculo se utilice un modelo proporcional respecto de la cantidad de radiación extraterrestre y la cantidad de radiación recibida en la superficie de la tierra.
 
 \paragraph{Tipo de superficie:}
-Otro factor no tan significativo, pero no menos despreciable, será el tipo de terreno donde se encuentre instalado el sistema. Recordemos que de acuerdo a la composición de la radiación global vista en el capítulo \ref{solar}, una de las componente de ésta, corresponde a la cantidad de radiación que refleja el suelo, entonces tenemos que para una superficie negra la absorción será total y no reflejará parte alguna (ej. tierra), Mientras que una superficie blanca, reflejará prácticamente toda la radiación, resultando muy beneficiosa (ej. nieve).\\
+Otro factor no tan significativo, pero no menos despreciable, será el tipo de terreno donde se encuentre instalado el sistema. Recordemos que de acuerdo a la composición de la radiación global vista en el capítulo \ref{solar}, una de las componente de ésta, corresponde a la cantidad de radiación que refleja el suelo, entonces tenemos que para una superficie negra la absorción será total y no reflejará parte alguna (ej. tierra). Mientras que una superficie blanca, reflejará prácticamente toda la radiación, resultando muy beneficiosa (ej. nieve).\\
 
-Como vimos en el apartado anterior las variables que afectan la producción de energía solar son muchas y cada una más compleja que la anterior, por lo que la versión de la calculadora que se publica con esta memoria solo incluye algunos de los parámetros más relevantes para este cálculo, dejando los otros para futuras mejoras.\\
+Como se mencionó en el párrafo anterior, las variables que afectan la producción de energía solar son muchas y cada una más compleja que la anterior, por lo que la versión de la calculadora que se publica con esta memoria solo incluye algunos de los parámetros más relevantes para este cálculo (época del año, ubicación geográfica, nubosidad, tipo de superficie ), dejando los otros para futuras mejoras (temperatura ambiente).\\
 
 A medida que la RedSolLAC se haga más conocida, tendrá acceso a mayor cantidad de datos empíricos, por lo que el modelo predictivo podrá ir desapareciendo para dar paso a un cálculo basado en datos reales.\\
 
 Los siguientes diagramas, de secuencia (Ver Fig. \ref{solarCalcS}) y estado (Ver Fig. \ref{solarCalcE}), respectivamente exponen el funcionamiento de la calculadora.
 
-En el anexo \ref{phpCalculadora} se puede ver el ''script'' en PHP que realiza los cálculos\\
+En el anexo \ref{phpCalculadora} se puede ver el ''script'' en PHP que realiza los cálculos.\\
 
 \begin{figure}[h!]
         \centering
@@ -354,9 +354,9 @@ En el anexo \ref{phpCalculadora} se puede ver el ''script'' en PHP que realiza l
 
 \newpage
 \subsection{Estaciones meteorológicas}
-La componente ''Estaciones meteorológicas'', abarca todas las estaciones de medición que están adaptadas para registrar datos en el ''Servidor de almacenamiento de datos'', para ello fue necesario acondicionar cada estación, agregándoles un módulo de comunicación, este módulo de comunicación depende del lugar geográfico donde se ubica la estación, ya que esto determinará la tecnología a implementar. Cualquiera sea la tecnología, esta debe permitir que cada estación se conecte a Internet y a través de esta red pueda, contando con las debidas llaves de autenticación, acceder al ''servidor de almacenamiento de datos''. Adicionalmente y para dar cumplimiento a los requerimientos de seguridad y resguardo de datos, fue necesario programar el módulo para que pudiese almacenar datos de manera local, independiente del estado de la conexión, diseñando un protocolo manual de restauración de datos, previniendo de esta forma, posibles pérdidas de datos.\\
+La componente ''Estaciones meteorológicas'', abarca todas las estaciones de medición que están adaptadas para registrar datos en el ''Servidor de almacenamiento de datos'', para ello fue necesario acondicionar cada estación, agregándoles un módulo de comunicación, este módulo de comunicación depende del lugar geográfico donde se ubica la estación, ya que esto determinará la tecnología a implementar. Cualquiera sea la tecnología, ésta debe permitir que cada estación se conecte a Internet y a través de esta red pueda, contando con las debidas llaves de autenticación, acceder al ''servidor de almacenamiento de datos''. Adicionalmente y para dar cumplimiento a los requerimientos de seguridad y resguardo de datos, fue necesario programar el módulo para que pudiese almacenar datos de manera local, independiente del estado de la conexión, diseñando un protocolo manual de restauración de datos, previniendo de esta forma, posibles pérdidas de datos.\\
 
-Principalmente, Fundación Chile, ofrece a sus clientes dos tipos de estaciones, serie ''Dédalo'' y serie ''Icaro'', cada una de ellas tienen componentes diferentes y fueron diseñadas para diferentes propósitos, las especificaciones generales de cada una de las Series se encuentra en la sección de anexos (Dédalo Ver: \ref{dedalo} e Icaro Ver: \ref{icaro}). Para realizar las pruebas del sistema se utilizó una estación Serie Dédalo, que es la estación ubicada en la comuna de Vitacura en las instalaciones de Fundación Chile, las características específicas de esta estación se presentan en el cuadro siguiente:
+Principalmente, Fundación Chile, ofrece a sus clientes dos tipos de estaciones, serie ''Dédalo'' y serie ''Icaro'', cada una de ellas tienen componentes diferentes y fueron diseñadas para diferentes propósitos, las especificaciones generales de cada una de las series se encuentra en la sección de anexos (Dédalo Ver: \ref{dedalo} e Icaro Ver: \ref{icaro}). Para realizar las pruebas del sistema se utilizó una estación serie Dédalo, que es la estación ubicada en la comuna de Vitacura en las instalaciones de Fundación Chile. Las características específicas de esta estación se presentan en el cuadro siguiente:
 
 \begin{table}[h!]
 \label{estacionDedalo}
@@ -378,15 +378,15 @@ Principalmente, Fundación Chile, ofrece a sus clientes dos tipos de estaciones,
 \end{tabular}
 \end{table}
 
-Para que dicha estación opere de manera correcta es necesario programar su ''datalogger'' con un ''script'' escrito en CRBasic. Este script se encuentra en la sección de anexos. (Ver: anexo \ref{getData})\\
+Para que dicha estación opere de manera correcta es necesario programar su ''datalogger'' con un ''script'' escrito en CRBasic. Este script se encuentra en la sección de anexos (Ver: anexo \ref{getData}).\\
 
-Inicialmente el ''script'' contiene la definición de variables que utilizará durante la ejecución. Tanto las variables de ejecución como las que serán posteriormente referenciadas a los diferentes ''inputs'' de cada sensor.\\
+Inicialmente el ''script'' contiene la definición de variables que utilizará durante la ejecución, son tanto las variables de ejecución como las que serán posteriormente referenciadas a los diferentes ''inputs'' de cada sensor.\\
 Luego sigue la definición de unidades. Cada instrumento mide parámetros en magnitudes físicas diferentes y el lenguaje permite declarar estas unidades.\\
 En tercer lugar se declara la definición de tablas de datos que almacenan los datos capturados por los instrumentos conectados. Pueden ser declaradas tantas tablas como sea necesario, sin embargo, a cada una se le debe asignar la cantidad de registros máxima que puede almacenar. En el eventual caso en que sea necesario más de una tabla, se debe planificar bien el uso de la memoria, ya que es un recurso limitado en el ''datalogger''.\\
 Como cuarto elemento, se da inicio a la ejecución del ''script'' con la declaración ''BeginProg'' y ''Scan''. Esta última declaración será una rutina de ejecución iterativa en el tiempo, parámetro que debe ser declarado en la misma instrucción.\\
 Dentro de la declaración ''Scan'', se establece una nueva conexión TCP/IP mediante la apertura de un ''socket'', si la conexión es exitosa, se envían los datos mediante la instrucción ''GET'', si no, saltamos dicho paso. Finalmente se almacenan los datos medidos en la tabla de memoria interna.\\
 
-Para graficar de mejor manera cual es el comportamiento de la estación se presenta un diagrama de estados y un diagrama de secuencia (Ver Fig: \ref{estacionEstados} y \ref{despliegue}).
+Para graficar de mejor manera cuál es el comportamiento de la estación se presenta un diagrama de estados y un diagrama de secuencia (Ver Fig: \ref{estacionEstados} y \ref{despliegue}).
 
 \begin{figure}[h!]
         \centering
@@ -403,14 +403,16 @@ Para graficar de mejor manera cual es el comportamiento de la estación se prese
 \end{figure}
 
 \subsection{Servidor de almacenamiento de datos}
-Anterior al desarrollo de este sistema, cada estación almacenaba datos en su memoria interna y era necesario que una persona accediese físicamente a cada estación con un PC portátil a descargar los datos. Este proceso resultaba bastante complejo y en varias ocasiones se perdían datos.\\ Esta componente cuenta con un servidor de bases de datos y un servidor Web, el cual es utilizado para el manejo y mantención de la base de datos y el control de acceso.\\
+Anterior al desarrollo de este sistema, cada estación almacenaba datos en su memoria interna y era necesario que una persona accediese físicamente a cada estación con un PC portátil a descargar los datos. Este proceso resultaba bastante complejo y en varias ocasiones se perdían datos.\\
+Esta nueva componente cuenta con un servidor de bases de datos y un servidor Web, el cual es utilizado para el manejo y mantención de la base de datos y el control de acceso.\\
 
 El sistema de ''Almacenamiento de Datos'' está compuesto por un solo servidor físico, el cual implementa el servidor Web Apache HTTPD y el servidor de bases de datos MySQL. El servicio MySQL se encarga directamente de almacenar los datos que llegan desde las estaciones y atender las solicitudes de datos del ''servidor de aplicaciones'', mientras que el servicio Web implementa ciertas rutinas escritas en PHP que componen el sistema de seguridad e integridad de los datos. Adicionalmente implementa rutinas que forman parte del sistema de respaldo manual para casos de falla del sistema.\\
 
 Uno de los requerimientos claves de este sistema es la robustez e integridad de los datos, así como la confiabilidad de ellos. Este sistema tiene restringido el ingreso de datos solo al módulo de estaciones y en ocasiones especiales al sistema de mantenimiento manual, por lo que implementa rutinas en PHP, a través del servidor Web que impiden que cualquier actor diferente de una estación pueda registrar datos nuevos. Estas rutinas son ejecutadas directamente por las estaciones a través del ''datalogger'' haciendo llamadas GET con las llaves de seguridad adecuadas.\\
-El sistema implementa una salida de datos libre, esto quiere decir que cualquiera que posea acceso a la base de datos puede solicitar el envió de estos a sus aplicaciones sin la necesidad de llaves extras de seguridad. Este acceso esta pensado para ser concedido mediante un contrato de prestación de servicios con algún cliente que deseen publicar datos en sus aplicaciones.\\
 
-Cuando una estación hace una llamada GET, el servidor Web mediante una rutina en PHP verifica las llaves de seguridad e integridad de los datos que le son enviados de la estación para luego enviarlos a la base de datos. Una vez que la petición GET es recibida, esta devuelve a la estación un mensaje ''200'' si la llamada fue recibida o un mensaje ''404'' si se produjo un error. En cualquier caso para el ''datalogger'' es indiferente si la petición fue aceptada y el sistema no fue diseñado para realizar esta verificación.\\ En una futura implementación, queda planteada la posibilidad de diseñar un protocolo de comunicación que permita la verificación de datos como una forma de mejorar la robustez del sistema.\\
+El sistema implementa una salida de datos libre, esto quiere decir que cualquiera que posea acceso a la base de datos puede solicitar el envío de éstos a sus aplicaciones sin la necesidad de llaves extras de seguridad. Este acceso está pensado para que los datos sean publicados a través de las aplicaciones desarrolladas en cualquier sitio, incluido el sitio de la RedSolLAC.\\
+
+Cuando una estación hace una llamada GET, el servidor Web mediante una rutina en PHP verifica las llaves de seguridad e integridad de los datos que le son enviados de la estación para luego enviarlos a la base de datos. Una vez que la petición GET es recibida, ésta devuelve a la estación un mensaje ''200'' si la llamada fue recibida o un mensaje ''404'' si se produjo un error. En cualquier caso para el ''datalogger'' es indiferente si la petición fue aceptada y el sistema no fue diseñado para realizar esta verificación.\\ En una futura implementación, queda planteada la posibilidad de diseñar un protocolo de comunicación que permita la verificación de datos como una forma de mejorar la robustez del sistema.\\
 
 El siguiente diagrama de estados detalla de forma técnica el comportamiento de esta componente:
 \begin{figure}[h!]
@@ -421,26 +423,26 @@ El siguiente diagrama de estados detalla de forma técnica el comportamiento de 
 \end{figure}
 
 \subsection{Modelo de datos}
-El modelo de datos desarrollado (Ver Fig. \ref{modeloDatos}) cuenta con dos bases de datos, la primera de ellas contiene las tablas de uso general del sistema con información respecto de la radiación solar, datos meteorológicos, información geográfica para las diferentes comunas, información respecto de las estaciones meteorológicas registradas e información de utilidad para la parte gráfica propia del sitio.\\ La segunda base de datos esta orientada solo a la recopilación de datos de las diferentes estaciones.\\ Esta decisión, de separa las bases de datos, fue una decisión de diseño del sistema ya que según los requerimientos, cada estación registra parámetros distintos dependiendo de los sensores, si bien hubiese sido posible estandarizar una tabla con la mayoría de los instrumentos, esta tabla hubiese sido de un tamaño exageradamente grande, por otro lado, la mayoría de las estaciones registran datos cada un minuto, esto desemboca en un crecimiento muy rápido en la cantidad de registro de las tablas, si bien el crecimiento es lineal en el tiempo, la combinación de registros con todos los sensores posibles, mas todas las estaciones juntas en una sola tabla, hubiesen provocado un colapso y grandes dificultades de administración y mantención.\\
+El modelo de datos desarrollado (Ver Fig. \ref{modeloDatos}) cuenta con dos bases de datos, la primera de ellas contiene las tablas de uso general del sistema con información respecto de la radiación solar, datos meteorológicos, información geográfica para las diferentes comunas, información respecto de las estaciones meteorológicas registradas e información de utilidad para la parte gráfica propia del sitio.\\ La segunda base de datos está orientada solo a la recopilación de datos de las diferentes estaciones.\\ Esta decisión, de separar las bases de datos, fue una decisión de diseño del sistema ya que según los requerimientos, cada estación registra parámetros distintos dependiendo de los sensores, si bien hubiese sido posible estandarizar una tabla con la mayoría de los instrumentos, hubiese tenido un tamaño, desde el punto de vista del DBA, inmanejable. Por otro lado, la mayoría de las estaciones registran datos cada un minuto, esto desemboca en un crecimiento muy rápido en la cantidad de registros de las tablas, si bien el crecimiento es lineal en el tiempo, la combinación de registros con todos los sensores posibles, más todas las estaciones juntas en una sola tabla, podrían provocar eventualmente un colapso y grandes dificultades de administración y mantención.\\
 
-Para tener una idea aproximada del crecimiento de las tablas de datos, se plantea un el siguiente ejercicio: Solo la estación ''Fundación Chile Vitacura'' almacena en su tabla de datos 3 mediciones (GHI, RH, Temp) mas 3 columnas extras para todo registro (id, timestmp, Battv). Además registra datos con intervalos de un minuto, solo esta estación crece 34 MB al año y 525.000 registros.
+Para tener una idea aproximada del crecimiento de las tablas de datos, se plantea el siguiente ejercicio: Solo la estación ''Fundación Chile Vitacura'' almacena en su tabla de datos 3 mediciones (rad\_w, rh, Temp\_tc) más 3 columnas extras para todo registro (id, timestmp, Battv). Además registra datos con intervalos de un minuto, solo esta estación crece 34 MB al año y 525.000 registros al año.
 
 \begin{table}[h!]
-\caption{Crecimiento de la base de datos}
+\caption{Crecimiento anual de la base de datos}
 \begin{tabular}{| c | p{11cm} |}
         \hline
         Numero de columnas & 6\\
         \hline
 	Tamaño de la fila & 66 Bytes\\
 	\hline
-	Cantidad de registros & 525.600 Anual\\
+	Cantidad de registros & 525.600 registros\\
 	\hline
-	Tamaño BD anual & 33.877 KBytes\\
+	Tamaño BD & 33.877 KBytes\\
 	\hline
 \end{tabular}
 \end{table}
 
-A primera vista el tamaño de crecimiento en Bytes no es significativos, considerando la capacidad que manejan los servidores de datos en la actualidad, sin embargo la cantidad de registro ingresados día a día a la base de datos, bajo el supuesto de que existirán un numero considerable de estaciones, hace que una sola tabla sea inmanejable ante una eventualidad o emergencia.
+A primera vista el tamaño de crecimiento en Bytes no es significativo, considerando la capacidad que manejan los servidores de datos en la actualidad, sin embargo la cantidad de registro ingresados día a día a la base de datos, bajo el supuesto de que existirán un número considerable de estaciones, hace que una sola tabla sea poco manejable ante eventuales o emergencias, tales como fallas del servidor, cortes de electricidad, fallas de discos, etc.
 
 \begin{figure}[h!]
         \centering

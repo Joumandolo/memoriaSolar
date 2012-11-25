@@ -3,7 +3,7 @@
 Plugin Name: Estacion FCh
 Plugin URI: http://www.solaratacama.cl
 Description: Muestra informacion capturada mediante estaciones de medicion solar de la redSolLac; Compatible con Chrome 19, IE 9, Firefox 12.
-Version: 1.2.2
+Version: 1.2.5
 Author: Manuel Arredondo
 Author URI: http://wp.mnj.cl/
 License: GPL v3.0

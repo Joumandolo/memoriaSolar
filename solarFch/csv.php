@@ -14,17 +14,17 @@ if($_POST["desde"] AND $_POST["hasta"]){
 
 /* Conexion BD */
 $datosConexion = array(
-        'servidorBD' => "solar.db.7367634.hostedresource.com",
-        'usuario' => "widgetSolar",
-        'pass' => "corbet*Mount54",
-        'bd' => "solar"
-        );
+	'servidorBD' => "184.168.194.156",
+	'usuario' => "datosestaciones",
+	'pass' => "vB1p1I9k2uz06Y",
+	'bd' => "datosestaciones"
+	);
 $conexion = mysql_connect($datosConexion['servidorBD'], $datosConexion['usuario'], $datosConexion['pass']);
 mysql_select_db($datosConexion['bd'], $conexion);
-$q = "SELECT timestamp, Rad_W, rh, Temp_TC, BattV FROM solarDatos2 $where order by timestamp";
+$q = "SELECT timestamp, ghiwm2, rh, airtc, battv FROM solarFch $where order by timestamp";
 $r = mysql_query($q, $conexion) or die(mysql_error());
 
-$datos = array(array("timestamp", "rad_w", "rh", "temp_tc"));
+$datos = array(array("timestamp", "ghiwm2", "rh", "airtc"));
 while($fila = mysql_fetch_row($r)){
         $time = strtotime($fila[0]."UTC");
         array_push($datos, array($fila[0], $fila[1], $fila[2], $fila[3]));

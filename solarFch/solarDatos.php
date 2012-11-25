@@ -14,11 +14,17 @@ $datosConexion = array(
         'servidorBD' => "solar.db.7367634.hostedresource.com",
         'usuario' => "widgetSolar",
         'pass' => "corbet*Mount54",
-        'bd' => "solar"
+        'bd' => "solar",
+	'servidorBD2' => "184.168.194.156",
+        'usuario2' => "datosestaciones",
+        'pass2' => "vB1p1I9k2uz06Y",
+        'bd2' => "datosestaciones"
         );
 
 $conexion = mysql_connect($datosConexion['servidorBD'], $datosConexion['usuario'], $datosConexion['pass']);
 mysql_select_db($datosConexion['bd'], $conexion);
+$conexion2 = mysql_connect($datosConexion['servidorBD2'], $datosConexion['usuario2'], $datosConexion['pass2']);
+mysql_select_db($datosConexion['bd2'], $conexion2);
 
 /* Seleccionar unidades para etiquetas */
 $q = "SELECT campo, etiqueta, unidad FROM solarUnidades";
@@ -30,8 +36,9 @@ while($fila = mysql_fetch_row($r)){
 
 //$q = "SELECT UNIX_TIMESTAMP(timestamp)*1000, Rad_W, rh, Temp_TC, BattV FROM solarDatos2 where timestamp > '$fechaWhere' order by timestamp";
 //$q = "SELECT timestamp, Rad_W, rh, Temp_TC, BattV FROM solarDatos2 where timestamp > '$fechaWhere' order by timestamp";
-$q = "SELECT timestamp, Rad_W, rh, Temp_TC, BattV FROM solarDatos2 $where order by timestamp";
-$r = mysql_query($q, $conexion) or die(mysql_error());
+//$q = "SELECT timestamp, Rad_W, rh, Temp_TC, BattV FROM solarDatos2 $where order by timestamp";
+$q = "SELECT timestamp, ghi2wm2, rh, airtc, battv FROM solarFch $where order by timestamp";
+$r = mysql_query($q, $conexion2) or die(mysql_error());
 
 while($fila = mysql_fetch_row($r)){
 	$time = (strtotime($fila[0]."UTC") * 1000);// + $fechaBrowserOf;

@@ -1,0 +1,2620 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.2.22)  21 NOV 2012 12:39
+entering extended mode
+ %&-line parsing enabled.
+**memoria.tex
+(./memoria.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen103
+\Hy@linkcounter=\count88
+\Hy@pagecounter=\count89
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count90
+\Field@Width=\dimen104
+\Fld@charsize=\dimen105
+\Field@toks=\toks17
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count91
+\c@Item=\count92
+\c@Hfootnote=\count93
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count94
+)
+(/var/lib/texmf/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count95
+\U@D=\dimen106
+)
+\es@datefmt=\count96
+\es@quottoks=\toks18
+\es@quotdepth=\count97
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+))
+(./usmtesis/usmtesis.sty
+
+LaTeX Warning: You have requested package `usmtesis/usmtesis',
+               but the package provides `usmtesis'.
+
+Package: usmtesis 2012
+Tesis Info Style
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/share/texmf-texlive/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen107
+\extrarowheight=\dimen108
+\NC@list=\toks19
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+\TX@col@width=\dimen109
+\TX@old@table=\dimen110
+\TX@old@col=\dimen111
+\TX@target=\dimen112
+\TX@delta=\dimen113
+\TX@cols=\count98
+\TX@ftn=\toks20
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip45
+\f@ncyO@elh=\skip46
+\f@ncyO@erh=\skip47
+\f@ncyO@olh=\skip48
+\f@ncyO@orh=\skip49
+\f@ncyO@elf=\skip50
+\f@ncyO@erf=\skip51
+\f@ncyO@olf=\skip52
+\f@ncyO@orf=\skip53
+))
+(/usr/share/texmf/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2010/03/19 v0.9a programmable bibliographies
+
+(/usr/share/texmf-texlive/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2009/08/06 v1.8 e-TeX tools for LaTeX
+
+(/usr/share/texmf-texlive/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count100
+))
+\c@listtotal=\count101
+\c@listcount=\count102
+\c@liststart=\count103
+\c@liststop=\count104
+\c@citecount=\count105
+\c@citetotal=\count106
+\c@multicitecount=\count107
+\c@multicitetotal=\count108
+\c@instcount=\count109
+\c@maxnames=\count110
+\c@minnames=\count111
+\c@maxitems=\count112
+\c@minitems=\count113
+\c@uniquename=\count114
+\c@refsection=\count115
+\c@refsegment=\count116
+\c@maxextrayear=\count117
+\c@maxextraalpha=\count118
+\c@abbrvpenalty=\count119
+\c@highnamepenalty=\count120
+\c@lownamepenalty=\count121
+\c@maxparens=\count122
+\c@parenlevel=\count123
+\blx@tempcnta=\count124
+\blx@tempcntb=\count125
+\blx@maxsection=\count126
+\blx@maxsegment=\count127
+\blx@notetype=\count128
+\blx@parenlevel@text=\count129
+\blx@parenlevel@foot=\count130
+\labelnumberwidth=\skip54
+\labelalphawidth=\skip55
+\shorthandwidth=\skip56
+\biblabelsep=\skip57
+\bibitemsep=\skip58
+\bibnamesep=\skip59
+\bibinitsep=\skip60
+\bibparsep=\skip61
+\bibhang=\skip62
+\blx@auxin=\read1
+\blx@auxout=\write3
+\c@labelname=\count131
+\c@author=\count132
+\c@shortauthor=\count133
+\c@editor=\count134
+\c@editora=\count135
+\c@editorb=\count136
+\c@editorc=\count137
+\c@shorteditor=\count138
+\c@bookauthor=\count139
+\c@translator=\count140
+\c@annotator=\count141
+\c@commentator=\count142
+\c@introduction=\count143
+\c@foreword=\count144
+\c@afterword=\count145
+\c@holder=\count146
+\c@namea=\count147
+\c@nameb=\count148
+\c@namec=\count149
+\c@institution=\count150
+\c@language=\count151
+\c@location=\count152
+\c@organization=\count153
+\c@origlocation=\count154
+\c@origpublisher=\count155
+\c@pageref=\count156
+\c@publisher=\count157
+\c@lista=\count158
+\c@listb=\count159
+\c@listc=\count160
+\c@listd=\count161
+\c@liste=\count162
+\c@listf=\count163
+
+(/usr/share/texmf/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2010/03/19 v0.9a biblatex generic compatibility
+)
+(/usr/share/texmf/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2010/03/19 v0.9a biblatex generic definitions
+\c@smartand=\count164
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/share/texmf/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2010/03/19 v0.9a biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texmf/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2010/03/19 v0.9a biblatex bibliography style
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/share/texmf/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2010/03/19 v0.9a biblatex citation style
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texmf/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+(/usr/share/texmf-texlive/tex/latex/gloss/gloss.sty
+Package: gloss 2002/07/26 1.5.2 Gloss package
+\glosshang=\skip63
+)
+(/usr/share/texmf-texlive/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2009/02/07 v0.4g Insert pages of external PDF documents (AM)
+
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count165
+\calc@Bcount=\count166
+\calc@Adimen=\dimen116
+\calc@Bdimen=\dimen117
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count167
+\calc@Cskip=\skip66
+)
+(/usr/share/texmf-texlive/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2006/07/14 v1.1d eso-pic (RN)
+
+(/usr/share/texmf-texlive/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf-texlive/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2009/02/07 v0.4g Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box26
+\AM@toc@title=\toks21
+\c@AM@survey=\count168
+\AM@templatesizebox=\box27
+)
+(/usr/share/texmf-texlive/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks22
+\verbatim@line=\toks23
+\verbatim@in@stream=\read2
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count169
+\ST@wd=\dimen118
+\ST@rightskip=\skip67
+\ST@leftskip=\skip68
+\ST@parfillskip=\skip69
+\ST@pageleft=\dimen119
+\ST@headht=\dimen120
+\ST@tailht=\dimen121
+\ST@pagesofar=\dimen122
+\ST@pboxht=\dimen123
+\ST@lineht=\dimen124
+\ST@stretchht=\dimen125
+\ST@prevht=\dimen126
+\ST@toadd=\dimen127
+\ST@dimen=\dimen128
+\ST@pbox=\box28
+)
+\glsf@default=\write4
+\openout4 = `memoria.gls.aux'.
+
+Package gloss Info: Writing gloss file memoria.gls.aux on input line 25.
+Package biblatex Info: Trying to load language 'spanish'...
+Package biblatex Info: ... file 'spanish.lbx' found.
+
+(/usr/share/texmf/tex/latex/biblatex/lbx/spanish.lbx
+File: spanish.lbx 2010/03/19 v0.9a biblatex localization
+)
+
+Package biblatex Warning: 'babel' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' is strongly recommended.
+
+\@quotelevel=\count170
+(./memoria.aux (./chapters/6-Introduccion.aux) (./chapters/7-Alcances.aux)
+(./chapters/8-Solar.aux) (./chapters/9-Solucion.aux) (./chapters/10-Pruebas.aux
+) (./chapters/11-Conclusiones.aux) (./chapters/12-Anexos.aux
+
+LaTeX Warning: Label `fotoEstacionFch' multiply defined.
+
+
+LaTeX Warning: Label `phpCalculadora' multiply defined.
+
+
+LaTeX Warning: Label `getData' multiply defined.
+
+))
+\openout1 = `memoria.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 38.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+Package hyperref Info: Link coloring OFF on input line 38.
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count171
+)
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+ (./memoria.out)
+(./memoria.out)
+\@outlinefile=\write5
+\openout5 = `memoria.out'.
+
+\AtBeginShipoutBox=\box29
+ (/usr/share/texmf/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count172
+\scratchdimen=\dimen129
+\scratchbox=\box30
+\nofMPsegments=\count173
+\nofMParguments=\count174
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count175
+\MPscratchDim=\dimen130
+\MPnumerator=\count176
+\everyMPtoPDFconversion=\toks25
+)
+\openout3 = `memoria-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'memoria.bbl' found.
+ (./memoria.bbl)
+Package biblatex Info: Reference section=0 on input line 38.
+Package biblatex Info: Reference segment=0 on input line 38.
+ ABD: EveryShipout initializing macros
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+Most over/underfulls in first few pages are the fault of dalthesis.
+Ignore all them. If uncorrectable errors occur, notify staff.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 40.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 40.
+(/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+<usmtesis/images/di.pdf, id=247, 256.96pt x 216.81pt>
+File: usmtesis/images/di.pdf Graphic file (type pdf)
+
+<use usmtesis/images/di.pdf>
+<usmtesis/images/utfsm.pdf, id=249, 591.81097pt x 427.196pt>
+File: usmtesis/images/utfsm.pdf Graphic file (type pdf)
+
+<use usmtesis/images/utfsm.pdf>
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./usmtesis/images/di.pdf> 
+<./usmtesis/images/utfsm.pdf>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+
+ []
+
+[2] (./chapters/1-Agradecimientos.tex [3]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 4.
+) [4
+
+] (./chapters/2-Resumen.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+) [5
+
+] (./chapters/3-Abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 7--40
+
+ []
+
+[6
+
+] (./memoria.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 6.
+ [7
+
+] [8])
+\tf@toc=\write6
+\openout6 = `memoria.toc'.
+
+ [9] (./memoria.lot)
+\tf@lot=\write7
+\openout7 = `memoria.lot'.
+
+ [10
+
+] (./memoria.lof
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 22.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+ [11
+
+]
+[12])
+\tf@lof=\write8
+\openout8 = `memoria.lof'.
+
+ [13]
+
+Package gloss Warning: Term `*' on page \es@scroman {xiv} not defined in glossa
+ry `default' on input line 42.
+
+(./memoria.gls.bbl
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 5.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 5.
+
+[14
+
+] [15]) [16]
+Prefacio escrito.
+\openout2 = `chapters/6-Introduccion.aux'.
+
+(./chapters/6-Introduccion.tex
+Cap\'{\i }tulo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+<images/solarSis.jpg, id=585, 803.0pt x 503.8825pt>
+File: images/solarSis.jpg Graphic file (type jpg)
+ <use images/solarSis.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+[1
+
+
+ <./images/solarSis.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+\openout2 = `chapters/7-Alcances.aux'.
+
+ (./chapters/7-Alcances.tex
+Cap\'{\i }tulo 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+<images/estacionDedaloFch.jpg, id=605, 963.6pt x 719.68875pt>
+File: images/estacionDedaloFch.jpg Graphic file (type jpg)
+
+<use images/estacionDedaloFch.jpg> [3
+
+
+
+]
+<images/mmena.jpg, id=613, 154.176pt x 46.7346pt>
+File: images/mmena.jpg Graphic file (type jpg)
+ <use images/mmena.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4 <./images/estacionDedaloFch.jpg> <./images/mmena.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5] <images/demandaGeneracionSubSole.jpg, id=628, 614.295pt x 371.13657pt>
+File: images/demandaGeneracionSubSole.jpg Graphic file (type jpg)
+
+<use images/demandaGeneracionSubSole.jpg>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <./images/demandaGeneracionSubSole.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+\openout2 = `chapters/8-Solar.aux'.
+
+ (./chapters/8-Solar.tex
+Cap\'{\i }tulo 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+[9
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+<images/afelioPerihelio.png, id=657, 481.8pt x 360.34625pt>
+File: images/afelioPerihelio.png Graphic file (type png)
+
+<use images/afelioPerihelio.png>
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./images/afelioPerihelio.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+<images/espectroSolar.jpg, id=667, 794.97pt x 541.02126pt>
+File: images/espectroSolar.jpg Graphic file (type jpg)
+
+<use images/espectroSolar.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11 <./images/espectroSolar.jpg>]
+Overfull \hbox (22.38907pt too wide) in paragraph at lines 38--39
+[]\OT1/ptm/m/n/12 Como se men-ciono en la sec-ci[]on []3.1[] la ra-dia-ci[]on c
+ap-tu-ra-da en la atm[]osfe-ra es de $\OT1/cmr/m/n/12 1395[\OML/cmm/m/it/12 W=m
+[]\OT1/cmr/m/n/12 ]$\OT1/ptm/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+<images/espesorAtmosfera.jpg, id=679, 478.78876pt x 550.055pt>
+File: images/espesorAtmosfera.jpg Graphic file (type jpg)
+
+<use images/espesorAtmosfera.jpg>
+REQ:2:bibtex:
+binary=bibtex
+option=-min-crossrefs=2
+infile=memoria
+:REQ
+
+LaTeX Warning: Citation 'foot:espesorAtmosfera' on page 12 undefined on input l
+ine 43.
+
+REQ:1:latex:REQ
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12 <./images/espesorAtmosfera.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+<images/radiacionDescompocicion.jpg, id=691, 415.5525pt x 315.1775pt>
+File: images/radiacionDescompocicion.jpg Graphic file (type jpg)
+
+<use images/radiacionDescompocicion.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13 <./images/radiacionDescompocicion.jpg>]
+<images/3tier_solar_irradiance.pdf, id=705, 1228.59pt x 794.97pt>
+File: images/3tier_solar_irradiance.pdf Graphic file (type pdf)
+
+<use images/3tier_solar_irradiance.pdf>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14 <./images/3tier_solar_irradiance.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
+\openout2 = `chapters/9-Solucion.aux'.
+
+ (./chapters/9-Solucion.tex
+Cap\'{\i }tulo 4.
+
+LaTeX Warning: Citation 'iternet' on page 18 undefined on input line 3.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+<images/diagramaArquitectura.png, id=924, 1051.93pt x 648.4225pt>
+File: images/diagramaArquitectura.png Graphic file (type png)
+
+<use images/diagramaArquitectura.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+[18
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19 <./images/diagramaArquitectura.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25] <images/cr1000.png, id=1004, 301.125pt x 207.77625pt>
+File: images/cr1000.png Graphic file (type png)
+
+<use images/cr1000.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <./images/cr1000.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+<images/nl200.png, id=1014, 301.125pt x 115.43124pt>
+File: images/nl200.png Graphic file (type png)
+ <use images/nl200.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28 <./images/nl200.png>]
+<images/MultiModemGPRS.png, id=1029, 211.79124pt x 134.5025pt>
+File: images/MultiModemGPRS.png Graphic file (type png)
+
+<use images/MultiModemGPRS.png>
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29 <./images/MultiModemGPRS.png (PNG copy)>]
+<images/piranometro.jpg, id=1037, 216.81pt x 151.56625pt>
+File: images/piranometro.jpg Graphic file (type jpg)
+
+<use images/piranometro.jpg>
+Overfull \hbox (3.00285pt too wide) in paragraph at lines 190--191
+ \OT1/ptm/b/n/12 Sen-sor de tem-pe-ra-tu-ra y hu-me-dad HMP60:[] \OT1/ptm/m/n/1
+2 Es una son-da de hu-me-dad sen-ci-lla, econ[]omi-
+ []
+
+<images/SensorThmp60.jpg, id=1039, 250.9375pt x 77.28876pt>
+File: images/SensorThmp60.jpg Graphic file (type jpg)
+
+<use images/SensorThmp60.jpg>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30 <./images/piranometro.jpg> <./images/SensorThmp60.jpg>]
+<images/bateria.jpg, id=1047, 249.93375pt x 149.55875pt>
+File: images/bateria.jpg Graphic file (type jpg)
+
+<use images/bateria.jpg>
+<images/panelSolar.jpg, id=1048, 163.61125pt x 250.9375pt>
+File: images/panelSolar.jpg Graphic file (type jpg)
+
+<use images/panelSolar.jpg>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.31775pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31 <./images/bateria.jpg> <./images/panelSolar.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+<images/despliegue.png, id=1056, 1730.465pt x 1019.81pt>
+File: images/despliegue.png Graphic file (type png)
+
+<use images/despliegue.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32 <./images/despliegue.png>]
+<images/webRedSolLAC.png, id=1062, 1178.4025pt x 543.02875pt>
+File: images/webRedSolLAC.png Graphic file (type png)
+
+<use images/webRedSolLAC.png>
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+[]|\OT1/ptm/m/n/12 Contact(v0.7.1), Cus-tom si-de-bars(v1.1), Goo-gle Analy-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+\OT1/ptm/m/n/12 tics(v1.0.2), Main-te-nan-ce Mo-de(v5.4), Word-Press Goo-gle
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33 <./images/webRedSolLAC.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34] <images/solarGrafico.png, id=1080, 943.525pt x 396.48125pt>
+File: images/solarGrafico.png Graphic file (type png)
+
+<use images/solarGrafico.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35 <./images/solarGrafico.png (PNG copy)>]
+<images/graficosEstados.png, id=1085, 705.63625pt x 353.32pt>
+File: images/graficosEstados.png Graphic file (type png)
+
+<use images/graficosEstados.png>
+<images/graficosSecuencia.png, id=1086, 959.585pt x 465.74pt>
+File: images/graficosSecuencia.png Graphic file (type png)
+
+<use images/graficosSecuencia.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36 <./images/graficosEstados.png> <./images/graficosSecuencia.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+
+Overfull \hbox (0.38542pt too wide) in paragraph at lines 317--318
+\OT1/ptm/m/n/12 los pa-ne-les so-la-res(Ver Anexo:[]7.4[]), mien-tras m[]as ca-
+lien-tes se en-cuen-tren []estos, me-nor ser[]a su
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+
+ []
+
+<images/calcSecuencia.png, id=1114, 544.0325pt x 544.0325pt>
+File: images/calcSecuencia.png Graphic file (type png)
+
+<use images/calcSecuencia.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/calcEstado.png, id=1115, 237.88875pt x 452.69125pt>
+File: images/calcEstado.png Graphic file (type png)
+
+<use images/calcEstado.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40 <./images/calcSecuencia.png> <./images/calcEstado.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--388
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41] <images/estacionEstados.png, id=1136, 305.14pt x 259.97125pt>
+File: images/estacionEstados.png Graphic file (type png)
+
+<use images/estacionEstados.png>
+<images/estacionSecuencia.png, id=1137, 785.93625pt x 397.485pt>
+File: images/estacionSecuencia.png Graphic file (type png)
+
+<use images/estacionSecuencia.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--408
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42 <./images/estacionEstados.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43 <./images/estacionSecuencia.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
+
+ []
+
+<images/datosEstados.png, id=1148, 461.725pt x 289.08pt>
+File: images/datosEstados.png Graphic file (type png)
+
+<use images/datosEstados.png>
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44 <./images/datosEstados.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45] <images/modeloDatos.png, id=1160, 658.46pt x 559.08875pt>
+File: images/modeloDatos.png Graphic file (type png)
+
+<use images/modeloDatos.png>)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46 <./images/modeloDatos.png>]
+\openout2 = `chapters/10-Pruebas.aux'.
+
+ (./chapters/10-Pruebas.tex
+Cap\'{\i }tulo 5.
+<./images/cap5chap1img0.png, id=1166, 957.5775pt x 415.5525pt>
+File: ./images/cap5chap1img0.png Graphic file (type png)
+
+<use ./images/cap5chap1img0.png>
+<./images/cap5chap1img5-1.png, id=1168, 292.09125pt x 299.1175pt>
+File: ./images/cap5chap1img5-1.png Graphic file (type png)
+
+<use ./images/cap5chap1img5-1.png>
+<./images/cap5chap1img5-2.png, id=1169, 277.035pt x 311.1625pt>
+File: ./images/cap5chap1img5-2.png Graphic file (type png)
+
+<use ./images/cap5chap1img5-2.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[47
+
+
+
+ <./images/cap5chap1img0.png (PNG copy)>]
+<./images/cap5chap1img1.png, id=1177, 616.3025pt x 418.56375pt>
+File: ./images/cap5chap1img1.png Graphic file (type png)
+
+<use ./images/cap5chap1img1.png>
+<./images/cap5chap1img3.png, id=1179, 646.415pt x 234.8775pt>
+File: ./images/cap5chap1img3.png Graphic file (type png)
+
+<use ./images/cap5chap1img3.png>
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48 <./images/cap5chap1img5-1.png> <./images/cap5chap1img5-2.png> <./images/cap
+5chap1img1.png>]
+<./images/cap5chap1img4-1.png, id=1190, 467.7475pt x 309.155pt>
+File: ./images/cap5chap1img4-1.png Graphic file (type png)
+
+<use ./images/cap5chap1img4-1.png>
+Overfull \hbox (22.58517pt too wide) in paragraph at lines 53--54
+ [][] 
+ []
+
+<./images/cap5chap1img4-2.png, id=1191, 393.47pt x 338.26375pt>
+File: ./images/cap5chap1img4-2.png Graphic file (type png)
+
+<use ./images/cap5chap1img4-2.png>
+<./images/cap5chap1img4-3.png, id=1192, 422.57875pt x 325.215pt>
+File: ./images/cap5chap1img4-3.png Graphic file (type png)
+
+<use ./images/cap5chap1img4-3.png>
+Overfull \hbox (6.77588pt too wide) in paragraph at lines 61--62
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49 <./images/cap5chap1img3.png> <./images/cap5chap1img4-1.png> <./images/cap5c
+hap1img4-2.png> <./images/cap5chap1img4-3.png>]
+<./images/cap5chap1img2-1.png, id=1203, 338.26375pt x 409.53pt>
+File: ./images/cap5chap1img2-1.png Graphic file (type png)
+
+<use ./images/cap5chap1img2-1.png>
+<./images/cap5chap1img2-2.png, id=1204, 357.335pt x 300.12125pt>
+File: ./images/cap5chap1img2-2.png Graphic file (type png)
+
+<use ./images/cap5chap1img2-2.png>
+<./images/cap5chap1img2-3.png, id=1205, 1026.83624pt x 132.495pt>
+File: ./images/cap5chap1img2-3.png Graphic file (type png)
+
+<use ./images/cap5chap1img2-3.png>
+Overfull \hbox (21.05432pt too wide) in paragraph at lines 86--88
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50 <./images/cap5chap1img2-1.png> <./images/cap5chap1img2-2.png> <./images/cap
+5chap1img2-3.png>]
+<./images/cap5chap1img6.png, id=1214, 954.56625pt x 482.80376pt>
+File: ./images/cap5chap1img6.png Graphic file (type png)
+
+<use ./images/cap5chap1img6.png>
+<./images/cap5chap1img7-1.png, id=1218, 349.305pt x 172.645pt>
+File: ./images/cap5chap1img7-1.png Graphic file (type png)
+
+<use ./images/cap5chap1img7-1.png>
+<./images/cap5chap1img7-2.png, id=1219, 951.555pt x 174.6525pt>
+File: ./images/cap5chap1img7-2.png Graphic file (type png)
+
+<use ./images/cap5chap1img7-2.png>
+Overfull \hbox (34.75862pt too wide) in paragraph at lines 114--115
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51 <./images/cap5chap1img6.png (PNG copy)>]
+<./images/cap5chap1img8.png, id=1228, 931.48pt x 202.7575pt>
+File: ./images/cap5chap1img8.png Graphic file (type png)
+
+<use ./images/cap5chap1img8.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52 <./images/cap5chap1img7-1.png> <./images/cap5chap1img7-2.png> <./images/cap
+5chap1img8.png>]
+<./images/planoPanelSolar.png, id=1238, 362.10281pt x 148.30406pt>
+File: ./images/planoPanelSolar.png Graphic file (type png)
+
+<use ./images/planoPanelSolar.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53 <./images/planoPanelSolar.png (PNG copy)>]
+<./images/cap5chap1img9.png, id=1249, 939.51pt x 541.02126pt>
+File: ./images/cap5chap1img9.png Graphic file (type png)
+
+<use ./images/cap5chap1img9.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54 <./images/cap5chap1img9.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56] <images/pruebas1.png, id=1271, 758.835pt x 523.9575pt>
+File: images/pruebas1.png Graphic file (type png)
+
+<use images/pruebas1.png>
+<images/pruebas2.png, id=1272, 532.23843pt x 344.78813pt>
+File: images/pruebas2.png Graphic file (type png)
+
+<use images/pruebas2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57 <./images/pruebas1.png (PNG copy)>]
+<images/pruebas3.png, id=1285, 719.68875pt x 388.45125pt>
+File: images/pruebas3.png Graphic file (type png)
+
+<use images/pruebas3.png>
+<images/pruebas4.png, id=1286, 611.28375pt x 370.38374pt>
+File: images/pruebas4.png Graphic file (type png)
+
+<use images/pruebas4.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58 <./images/pruebas2.png (PNG copy)> <./images/pruebas3.png>]
+<images/pruebas5.png, id=1292, 473.51906pt x 307.90031pt>
+File: images/pruebas5.png Graphic file (type png)
+
+<use images/pruebas5.png>
+<images/pruebasLog1.png, id=1294, 925.4575pt x 271.0125pt>
+File: images/pruebasLog1.png Graphic file (type png)
+
+<use images/pruebasLog1.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59 <./images/pruebas4.png (PNG copy)> <./images/pruebas5.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[60 <./images/pruebasLog1.png (PNG copy)>]
+<images/modem1.png, id=1314, 350.05782pt x 142.28156pt>
+File: images/modem1.png Graphic file (type png)
+
+<use images/modem1.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/modem2.png, id=1315, 434.37282pt x 181.42781pt>
+File: images/modem2.png Graphic file (type png)
+
+<use images/modem2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[61] <images/modem3.png, id=1326, 505.13719pt x 94.85437pt>
+File: images/modem3.png Graphic file (type png)
+
+<use images/modem3.png>
+<images/modem4.png, id=1327, 520.19344pt x 341.02406pt>
+File: images/modem4.png Graphic file (type png)
+
+<use images/modem4.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62 <./images/modem1.png (PNG copy)> <./images/modem2.png (PNG copy)> <./images
+/modem3.png (PNG copy)>] <images/modem5.png, id=1332, 523.20468pt x 337.26pt>
+File: images/modem5.png Graphic file (type png)
+
+<use images/modem5.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[63 <./images/modem4.png (PNG copy)> <./images/modem5.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--304
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[65]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[66
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[67
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[68]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[69])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70]
+\openout2 = `chapters/11-Conclusiones.aux'.
+
+ (./chapters/11-Conclusiones.tex
+Cap\'{\i }tulo 6.
+[71
+
+
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[72]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[73]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[74])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[75]
+\openout2 = `chapters/12-Anexos.aux'.
+
+ (./chapters/12-Anexos.tex
+Cap\'{\i }tulo 7.
+[76
+
+
+
+] <include/masterEdu.pdf, id=1402, page=1, 614.295pt x 917.1063pt>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 1>
+File: include/masterEdu.pdf Graphic file (type pdf)
+ <use include/masterEdu.pdf, page 1>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 1>
+File: include/masterEdu.pdf Graphic file (type pdf)
+ <use include/masterEdu.pdf, page 1>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 1> [77 <./include/masterEdu.pdf>]
+<include/masterEdu.pdf, id=1458, page=2, 614.295pt x 917.1063pt>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 2>
+File: include/masterEdu.pdf Graphic file (type pdf)
+ <use include/masterEdu.pdf, page 2>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 2>
+File: include/masterEdu.pdf Graphic file (type pdf)
+ <use include/masterEdu.pdf, page 2>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 2> [78 <./include/masterEdu.pdf>]
+<include/masterEdu.pdf, id=1527, page=3, 614.295pt x 917.1063pt>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 3>
+File: include/masterEdu.pdf Graphic file (type pdf)
+ <use include/masterEdu.pdf, page 3>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 3> [79 <./include/masterEdu.pdf>]
+<include/masterEdu.pdf, id=1603, page=4, 614.295pt x 917.1063pt>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 4>
+File: include/masterEdu.pdf Graphic file (type pdf)
+ <use include/masterEdu.pdf, page 4>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 4> [80 <./include/masterEdu.pdf>]
+<include/masterEdu.pdf, id=1609, page=5, 614.295pt x 917.1063pt>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 5>
+File: include/masterEdu.pdf Graphic file (type pdf)
+ <use include/masterEdu.pdf, page 5>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 5> [81 <./include/masterEdu.pdf>]
+<include/masterEdu.pdf, id=1616, page=6, 614.295pt x 917.1063pt>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 6>
+File: include/masterEdu.pdf Graphic file (type pdf)
+ <use include/masterEdu.pdf, page 6>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 6> [82 <./include/masterEdu.pdf>]
+<include/masterEdu.pdf, id=1626, page=7, 614.295pt x 917.1063pt>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 7>
+File: include/masterEdu.pdf Graphic file (type pdf)
+ <use include/masterEdu.pdf, page 7>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 7> [83 <./include/masterEdu.pdf>]
+<include/masterEdu.pdf, id=1632, page=8, 614.295pt x 917.1063pt>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 8>
+File: include/masterEdu.pdf Graphic file (type pdf)
+ <use include/masterEdu.pdf, page 8>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 8> [84 <./include/masterEdu.pdf>]
+<include/masterEdu.pdf, id=1654, page=9, 614.295pt x 917.1063pt>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 9>
+File: include/masterEdu.pdf Graphic file (type pdf)
+ <use include/masterEdu.pdf, page 9>
+File: include/masterEdu.pdf Graphic file (type pdf)
+
+<use include/masterEdu.pdf, page 9> [85 <./include/masterEdu.pdf>]
+<include/fichaTecnicaDedalo.pdf, id=1664, page=1, 598.235pt x 845.55902pt>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 1>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 1>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 1>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 1>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 1> [86 <./include/fichaTecnicaDedalo.
+pdf>]
+<include/fichaTecnicaDedalo.pdf, id=1682, page=2, 598.235pt x 845.55902pt>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 2>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 2>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 2>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 2>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 2> [87 <./include/fichaTecnicaDedalo.
+pdf>] <include/fichaTecnicaDedalo.pdf, id=1701, page=3, 614.295pt x 794.97pt>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 3>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 3>
+File: include/fichaTecnicaDedalo.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaDedalo.pdf, page 3> [88 <./include/fichaTecnicaDedalo.
+pdf>]
+<include/fichaTecnicaIcaro.pdf, id=1737, page=1, 598.235pt x 845.55902pt>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 1>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 1>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 1>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 1>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 1> [89 <./include/fichaTecnicaIcaro.pd
+f>] <include/fichaTecnicaIcaro.pdf, id=1755, page=2, 598.235pt x 845.55902pt>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 2>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 2>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 2>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 2>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 2> [90 <./include/fichaTecnicaIcaro.pd
+f>] <include/fichaTecnicaIcaro.pdf, id=1772, page=3, 598.235pt x 845.55902pt>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 3>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 3>
+File: include/fichaTecnicaIcaro.pdf Graphic file (type pdf)
+
+<use include/fichaTecnicaIcaro.pdf, page 3> [91 <./include/fichaTecnicaIcaro.pd
+f>] <include/pvsistSim.pdf, id=1794, page=1, 845.1575pt x 1195.46625pt>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+
+<use include/pvsistSim.pdf, page 1>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+ <use include/pvsistSim.pdf, page 1>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+
+<use include/pvsistSim.pdf, page 1>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+ <use include/pvsistSim.pdf, page 1>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+
+<use include/pvsistSim.pdf, page 1> [92 <./include/pvsistSim.pdf>]
+<include/pvsistSim.pdf, id=1806, page=2, 845.1575pt x 1195.46625pt>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+
+<use include/pvsistSim.pdf, page 2>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+ <use include/pvsistSim.pdf, page 2>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+
+<use include/pvsistSim.pdf, page 2>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+ <use include/pvsistSim.pdf, page 2>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+
+<use include/pvsistSim.pdf, page 2> [93 <./include/pvsistSim.pdf>]
+<include/pvsistSim.pdf, id=1812, page=3, 845.1575pt x 1195.46625pt>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+
+<use include/pvsistSim.pdf, page 3>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+ <use include/pvsistSim.pdf, page 3>
+File: include/pvsistSim.pdf Graphic file (type pdf)
+
+<use include/pvsistSim.pdf, page 3> [94 <./include/pvsistSim.pdf>]
+(./chapters/12-solarCalc.tex
+Overfull \hbox (11.00565pt too wide) in paragraph at lines 1--1
+[]\OT1/ptm/b/n/17.28 Resultados si-mu-la-cion So-lar-Calc pa-ra plan-ta so-lar 
+Mar-
+ []
+
+<images/simMmena1.png, id=1817, 962.59625pt x 480.79625pt>
+File: images/simMmena1.png Graphic file (type png)
+
+<use images/simMmena1.png>
+<images/simMmena2.png, id=1818, 924.45375pt x 412.54124pt>
+File: images/simMmena2.png Graphic file (type png)
+
+<use images/simMmena2.png>)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[95 <./images/simMmena1.png (PNG copy)> <./images/simMmena2.png (PNG copy)>]
+(./chapters/12-phpCalculadora.tex
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 3.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Overfull \hbox (5.3821pt too wide) in paragraph at lines 11--11
+[]        \OT1/pcr/m/n/12 'servidorBD' => "solar.db.7367634.hostedresource.com"
+,[] 
+ []
+
+
+Overfull \hbox (5.3821pt too wide) in paragraph at lines 30--30
+[]\OT1/pcr/m/n/12 $hd = array(0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5,11.5
+,[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[96]
+Overfull \hbox (5.3821pt too wide) in paragraph at lines 35--35
+[]\OT1/pcr/m/n/12 /* Definicion de datos que dependen de la comuna a calcular *
+/[] 
+ []
+
+
+Overfull \hbox (5.3821pt too wide) in paragraph at lines 43--43
+[]\OT1/pcr/m/n/12 $q = "SELECT latitud FROM comunas WHERE comuna='".$comuna."'"
+;[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[97]
+Overfull \hbox (19.78209pt too wide) in paragraph at lines 82--82
+[] \OT1/pcr/m/n/12 (0.006758*cos(2*gamma($nda))) + (0.000907*sin(2*gamma($nda))
+) -[] 
+ []
+
+
+Overfull \hbox (34.18208pt too wide) in paragraph at lines 83--83
+[] \OT1/pcr/m/n/12 (0.002697*cos(3*gamma($nda))) + (0.00148*sin(3*gamma($nda)))
+ ) );[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[98]
+Overfull \hbox (5.3821pt too wide) in paragraph at lines 115--115
+[]\OT1/pcr/m/n/12 $RDHd = $RGHd * (0.91138 - (0.96225 * kt($RGHd,$l,$nda,$cs)))
+;[] 
+ []
+
+
+Overfull \hbox (12.58209pt too wide) in paragraph at lines 120--120
+[]\OT1/pcr/m/n/12 $a = (0.409 + (0.5016 * sin((ws($l,$nda) - 60) * M_PI / 180))
+);[] 
+ []
+
+
+Overfull \hbox (19.78209pt too wide) in paragraph at lines 125--125
+[]\OT1/pcr/m/n/12 $b = (0.6609 - (0.4767 * sin((ws($l,$nda) - 60) * M_PI / 180)
+));[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[99]
+Overfull \hbox (12.58209pt too wide) in paragraph at lines 143--143
+[]\OT1/pcr/m/n/12 $acimut = (acos(( (cos(delta($nda) * M_PI / 180) * cos(w($hd)
+ *[] 
+ []
+
+
+Overfull \hbox (12.58209pt too wide) in paragraph at lines 145--145
+[] \OT1/pcr/m/n/12 M_PI / 180)) ) / (cos(hs($l,$nda,$hd) * M_PI / 180) * sin($l
+ *[] 
+ []
+
+
+Overfull \hbox (34.18208pt too wide) in paragraph at lines 150--150
+[]\OT1/pcr/m/n/12 /* Funciones para calcular la distribucion horaria de la radi
+acion[] 
+ []
+
+
+Overfull \hbox (34.18208pt too wide) in paragraph at lines 156--156
+[]\OT1/pcr/m/n/12 cos(ws($l,$nda) * M_PI / 180))) / (sin(ws($l,$nda) * M_PI / 1
+80) -[] 
+ []
+
+
+Overfull \hbox (34.18208pt too wide) in paragraph at lines 157--157
+[]\OT1/pcr/m/n/12 ((M_PI / 180) * (ws($l,$nda)) * cos(ws($l,$nda) * M_PI / 180)
+))));[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[100]
+Overfull \hbox (12.58209pt too wide) in paragraph at lines 170--170
+[]\OT1/pcr/m/n/12 if(hs($l,$nda,$hd) > 0){ $RGHh = ($RGHd * FRGHhd($l,$nda,$hd)
+);[] 
+ []
+
+
+Overfull \hbox (19.78209pt too wide) in paragraph at lines 182--182
+[]\OT1/pcr/m/n/12 $RDrHh = RGHh($RGHd,$l,$nda,$hd) - RDfHh($RGHd,$l,$nda,$cs,$h
+d);[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[101]
+Overfull \hbox (19.78209pt too wide) in paragraph at lines 218--218
+[]\OT1/pcr/m/n/12 $anguloIncidencia = (180 / M_PI) * acos( cos($HS * M_PI / 180
+) *[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[102]
+Overfull \hbox (34.18208pt too wide) in paragraph at lines 248--248
+[]\OT1/pcr/m/n/12 function energiaSolarTotal($alb,$incl,$ori,$RGHd,$l,$nda,$cs,
+$hd){[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[103]
+Overfull \hbox (34.18208pt too wide) in paragraph at lines 263--263
+[]\OT1/pcr/m/n/12 //$filaRadiacion = '<td id=col1>Radiaci[]on solar[kWh/m2/dia]
+</td>';[] 
+ []
+
+
+Overfull \hbox (48.58208pt too wide) in paragraph at lines 274--274
+[] \OT1/pcr/m/n/12 array($var,RGhS($alb,$incl,$ori,$RGHd[$i+1],$l,$nda[$i],$cs,
+$var));[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[104]
+Overfull \hbox (5.3821pt too wide) in paragraph at lines 298--298
+[]\OT1/pcr/m/n/12 array('label' => 'costo', "data" => $filaCosto, 'yaxis' => 4)
+,[] 
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[105] (./chapters/12-getData.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[106]
+Overfull \hbox (19.78209pt too wide) in paragraph at lines 55--55
+[]\OT1/pcr/m/n/12 'HMP50 Temperature & Relative Humidity Sensor measurements Ai
+rTC[] 
+ []
+
+
+Overfull \hbox (12.58209pt too wide) in paragraph at lines 65--65
+[]\OT1/pcr/m/n/12 'peticion get al servidor de solaratacama.cl para registrar l
+as[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[107]
+Overfull \hbox (5.3821pt too wide) in paragraph at lines 69--69
+[]\OT1/pcr/m/n/12 'varsGetRequest = "timestamp="+TimeS+"&battV="+BattV+"&radW="
++[] 
+ []
+
+
+Overfull \hbox (41.38208pt too wide) in paragraph at lines 74--74
+[]\OT1/pcr/m/n/12 GetRequest = "GET /solarDatos/getDatalogerFch.php?"+varsGetRe
+quest+[] 
+ []
+
+
+Overfull \hbox (26.98209pt too wide) in paragraph at lines 76--76
+[]\OT1/pcr/m/n/12 'GetRequest = "GET /getDatalogerFch.php HTTP/1.1"+CHR(13)+CHR
+(10)[] 
+ []
+
+
+Overfull \hbox (26.98209pt too wide) in paragraph at lines 81--81
+[]\OT1/pcr/m/n/12 SerialOut(socket,"User-Agent:Mozilla/5.0"+CHR(13)+CHR(10),"",
+0,0)[] 
+ []
+
+))
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[108] [109
+
+
+]
+Underfull \hbox (badness 1028) in paragraph at lines 63--63
+[]  \OT1/ptm/m/n/12 The PHP Group.   Li-cen-cia PHP.   2001 - 2012.   \OT1/ptm/
+m/sc/12 url\OT1/ptm/m/n/12 : []$\OT1/pcr/m/n/12 http : / / php . net /
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[110]
+Underfull \hbox (badness 1859) in paragraph at lines 63--63
+[]  \OT1/ptm/m/n/12 Wi-ki-pe-dia.   Reac-cio-nes ter-mo-nu-clea-res e in-ci-den
+-cia so-bre la su-per-fi-cie te-rres-
+ []
+
+
+Underfull \hbox (badness 8170) in paragraph at lines 63--63
+\OT1/pcr/m/n/12 termonucleares _ e _ incidencia _ sobre _ la _ superficie _
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.14989pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[111] (./memoria.aux (./chapters/6-Introduccion.aux) (./chapters/7-Alcances.aux
+) (./chapters/8-Solar.aux) (./chapters/9-Solucion.aux)
+(./chapters/10-Pruebas.aux) (./chapters/11-Conclusiones.aux)
+(./chapters/12-Anexos.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                memoria.aux
+(biblatex)                and rerun LaTeX afterwards.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 10992 strings out of 493848
+ 167873 string characters out of 1152823
+ 316459 words of memory out of 3000000
+ 13534 multiletter control sequences out of 15000+50000
+ 40076 words of font info for 72 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 40i,17n,45p,1605b,1684s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fo
+nts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helv
+etic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></us
+r/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texli
+ve/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/t
+imes/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on memoria.pdf (127 pages, 19752441 bytes).
+PDF statistics:
+ 2060 PDF objects out of 2073 (max. 8388607)
+ 388 named destinations out of 1000 (max. 500000)
+ 959 words of extra memory for PDF output out of 10000 (max. 10000000)
+
